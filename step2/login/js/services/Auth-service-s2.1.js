@@ -10,10 +10,14 @@ function authFnc() {
 		userList: userList
 	};
 	function checkUser(userlogin,userpwd){
-
-		// TODO
+		for(u in userMap){
+			if(u==userlogin && userMap[u]==userpwd){
+				return true;
+			}
+		}
+		return false;
 	};
 	function userList(){
-		// TODO
+		return Object.keys(userMap);
 	};
 

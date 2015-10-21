@@ -1,6 +1,6 @@
-angular.module('loginApp',[]).controller('loginCtrl',loginCrtFnt);
-loginCrtFnt.$inject=['$scope','$log'];
-function loginCrtFnt($scope, $log){
+angular.module('loginApp',['$auth']).controller('loginCtrl',loginCrtFnt);
+loginCrtFnt.$inject=['$scope','$log','$auth'];
+function loginCrtFnt($scope, $log,$auth){
 	$scope.logAuth = function() { // Fonction sans paramètres qui s'appuie sur le scope
 		$log.info('user login:', $scope.user.login);
 		$log.info('user pwd:', $scope.user.pwd);
