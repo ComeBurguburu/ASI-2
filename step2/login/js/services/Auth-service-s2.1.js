@@ -1,4 +1,5 @@
-angular.module('authService', []).service('auth',authFnc);
+//var app = angular.module('loginApp', []);
+app.service('auth',authFnc);
 function authFnc() {
 	var userMap={};
 	userMap['jdoe']='jdoepwd';
@@ -20,4 +21,5 @@ function authFnc() {
 	function userList(){
 		return Object.keys(userMap);
 	};
-
+	return fncContainer;
+}
