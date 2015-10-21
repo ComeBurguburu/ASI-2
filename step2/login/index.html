@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="authService">
+<html lang="en" ng-app="loginApp" ng-controller="loginCtrl">
 	<head>
 		<title>Watcher Login</title>
 		<!-- CSS -->
@@ -33,7 +33,7 @@
 										<input type="password" name="form-password" placeholder="Password..."
 											   class="form-password form-control" id="form-password" ng-model="user.pwd">
 									</div>
-									<button type="button" class="btn">Lets go!</button>
+									<button type="button" class="btn" ng-click="logAuth();logAuthObject(user)">Lets go!</button>
 									<div>Login :{{user.login}}</div>
 									<div>password:{{user.pwd}}</div>
 								</form>
@@ -47,7 +47,7 @@
 		<script src="../lib/jquery/jquery-1.11.3.min.js"></script>
 		<script src="../lib/bootsrap/js/bootstrap.min.js"></script>
 		<script src="../lib/angular/angular.min.js"></script>
-		<script src="js/controllers/LoginController-s1.1.js"></script>
+		<script src="js/controllers/LoginController-s2.1.js"></script>
 
 	</body>
 </html>
