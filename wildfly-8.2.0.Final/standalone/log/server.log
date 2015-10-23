@@ -1,0 +1,1829 @@
+2015-10-23 15:43:43,924 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 15:43:43,953 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 15:43:43,969 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 15:43:43,968 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 15:43:43,975 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 15:43:43,983 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 15:43:44,023 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:43:44,024 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:43:44,039 INFO  [org.jboss.as.security] (MSC service thread 1-7) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 15:43:44,093 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-6) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 15:43:44,278 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final/welcome-content
+2015-10-23 15:43:44,302 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 15:43:44,307 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 15:43:44,314 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 15:43:44,543 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 15:43:44,546 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+2015-10-23 15:43:44,927 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) JBAS015012: Started FileSystemDeploymentService for directory C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\deployments
+2015-10-23 15:43:44,930 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-10-23 15:43:45,198 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-10-23 15:43:45,214 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017525: Started server default-server.
+2015-10-23 15:43:45,218 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017531: Host default-host starting
+2015-10-23 15:43:45,220 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.6.Final
+2015-10-23 15:43:45,217 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-10-23 15:43:45,250 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-10-23 15:43:45,833 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-10-23 15:43:46,475 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-10-23 15:43:46,484 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-10-23 15:43:46,556 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-10-23 15:43:46,558 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+
+2015-10-23 15:43:46,790 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-10-23 15:43:46,790 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-10-23 15:43:46,790 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 10059ms - Started 248 of 306 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-10-23 15:45:08,457 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-10-23 15:45:08,722 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-10-23 15:45:08,791 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-10-23 15:45:08,796 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_60
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_60-b27
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_60
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.60-b23
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-10-23 15:45:08,798 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-10-23 15:45:10,185 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-10-23 15:45:10,208 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-10-23 15:45:10,237 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.3.0.Final
+2015-10-23 15:45:10,248 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.3.0.Final
+2015-10-23 15:45:10,307 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 15:45:10,339 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 15:45:10,339 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 15:45:10,348 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 15:45:10,348 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 15:45:10,354 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 15:45:10,366 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 15:45:10,377 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 15:45:10,379 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 15:45:10,415 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:45:10,416 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:45:10,463 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-3) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 15:45:10,472 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 15:45:10,558 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+2015-10-23 15:45:10,569 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 15:45:10,999 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.6.Final
+2015-10-23 15:45:11,010 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final/welcome-content
+2015-10-23 15:45:11,058 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017525: Started server default-server.
+2015-10-23 15:45:11,079 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017531: Host default-host starting
+2015-10-23 15:45:11,230 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\deployments
+2015-10-23 15:45:11,235 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-10-23 15:45:11,327 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-10-23 15:45:11,408 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-10-23 15:45:11,586 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-10-23 15:45:11,854 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-10-23 15:45:12,236 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-10-23 15:45:12,242 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-10-23 15:45:12,294 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-10-23 15:45:12,297 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+
+2015-10-23 15:45:12,358 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-10-23 15:45:12,359 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-10-23 15:45:12,359 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4303ms - Started 248 of 306 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-10-23 15:47:55,531 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-10-23 15:47:55,795 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-10-23 15:47:55,865 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-10-23 15:47:55,873 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_60
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_60-b27
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_60
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.60-b23
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-10-23 15:47:55,874 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-10-23 15:47:57,383 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-10-23 15:47:57,407 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-10-23 15:47:57,434 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.3.0.Final
+2015-10-23 15:47:57,445 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.3.0.Final
+2015-10-23 15:47:57,506 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 15:47:57,510 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 15:47:57,516 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 15:47:57,516 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 15:47:57,545 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 15:47:57,547 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 15:47:57,549 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:47:57,561 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:47:57,571 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 15:47:57,582 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 15:47:57,605 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 15:47:57,618 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 15:47:57,658 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 15:47:57,662 INFO  [org.jboss.as.naming] (MSC service thread 1-4) JBAS011802: Starting Naming Service
+2015-10-23 15:47:57,700 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 15:47:57,835 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final/welcome-content
+2015-10-23 15:47:57,944 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017525: Started server default-server.
+2015-10-23 15:47:58,110 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017531: Host default-host starting
+2015-10-23 15:47:58,203 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 4.0.6.Final
+2015-10-23 15:47:58,321 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) JBAS015012: Started FileSystemDeploymentService for directory C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\deployments
+2015-10-23 15:47:58,327 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-10-23 15:47:58,784 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-10-23 15:47:58,842 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-10-23 15:47:58,981 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-10-23 15:47:59,207 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-10-23 15:47:59,579 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-10-23 15:47:59,588 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-10-23 15:47:59,659 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-10-23 15:47:59,661 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+
+2015-10-23 15:47:59,768 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-10-23 15:47:59,768 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-10-23 15:47:59,769 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4592ms - Started 248 of 306 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-10-23 15:48:52,795 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-10-23 15:48:53,017 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-10-23 15:48:53,078 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-10-23 15:48:53,084 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_60
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_60-b27
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_60
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.60-b23
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-10-23 15:48:53,085 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-10-23 15:48:54,508 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-10-23 15:48:54,530 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-10-23 15:48:54,556 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.3.0.Final
+2015-10-23 15:48:54,567 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.3.0.Final
+2015-10-23 15:48:54,639 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 15:48:54,644 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 15:48:54,648 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 15:48:54,648 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:48:54,657 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 15:48:54,666 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 15:48:54,672 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 15:48:54,690 INFO  [org.jboss.as.security] (MSC service thread 1-8) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 15:48:54,690 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 15:48:54,703 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:48:54,725 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-1) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 15:48:54,832 INFO  [org.jboss.as.naming] (MSC service thread 1-8) JBAS011802: Starting Naming Service
+2015-10-23 15:48:54,837 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 15:48:54,894 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 15:48:54,909 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final/welcome-content
+2015-10-23 15:48:54,914 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 15:48:54,960 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017525: Started server default-server.
+2015-10-23 15:48:54,968 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017531: Host default-host starting
+2015-10-23 15:48:55,053 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.6.Final
+2015-10-23 15:48:55,471 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) JBAS015012: Started FileSystemDeploymentService for directory C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\deployments
+2015-10-23 15:48:55,482 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-10-23 15:48:55,571 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-10-23 15:48:55,770 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-10-23 15:48:55,897 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-10-23 15:48:56,092 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-10-23 15:48:56,487 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-10-23 15:48:56,492 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-10-23 15:48:56,550 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-10-23 15:48:56,552 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+
+2015-10-23 15:48:56,642 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-10-23 15:48:56,642 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-10-23 15:48:56,643 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4161ms - Started 248 of 306 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-10-23 15:49:00,556 ERROR [stderr] (default task-4) java.lang.NullPointerException
+2015-10-23 15:49:00,557 ERROR [stderr] (default task-4) 	at java.io.StringReader.<init>(Unknown Source)
+2015-10-23 15:49:00,557 ERROR [stderr] (default task-4) 	at org.json.simple.JSONValue.parse(JSONValue.java:50)
+2015-10-23 15:49:00,558 ERROR [stderr] (default task-4) 	at servlet.WatcherAuthServlet.doPost(WatcherAuthServlet.java:44)
+2015-10-23 15:49:00,558 ERROR [stderr] (default task-4) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+2015-10-23 15:49:00,558 ERROR [stderr] (default task-4) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+2015-10-23 15:49:00,558 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+2015-10-23 15:49:00,559 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61)
+2015-10-23 15:49:00,559 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+2015-10-23 15:49:00,559 ERROR [stderr] (default task-4) 	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+2015-10-23 15:49:00,560 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:49:00,560 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+2015-10-23 15:49:00,560 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56)
+2015-10-23 15:49:00,561 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:49:00,562 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45)
+2015-10-23 15:49:00,566 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63)
+2015-10-23 15:49:00,566 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58)
+2015-10-23 15:49:00,566 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70)
+2015-10-23 15:49:00,566 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76)
+2015-10-23 15:49:00,567 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:49:00,567 ERROR [stderr] (default task-4) 	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+2015-10-23 15:49:00,567 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:49:00,567 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:49:00,567 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261)
+2015-10-23 15:49:00,568 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247)
+2015-10-23 15:49:00,568 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76)
+2015-10-23 15:49:00,568 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166)
+2015-10-23 15:49:00,568 ERROR [stderr] (default task-4) 	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
+2015-10-23 15:49:00,569 ERROR [stderr] (default task-4) 	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
+2015-10-23 15:49:00,569 ERROR [stderr] (default task-4) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+2015-10-23 15:49:00,569 ERROR [stderr] (default task-4) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+2015-10-23 15:49:00,569 ERROR [stderr] (default task-4) 	at java.lang.Thread.run(Unknown Source)
+2015-10-23 15:49:56,643 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-10-23 15:49:56,858 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-10-23 15:49:56,918 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-10-23 15:49:56,924 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_60
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_60-b27
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_60
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.60-b23
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-10-23 15:49:56,925 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-10-23 15:49:58,441 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-10-23 15:49:58,463 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-10-23 15:49:58,491 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.3.0.Final
+2015-10-23 15:49:58,502 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.3.0.Final
+2015-10-23 15:49:58,570 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 15:49:58,573 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 15:49:58,581 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 15:49:58,588 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:49:58,564 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 15:49:58,606 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:49:58,607 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 15:49:58,611 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 15:49:58,654 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 15:49:58,657 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 15:49:58,667 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-6) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 15:49:58,681 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 15:49:58,695 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 15:49:58,800 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final/welcome-content
+2015-10-23 15:49:58,824 INFO  [org.jboss.as.naming] (MSC service thread 1-5) JBAS011802: Starting Naming Service
+2015-10-23 15:49:58,828 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 15:49:58,918 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017525: Started server default-server.
+2015-10-23 15:49:58,930 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017531: Host default-host starting
+2015-10-23 15:49:58,940 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 4.0.6.Final
+2015-10-23 15:49:59,348 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) JBAS015012: Started FileSystemDeploymentService for directory C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\deployments
+2015-10-23 15:49:59,352 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-10-23 15:49:59,484 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-10-23 15:49:59,735 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-10-23 15:49:59,834 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-10-23 15:50:00,034 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-10-23 15:50:00,412 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-10-23 15:50:00,419 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-10-23 15:50:00,480 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-10-23 15:50:00,483 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+
+2015-10-23 15:50:00,604 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-10-23 15:50:00,605 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-10-23 15:50:00,605 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4265ms - Started 248 of 306 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-10-23 15:50:14,319 ERROR [stderr] (default task-4) java.lang.NullPointerException
+2015-10-23 15:50:14,320 ERROR [stderr] (default task-4) 	at java.io.StringReader.<init>(Unknown Source)
+2015-10-23 15:50:14,320 ERROR [stderr] (default task-4) 	at org.json.simple.JSONValue.parse(JSONValue.java:50)
+2015-10-23 15:50:14,321 ERROR [stderr] (default task-4) 	at servlet.WatcherAuthServlet.doPost(WatcherAuthServlet.java:44)
+2015-10-23 15:50:14,321 ERROR [stderr] (default task-4) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+2015-10-23 15:50:14,321 ERROR [stderr] (default task-4) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+2015-10-23 15:50:14,322 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+2015-10-23 15:50:14,322 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61)
+2015-10-23 15:50:14,322 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+2015-10-23 15:50:14,323 ERROR [stderr] (default task-4) 	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+2015-10-23 15:50:14,323 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:50:14,323 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+2015-10-23 15:50:14,324 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56)
+2015-10-23 15:50:14,324 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:50:14,324 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45)
+2015-10-23 15:50:14,325 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63)
+2015-10-23 15:50:14,325 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58)
+2015-10-23 15:50:14,325 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70)
+2015-10-23 15:50:14,326 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76)
+2015-10-23 15:50:14,326 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:50:14,326 ERROR [stderr] (default task-4) 	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+2015-10-23 15:50:14,327 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:50:14,327 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:50:14,327 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261)
+2015-10-23 15:50:14,328 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247)
+2015-10-23 15:50:14,328 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76)
+2015-10-23 15:50:14,328 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166)
+2015-10-23 15:50:14,328 ERROR [stderr] (default task-4) 	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
+2015-10-23 15:50:14,328 ERROR [stderr] (default task-4) 	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
+2015-10-23 15:50:14,329 ERROR [stderr] (default task-4) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+2015-10-23 15:50:14,329 ERROR [stderr] (default task-4) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+2015-10-23 15:50:14,329 ERROR [stderr] (default task-4) 	at java.lang.Thread.run(Unknown Source)
+2015-10-23 15:52:27,469 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-10-23 15:52:27,752 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-10-23 15:52:27,826 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-10-23 15:52:27,834 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_60
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_60-b27
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_60
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.60-b23
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-10-23 15:52:27,835 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-10-23 15:52:29,292 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-10-23 15:52:29,312 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-10-23 15:52:29,345 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.3.0.Final
+2015-10-23 15:52:29,378 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.3.0.Final
+2015-10-23 15:52:29,427 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 15:52:29,440 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 15:52:29,450 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 15:52:29,467 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 15:52:29,467 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 15:52:29,471 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 15:52:29,476 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 15:52:29,488 INFO  [org.jboss.as.security] (MSC service thread 1-7) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 15:52:29,539 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:52:29,543 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:52:29,545 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-3) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 15:52:29,554 INFO  [org.jboss.as.naming] (MSC service thread 1-7) JBAS011802: Starting Naming Service
+2015-10-23 15:52:29,608 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 15:52:29,774 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final/welcome-content
+2015-10-23 15:52:29,812 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 15:52:29,917 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 15:52:30,191 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.6.Final
+2015-10-23 15:52:30,212 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017525: Started server default-server.
+2015-10-23 15:52:30,217 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017531: Host default-host starting
+2015-10-23 15:52:30,450 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) JBAS015012: Started FileSystemDeploymentService for directory C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\deployments
+2015-10-23 15:52:30,455 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-10-23 15:52:30,592 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-10-23 15:52:30,631 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-10-23 15:52:30,824 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-10-23 15:52:31,112 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-10-23 15:52:31,518 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-10-23 15:52:31,524 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-10-23 15:52:31,581 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-10-23 15:52:31,589 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+
+2015-10-23 15:52:31,652 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-10-23 15:52:31,652 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-10-23 15:52:31,653 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4518ms - Started 248 of 306 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-10-23 15:52:32,181 ERROR [stderr] (default task-4) java.lang.NullPointerException
+2015-10-23 15:52:32,182 ERROR [stderr] (default task-4) 	at java.io.StringReader.<init>(Unknown Source)
+2015-10-23 15:52:32,183 ERROR [stderr] (default task-4) 	at org.json.simple.JSONValue.parse(JSONValue.java:50)
+2015-10-23 15:52:32,184 ERROR [stderr] (default task-4) 	at servlet.WatcherAuthServlet.doPost(WatcherAuthServlet.java:44)
+2015-10-23 15:52:32,184 ERROR [stderr] (default task-4) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+2015-10-23 15:52:32,184 ERROR [stderr] (default task-4) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+2015-10-23 15:52:32,184 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+2015-10-23 15:52:32,185 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61)
+2015-10-23 15:52:32,185 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+2015-10-23 15:52:32,185 ERROR [stderr] (default task-4) 	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+2015-10-23 15:52:32,186 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:52:32,186 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+2015-10-23 15:52:32,186 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56)
+2015-10-23 15:52:32,187 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:52:32,187 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45)
+2015-10-23 15:52:32,187 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63)
+2015-10-23 15:52:32,188 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58)
+2015-10-23 15:52:32,188 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70)
+2015-10-23 15:52:32,188 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76)
+2015-10-23 15:52:32,188 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:52:32,189 ERROR [stderr] (default task-4) 	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+2015-10-23 15:52:32,189 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:52:32,189 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:52:32,190 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261)
+2015-10-23 15:52:32,190 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247)
+2015-10-23 15:52:32,190 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76)
+2015-10-23 15:52:32,191 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166)
+2015-10-23 15:52:32,191 ERROR [stderr] (default task-4) 	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
+2015-10-23 15:52:32,191 ERROR [stderr] (default task-4) 	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
+2015-10-23 15:52:32,192 ERROR [stderr] (default task-4) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+2015-10-23 15:52:32,192 ERROR [stderr] (default task-4) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+2015-10-23 15:52:32,192 ERROR [stderr] (default task-4) 	at java.lang.Thread.run(Unknown Source)
+2015-10-23 15:52:32,195 ERROR [io.undertow.request] (default task-4) UT005023: Exception handling request to /FrontAuthWatcherWebService/WatcherAuth: java.lang.NullPointerException
+	at io.undertow.servlet.spec.ServletPrintWriter.write(ServletPrintWriter.java:300) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.spec.ServletPrintWriterDelegate.write(ServletPrintWriterDelegate.java:129) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at servlet.WatcherAuthServlet.doPost(WatcherAuthServlet.java:60) [classes:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+
+2015-10-23 15:52:57,075 ERROR [stderr] (default task-7) java.lang.NullPointerException
+2015-10-23 15:52:57,075 ERROR [stderr] (default task-7) 	at java.io.StringReader.<init>(Unknown Source)
+2015-10-23 15:52:57,076 ERROR [stderr] (default task-7) 	at org.json.simple.JSONValue.parse(JSONValue.java:50)
+2015-10-23 15:52:57,076 ERROR [stderr] (default task-7) 	at servlet.WatcherAuthServlet.doPost(WatcherAuthServlet.java:44)
+2015-10-23 15:52:57,076 ERROR [stderr] (default task-7) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+2015-10-23 15:52:57,076 ERROR [stderr] (default task-7) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+2015-10-23 15:52:57,076 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+2015-10-23 15:52:57,077 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61)
+2015-10-23 15:52:57,077 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+2015-10-23 15:52:57,078 ERROR [stderr] (default task-7) 	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+2015-10-23 15:52:57,078 ERROR [stderr] (default task-7) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:52:57,078 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+2015-10-23 15:52:57,078 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56)
+2015-10-23 15:52:57,078 ERROR [stderr] (default task-7) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:52:57,079 ERROR [stderr] (default task-7) 	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45)
+2015-10-23 15:52:57,079 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63)
+2015-10-23 15:52:57,079 ERROR [stderr] (default task-7) 	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58)
+2015-10-23 15:52:57,079 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70)
+2015-10-23 15:52:57,079 ERROR [stderr] (default task-7) 	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76)
+2015-10-23 15:52:57,079 ERROR [stderr] (default task-7) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:52:57,080 ERROR [stderr] (default task-7) 	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+2015-10-23 15:52:57,080 ERROR [stderr] (default task-7) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:52:57,081 ERROR [stderr] (default task-7) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:52:57,082 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261)
+2015-10-23 15:52:57,082 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247)
+2015-10-23 15:52:57,082 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76)
+2015-10-23 15:52:57,083 ERROR [stderr] (default task-7) 	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166)
+2015-10-23 15:52:57,083 ERROR [stderr] (default task-7) 	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
+2015-10-23 15:52:57,083 ERROR [stderr] (default task-7) 	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
+2015-10-23 15:52:57,083 ERROR [stderr] (default task-7) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+2015-10-23 15:52:57,083 ERROR [stderr] (default task-7) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+2015-10-23 15:52:57,084 ERROR [stderr] (default task-7) 	at java.lang.Thread.run(Unknown Source)
+2015-10-23 15:52:57,084 ERROR [io.undertow.request] (default task-7) UT005023: Exception handling request to /FrontAuthWatcherWebService/WatcherAuth: java.lang.NullPointerException
+	at io.undertow.servlet.spec.ServletPrintWriter.write(ServletPrintWriter.java:300) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.spec.ServletPrintWriterDelegate.write(ServletPrintWriterDelegate.java:129) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at servlet.WatcherAuthServlet.doPost(WatcherAuthServlet.java:60) [classes:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+
+2015-10-23 15:53:20,636 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-10-23 15:53:20,867 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-10-23 15:53:20,929 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-10-23 15:53:20,935 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_60
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_60-b27
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_60
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.60-b23
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-10-23 15:53:20,936 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-10-23 15:53:22,372 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-10-23 15:53:22,393 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-10-23 15:53:22,420 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.3.0.Final
+2015-10-23 15:53:22,433 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.3.0.Final
+2015-10-23 15:53:22,486 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 15:53:22,520 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 15:53:22,523 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 15:53:22,523 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 15:53:22,529 INFO  [org.jboss.as.security] (MSC service thread 1-7) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 15:53:22,520 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 15:53:22,518 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 15:53:22,610 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 15:53:22,618 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:53:22,630 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-1) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 15:53:22,642 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 15:53:22,652 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:53:22,658 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 15:53:22,707 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+2015-10-23 15:53:22,786 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 15:53:22,924 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.6.Final
+2015-10-23 15:53:23,205 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final/welcome-content
+2015-10-23 15:53:23,290 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017525: Started server default-server.
+2015-10-23 15:53:23,300 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017531: Host default-host starting
+2015-10-23 15:53:23,479 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) JBAS015012: Started FileSystemDeploymentService for directory C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\deployments
+2015-10-23 15:53:23,485 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-10-23 15:53:23,585 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-10-23 15:53:23,662 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-10-23 15:53:23,817 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-10-23 15:53:24,127 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-10-23 15:53:24,517 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-10-23 15:53:24,525 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-10-23 15:53:24,589 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-10-23 15:53:24,590 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+
+2015-10-23 15:53:24,675 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-10-23 15:53:24,675 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-10-23 15:53:24,676 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4349ms - Started 248 of 306 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-10-23 15:53:28,854 ERROR [stderr] (default task-4) java.lang.NullPointerException
+2015-10-23 15:53:28,855 ERROR [stderr] (default task-4) 	at java.io.StringReader.<init>(Unknown Source)
+2015-10-23 15:53:28,855 ERROR [stderr] (default task-4) 	at org.json.simple.JSONValue.parse(JSONValue.java:50)
+2015-10-23 15:53:28,855 ERROR [stderr] (default task-4) 	at servlet.WatcherAuthServlet.doPost(WatcherAuthServlet.java:44)
+2015-10-23 15:53:28,856 ERROR [stderr] (default task-4) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+2015-10-23 15:53:28,856 ERROR [stderr] (default task-4) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+2015-10-23 15:53:28,856 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+2015-10-23 15:53:28,857 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61)
+2015-10-23 15:53:28,857 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+2015-10-23 15:53:28,857 ERROR [stderr] (default task-4) 	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+2015-10-23 15:53:28,857 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:53:28,858 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+2015-10-23 15:53:28,858 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56)
+2015-10-23 15:53:28,858 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:53:28,859 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45)
+2015-10-23 15:53:28,859 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63)
+2015-10-23 15:53:28,859 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58)
+2015-10-23 15:53:28,860 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70)
+2015-10-23 15:53:28,860 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76)
+2015-10-23 15:53:28,860 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:53:28,860 ERROR [stderr] (default task-4) 	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+2015-10-23 15:53:28,861 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:53:28,861 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:53:28,861 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261)
+2015-10-23 15:53:28,862 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247)
+2015-10-23 15:53:28,862 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76)
+2015-10-23 15:53:28,862 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166)
+2015-10-23 15:53:28,862 ERROR [stderr] (default task-4) 	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
+2015-10-23 15:53:28,862 ERROR [stderr] (default task-4) 	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
+2015-10-23 15:53:28,863 ERROR [stderr] (default task-4) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+2015-10-23 15:53:28,863 ERROR [stderr] (default task-4) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+2015-10-23 15:53:28,864 ERROR [stderr] (default task-4) 	at java.lang.Thread.run(Unknown Source)
+2015-10-23 15:53:59,889 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-10-23 15:54:00,214 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-10-23 15:54:00,289 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-10-23 15:54:00,294 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_60
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_60-b27
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_60
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.60-b23
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-10-23 15:54:00,296 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-10-23 15:54:01,735 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-10-23 15:54:01,761 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-10-23 15:54:01,785 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.3.0.Final
+2015-10-23 15:54:01,795 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.3.0.Final
+2015-10-23 15:54:01,859 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 15:54:01,860 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 15:54:01,860 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 15:54:01,866 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 15:54:01,870 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 15:54:01,873 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 15:54:01,897 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 15:54:01,899 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 15:54:01,912 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-7) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 15:54:01,956 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:54:01,959 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:54:02,072 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 15:54:02,097 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+2015-10-23 15:54:02,178 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 15:54:02,214 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 15:54:02,296 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final/welcome-content
+2015-10-23 15:54:02,323 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017525: Started server default-server.
+2015-10-23 15:54:02,329 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017531: Host default-host starting
+2015-10-23 15:54:02,330 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.6.Final
+2015-10-23 15:54:02,707 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) JBAS015012: Started FileSystemDeploymentService for directory C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\deployments
+2015-10-23 15:54:02,709 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-10-23 15:54:02,925 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-10-23 15:54:03,058 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-10-23 15:54:03,113 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-10-23 15:54:03,366 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-10-23 15:54:03,727 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-10-23 15:54:03,734 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-10-23 15:54:03,792 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-10-23 15:54:03,793 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+
+2015-10-23 15:54:03,854 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-10-23 15:54:03,854 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-10-23 15:54:03,854 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4273ms - Started 248 of 306 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-10-23 15:54:13,074 ERROR [stderr] (default task-4) java.lang.NullPointerException
+2015-10-23 15:54:13,075 ERROR [stderr] (default task-4) 	at java.io.StringReader.<init>(Unknown Source)
+2015-10-23 15:54:13,075 ERROR [stderr] (default task-4) 	at org.json.simple.JSONValue.parse(JSONValue.java:50)
+2015-10-23 15:54:13,075 ERROR [stderr] (default task-4) 	at servlet.WatcherAuthServlet.doPost(WatcherAuthServlet.java:44)
+2015-10-23 15:54:13,075 ERROR [stderr] (default task-4) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+2015-10-23 15:54:13,076 ERROR [stderr] (default task-4) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+2015-10-23 15:54:13,076 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+2015-10-23 15:54:13,076 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61)
+2015-10-23 15:54:13,077 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+2015-10-23 15:54:13,077 ERROR [stderr] (default task-4) 	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+2015-10-23 15:54:13,077 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:54:13,078 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+2015-10-23 15:54:13,078 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56)
+2015-10-23 15:54:13,078 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:54:13,079 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45)
+2015-10-23 15:54:13,079 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63)
+2015-10-23 15:54:13,079 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58)
+2015-10-23 15:54:13,080 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70)
+2015-10-23 15:54:13,080 ERROR [stderr] (default task-4) 	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76)
+2015-10-23 15:54:13,080 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:54:13,080 ERROR [stderr] (default task-4) 	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+2015-10-23 15:54:13,081 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:54:13,081 ERROR [stderr] (default task-4) 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2015-10-23 15:54:13,081 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261)
+2015-10-23 15:54:13,083 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247)
+2015-10-23 15:54:13,084 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76)
+2015-10-23 15:54:13,084 ERROR [stderr] (default task-4) 	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166)
+2015-10-23 15:54:13,084 ERROR [stderr] (default task-4) 	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
+2015-10-23 15:54:13,084 ERROR [stderr] (default task-4) 	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
+2015-10-23 15:54:13,085 ERROR [stderr] (default task-4) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+2015-10-23 15:54:13,086 ERROR [stderr] (default task-4) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+2015-10-23 15:54:13,086 ERROR [stderr] (default task-4) 	at java.lang.Thread.run(Unknown Source)
+2015-10-23 15:54:13,088 ERROR [io.undertow.request] (default task-4) UT005023: Exception handling request to /FrontAuthWatcherWebService/WatcherAuth: java.lang.NullPointerException
+	at io.undertow.servlet.spec.ServletPrintWriter.write(ServletPrintWriter.java:300) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.spec.ServletPrintWriterDelegate.write(ServletPrintWriterDelegate.java:129) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at servlet.WatcherAuthServlet.doPost(WatcherAuthServlet.java:61) [classes:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+
+2015-10-23 15:56:40,102 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-10-23 15:56:40,347 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-10-23 15:56:40,417 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-10-23 15:56:40,425 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_60
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_60-b27
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_60
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.60-b23
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-10-23 15:56:40,427 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-10-23 15:56:41,873 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-10-23 15:56:41,896 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-10-23 15:56:41,922 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.3.0.Final
+2015-10-23 15:56:41,934 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.3.0.Final
+2015-10-23 15:56:42,006 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 15:56:42,024 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 15:56:42,028 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 15:56:42,038 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 15:56:42,053 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 15:56:42,056 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-5) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 15:56:42,057 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 15:56:42,056 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 15:56:42,060 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 15:56:42,080 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 15:56:42,082 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:56:42,106 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:56:42,145 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 15:56:42,232 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+2015-10-23 15:56:42,233 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 15:56:42,437 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.6.Final
+2015-10-23 15:56:42,451 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final/welcome-content
+2015-10-23 15:56:42,482 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017525: Started server default-server.
+2015-10-23 15:56:42,767 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017531: Host default-host starting
+2015-10-23 15:56:42,957 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\deployments
+2015-10-23 15:56:42,959 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-10-23 15:56:43,009 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-10-23 15:56:43,077 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-10-23 15:56:43,223 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-10-23 15:56:43,488 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-10-23 15:56:43,863 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-10-23 15:56:43,870 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-10-23 15:56:43,934 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-10-23 15:56:43,936 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+
+2015-10-23 15:56:44,027 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-10-23 15:56:44,028 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-10-23 15:56:44,028 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4236ms - Started 248 of 306 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-10-23 15:58:11,914 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-10-23 15:58:12,181 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-10-23 15:58:12,248 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-10-23 15:58:12,257 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_60
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_60-b27
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_60
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.60-b23
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-10-23 15:58:12,259 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-10-23 15:58:13,700 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-10-23 15:58:13,724 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-10-23 15:58:13,753 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.3.0.Final
+2015-10-23 15:58:13,763 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.3.0.Final
+2015-10-23 15:58:13,874 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 15:58:13,896 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 15:58:13,904 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 15:58:13,952 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 15:58:13,959 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 15:58:14,012 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 15:58:14,015 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 15:58:14,037 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 15:58:14,046 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 15:58:14,067 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 15:58:14,076 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 15:58:14,087 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:58:14,111 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 15:58:14,181 INFO  [org.jboss.as.naming] (MSC service thread 1-7) JBAS011802: Starting Naming Service
+2015-10-23 15:58:14,187 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 15:58:14,284 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.6.Final
+2015-10-23 15:58:14,519 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final/welcome-content
+2015-10-23 15:58:14,529 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017525: Started server default-server.
+2015-10-23 15:58:14,548 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017531: Host default-host starting
+2015-10-23 15:58:14,733 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\deployments
+2015-10-23 15:58:14,736 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-10-23 15:58:14,838 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-10-23 15:58:14,909 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-10-23 15:58:15,025 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-10-23 15:58:15,359 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-10-23 15:58:15,715 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-10-23 15:58:15,725 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-10-23 15:58:15,790 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-10-23 15:58:15,793 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+
+2015-10-23 15:58:15,955 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-10-23 15:58:15,955 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-10-23 15:58:15,956 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4416ms - Started 248 of 306 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-10-23 16:22:01,772 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-10-23 16:22:01,798 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-10-23 16:22:01,805 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-10-23 16:22:01,811 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-10-23 16:22:01,826 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-10-23 16:22:01,828 INFO  [org.jboss.as.security] (MSC service thread 1-1) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-10-23 16:22:01,841 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-10-23 16:22:01,856 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-10-23 16:22:01,860 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-10-23 16:22:01,878 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-2) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-10-23 16:22:01,879 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 16:22:01,882 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-10-23 16:22:01,910 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = h2
+2015-10-23 16:22:02,095 INFO  [org.jboss.as.naming] (MSC service thread 1-1) JBAS011802: Starting Naming Service
+2015-10-23 16:22:02,096 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-10-23 16:22:02,192 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
+2015-10-23 16:22:02,441 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.6.Final
+2015-10-23 16:22:02,471 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017525: Started server default-server.
+2015-10-23 16:22:02,477 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017531: Host default-host starting
