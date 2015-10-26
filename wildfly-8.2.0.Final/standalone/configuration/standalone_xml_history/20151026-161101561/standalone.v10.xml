@@ -304,6 +304,7 @@
             <mail-session name="default" jndi-name="java:jboss/mail/Default">
                 <smtp-server outbound-socket-binding-ref="mail-smtp"/>
             </mail-session>
+            <mail-session name="java:/jms/queue/watcherqueue" jndi-name="java:/jms/queue/watcherqueue"/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:naming:2.0">
             <remote-naming/>

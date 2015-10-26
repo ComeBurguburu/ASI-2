@@ -146,10 +146,10 @@
                         <password>sa</password>
                     </security>
                 </datasource>
-                <datasource jta="true" jndi-name="java:/jdbc/AppDS" pool-name="AppDS" enabled="true" use-ccm="true">
-                    <connection-url>jdbc:mysql://127.0.0.1:3306/AppDS</connection-url>
-                    <driver-class>com.mysql.jdbc.Driver</driver-class>
-                    <driver>mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1</driver>
+                <datasource jta="false" jndi-name="java:/jdbc/AppDS" pool-name="AppDS" enabled="false" use-ccm="false">
+                    <connection-url>http://127.0.0.1:3306/</connection-url>
+                    <driver-class>com.mysql.fabric.jdbc.FabricMySQLDriver</driver-class>
+                    <driver>mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1</driver>
                     <security>
                         <user-name>root</user-name>
                     </security>
@@ -408,7 +408,7 @@
     </socket-binding-group>
 
     <deployments>
-        <deployment name="mysql-connector-java-5.1.33.jar" runtime-name="mysql-connector-java-5.1.33.jar">
+        <deployment name="mysql-connector-java-5.1.33.jar" runtime-name="mysql-connector-java-5.1.33.jar" enabled="true">
             <content sha1="8af455a9a3267e6664cafc87ace71a4e4ef02837"/>
         </deployment>
     </deployments>

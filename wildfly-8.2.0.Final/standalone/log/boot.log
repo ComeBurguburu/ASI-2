@@ -1,7 +1,7 @@
-2015-10-23 15:43:37,691 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
-2015-10-23 15:43:38,825 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
-2015-10-23 15:43:38,910 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
-2015-10-23 15:43:38,917 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+2015-10-23 17:43:27,611 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-10-23 17:43:27,924 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-10-23 17:43:28,049 INFO  [org.jboss.as] (MSC service thread 1-8) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-10-23 17:43:28,049 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
 	awt.toolkit = sun.awt.windows.WToolkit
 	file.encoding = Cp1252
 	file.encoding.pkg = sun.io
@@ -9,7 +9,7 @@
 	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
 	java.awt.headless = true
 	java.awt.printerjob = sun.awt.windows.WPrinterJob
-	java.class.path = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.path = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\jboss-modules.jar
 	java.class.version = 52.0
 	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
 	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
@@ -45,25 +45,25 @@
 	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
 	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
 	jboss.bind.address = localhost
-	jboss.home.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final
+	jboss.home.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final
 	jboss.host.name = pc-câme
-	jboss.modules.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\modules
+	jboss.modules.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\modules
 	jboss.modules.system.pkgs = org.jboss.byteman
 	jboss.node.name = pc-câme
 	jboss.qualified.host.name = pc-câme
-	jboss.server.base.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone
-	jboss.server.config.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\configuration
-	jboss.server.data.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data
-	jboss.server.deploy.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\data\content
-	jboss.server.log.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\log
+	jboss.server.base.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\log
 	jboss.server.name = pc-câme
 	jboss.server.persist.config = true
-	jboss.server.temp.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\standalone\tmp
+	jboss.server.temp.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\tmp
 	line.separator = 
 
-	logging.configuration = file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties
-	module.path = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules
-	org.jboss.boot.log.file = C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log
+	logging.configuration = file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log
 	org.jboss.logmanager.nocolor = true
 	org.jboss.resolver.warning = true
 	org.xml.sax.driver = __redirected.__XMLReaderFactory
@@ -79,7 +79,7 @@
 	sun.cpu.isalist = amd64
 	sun.desktop = windows
 	sun.io.unicode.encoding = UnicodeLittle
-	sun.java.command = org.jboss.modules.Main -mp C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
 	sun.java.launcher = SUN_STANDARD
 	sun.jnu.encoding = Cp1252
 	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
@@ -87,15 +87,15 @@
 	sun.rmi.dgc.client.gcInterval = 3600000
 	sun.rmi.dgc.server.gcInterval = 3600000
 	user.country = FR
-	user.dir = C:\wildfly-8.2.0.Final\wildfly-8.2.0.Final\bin
+	user.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\bin
 	user.home = C:\Users\côme
 	user.language = fr
 	user.name = c“me
 	user.script = 
 	user.timezone = Europe/Paris
 	user.variant = 
-2015-10-23 15:43:38,919 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/wildfly-8.2.0.Final/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
-2015-10-23 15:43:43,794 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
-2015-10-23 15:43:43,821 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
-2015-10-23 15:43:43,853 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.3.0.Final
-2015-10-23 15:43:43,862 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.3.0.Final
+2015-10-23 17:43:28,064 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-10-23 17:43:29,674 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-10-23 17:43:29,712 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-10-23 17:43:29,743 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.3.0.Final
+2015-10-23 17:43:29,758 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.3.0.Final

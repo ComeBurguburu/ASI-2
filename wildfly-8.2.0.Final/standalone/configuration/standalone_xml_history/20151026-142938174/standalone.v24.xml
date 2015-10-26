@@ -146,12 +146,13 @@
                         <password>sa</password>
                     </security>
                 </datasource>
-                <datasource jta="true" jndi-name="java:/jdbc/AppDS" pool-name="AppDS" enabled="true" use-ccm="true">
-                    <connection-url>jdbc:mysql://127.0.0.1:3306/AppDS</connection-url>
+                <datasource jta="false" jndi-name="java:/jdbc/AppDS" pool-name="AppDS" enabled="true" use-ccm="false">
+                    <connection-url>jdbc:mysql://localhost:3306/AppDS</connection-url>
                     <driver-class>com.mysql.jdbc.Driver</driver-class>
                     <driver>mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1</driver>
                     <security>
                         <user-name>root</user-name>
+                        <password>root</password>
                     </security>
                     <validation>
                         <validate-on-match>false</validate-on-match>
@@ -408,7 +409,7 @@
     </socket-binding-group>
 
     <deployments>
-        <deployment name="mysql-connector-java-5.1.33.jar" runtime-name="mysql-connector-java-5.1.33.jar">
+        <deployment name="mysql-connector-java-5.1.33.jar" runtime-name="mysql-connector-java-5.1.33.jar" enabled="true">
             <content sha1="8af455a9a3267e6664cafc87ace71a4e4ef02837"/>
         </deployment>
     </deployments>
