@@ -1,7 +1,7 @@
-2015-10-26 12:04:58,439 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
-2015-10-26 12:04:59,650 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
-2015-10-26 12:04:59,732 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
-2015-10-26 12:04:59,748 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+2015-11-03 13:40:24,648 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-11-03 13:40:26,272 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-11-03 13:40:26,393 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-11-03 13:40:26,409 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
 	awt.toolkit = sun.awt.windows.WToolkit
 	file.encoding = Cp1252
 	file.encoding.pkg = sun.io
@@ -15,7 +15,7 @@
 	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
 	java.home = C:\Program Files\Java\jre1.8.0_60
 	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
-	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
 	java.net.preferIPv4Stack = true
 	java.runtime.name = Java(TM) SE Runtime Environment
 	java.runtime.version = 1.8.0_60-b27
@@ -94,76 +94,51 @@
 	user.script = 
 	user.timezone = Europe/Berlin
 	user.variant = 
-2015-10-26 12:04:59,748 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
-2015-10-26 12:05:07,482 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
-2015-10-26 12:05:07,545 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
-2015-10-26 12:05:07,654 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.3.0.Final
-2015-10-26 12:05:07,670 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.3.0.Final
-2015-10-26 12:05:07,764 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
-2015-10-26 12:05:07,764 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
-2015-10-26 12:05:07,779 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
-2015-10-26 12:05:07,779 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
-2015-10-26 12:05:07,795 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
-2015-10-26 12:05:08,092 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
-2015-10-26 12:05:08,201 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
-2015-10-26 12:05:08,279 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
-2015-10-26 12:05:08,529 INFO  [org.jboss.as.security] (MSC service thread 1-8) JBAS013170: Current PicketBox version=4.0.21.Final
-2015-10-26 12:05:08,647 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 12:05:08,647 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 12:05:09,115 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
-2015-10-26 12:05:09,115 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = h2
-2015-10-26 12:05:09,131 INFO  [org.jboss.as.naming] (MSC service thread 1-8) JBAS011802: Starting Naming Service
-2015-10-26 12:05:09,131 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) JBAS015400: Bound mail session [java:jboss/mail/Default]
-2015-10-26 12:05:09,194 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
-2015-10-26 12:05:10,459 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017525: Started server default-server.
-2015-10-26 12:05:10,579 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 4.0.6.Final
-2015-10-26 12:05:10,579 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017531: Host default-host starting
-2015-10-26 12:05:10,720 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
-2015-10-26 12:05:10,970 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
-2015-10-26 12:05:11,017 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
-2015-10-26 12:05:11,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 12:05:11,707 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
-	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
-	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
-	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
-	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
-	... 5 more
-Caused by: java.net.BindException: Address already in use: bind
-	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
-	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
-	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
-	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
-	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
-	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
-	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
-	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
-	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
-	... 6 more
-
-2015-10-26 12:05:12,629 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
-2015-10-26 12:05:13,556 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017534: Registered web context: /FrontAuthWatcherWebService
-2015-10-26 12:05:13,556 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
-    ("core-service" => "management"),
-    ("management-interface" => "http-interface")
-]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
-    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
-    Caused by: java.net.BindException: Address already in use: bind"}}
-2015-10-26 12:05:13,619 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
-2015-10-26 12:05:13,619 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
-JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
-
-2015-10-26 12:05:13,744 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
-2015-10-26 12:05:13,744 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
-2015-10-26 12:05:13,759 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 15977ms - Started 244 of 302 services (1 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
-2015-10-26 12:29:51,803 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
-2015-10-26 12:29:52,122 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
-2015-10-26 12:29:52,213 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
-2015-10-26 12:29:52,228 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+2015-11-03 13:40:26,409 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-11-03 13:40:34,003 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-11-03 13:40:34,026 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-11-03 13:40:34,182 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.3.0.Final
+2015-11-03 13:40:34,245 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.3.0.Final
+2015-11-03 13:40:34,370 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-11-03 13:40:34,370 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-11-03 13:40:34,385 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-11-03 13:40:34,385 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-11-03 13:40:34,401 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-11-03 13:40:34,417 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-11-03 13:40:34,526 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-11-03 13:40:34,589 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-11-03 13:40:34,698 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-11-03 13:40:34,698 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017502: Undertow 1.1.0.Final starting
+2015-11-03 13:40:34,698 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-11-03 13:40:35,651 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-11-03 13:40:35,664 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
+2015-11-03 13:40:35,743 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
+2015-11-03 13:40:36,211 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+2015-11-03 13:40:36,211 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-11-03 13:40:36,915 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017525: Started server default-server.
+2015-11-03 13:40:36,986 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 4.0.6.Final
+2015-11-03 13:40:37,064 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017531: Host default-host starting
+2015-11-03 13:40:37,126 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-11-03 13:40:37,173 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-11-03 13:40:37,189 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
+2015-11-03 13:40:37,189 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-11-03 13:40:37,189 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
+2015-11-03 13:40:39,517 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-11-03 13:40:39,562 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2015-11-03 13:40:39,562 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
+2015-11-03 13:40:39,609 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1
+2015-11-03 13:40:39,609 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
+2015-11-03 13:40:39,609 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:/jdbc/AppDS]
+2015-11-03 13:40:40,437 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-11-03 13:40:40,500 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS018559: Deployed "mysql-connector-java-5.1.33.jar" (runtime-name : "mysql-connector-java-5.1.33.jar")
+2015-11-03 13:40:40,500 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-11-03 13:40:40,828 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-11-03 13:40:40,828 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-11-03 13:40:40,833 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 17664ms - Started 292 of 353 services (100 services are lazy, passive or on-demand)
+2015-11-03 13:44:38,645 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-11-03 13:44:38,863 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-11-03 13:44:38,926 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-11-03 13:44:38,942 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
 	awt.toolkit = sun.awt.windows.WToolkit
 	file.encoding = Cp1252
 	file.encoding.pkg = sun.io
@@ -177,7 +152,7 @@ JBAS014777:   Services which failed to start:      service jboss.serverManagemen
 	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
 	java.home = C:\Program Files\Java\jre1.8.0_60
 	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
-	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
 	java.net.preferIPv4Stack = true
 	java.runtime.name = Java(TM) SE Runtime Environment
 	java.runtime.version = 1.8.0_60-b27
@@ -241,7 +216,7 @@ JBAS014777:   Services which failed to start:      service jboss.serverManagemen
 	sun.cpu.isalist = amd64
 	sun.desktop = windows
 	sun.io.unicode.encoding = UnicodeLittle
-	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone-full.xml
 	sun.java.launcher = SUN_STANDARD
 	sun.jnu.encoding = Cp1252
 	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
@@ -256,464 +231,88 @@ JBAS014777:   Services which failed to start:      service jboss.serverManagemen
 	user.script = 
 	user.timezone = Europe/Berlin
 	user.variant = 
-2015-10-26 12:29:52,231 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
-2015-10-26 12:29:53,813 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
-2015-10-26 12:29:53,837 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
-2015-10-26 12:29:53,861 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.3.0.Final
-2015-10-26 12:29:53,872 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.3.0.Final
-2015-10-26 12:29:53,925 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
-2015-10-26 12:29:53,942 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
-2015-10-26 12:29:53,951 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
-2015-10-26 12:29:53,956 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
-2015-10-26 12:29:53,959 INFO  [org.jboss.as.security] (MSC service thread 1-8) JBAS013170: Current PicketBox version=4.0.21.Final
-2015-10-26 12:29:53,959 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
-2015-10-26 12:29:53,961 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
-2015-10-26 12:29:53,971 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
-2015-10-26 12:29:54,005 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 12:29:54,007 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 12:29:54,058 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
-2015-10-26 12:29:54,063 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) JBAS015400: Bound mail session [java:jboss/mail/Default]
-2015-10-26 12:29:54,078 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
-2015-10-26 12:29:54,147 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-2) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
-2015-10-26 12:29:54,152 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
-2015-10-26 12:29:54,353 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
-2015-10-26 12:29:54,384 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 4.0.6.Final
-2015-10-26 12:29:54,669 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017525: Started server default-server.
-2015-10-26 12:29:54,708 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017531: Host default-host starting
-2015-10-26 12:29:54,874 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
-2015-10-26 12:29:54,879 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
-2015-10-26 12:29:54,944 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
-2015-10-26 12:29:55,180 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 12:29:55,472 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
-2015-10-26 12:29:55,805 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017534: Registered web context: /FrontAuthWatcherWebService
-2015-10-26 12:29:55,871 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
-2015-10-26 12:29:55,963 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
-2015-10-26 12:29:55,963 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
-2015-10-26 12:29:55,964 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 4485ms - Started 249 of 304 services (92 services are lazy, passive or on-demand)
-2015-10-26 13:51:47,914 INFO  [org.jboss.as.repository] (XNIO-1 task-10) JBAS014900: Content added at location C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content\8a\f455a9a3267e6664cafc87ace71a4e4ef02837\content
-2015-10-26 13:51:48,038 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
-2015-10-26 13:51:48,161 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
-2015-10-26 13:51:48,163 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
-2015-10-26 13:51:48,168 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
-2015-10-26 13:51:48,169 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1
-2015-10-26 13:51:48,322 INFO  [org.jboss.as.server] (XNIO-1 task-5) JBAS018559: Deployed "mysql-connector-java-5.1.33.jar" (runtime-name : "mysql-connector-java-5.1.33.jar")
-2015-10-26 13:55:38,039 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 13:55:38,406 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (XNIO-1 task-3) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:347) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:354) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:288) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:1166) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:446) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.internalTestConnection(AbstractPool.java:764) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.strategy.OnePool.testConnection(OnePool.java:91) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$TestConnectionInPool.invokeCommandOn(PoolOperations.java:206) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$1.execute(PoolOperations.java:87) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.DomainApiHandler.handleRequest(DomainApiHandler.java:170)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:72)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:68)
-	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_60]
-	at javax.security.auth.Subject.doAs(Unknown Source) [rt.jar:1.8.0_60]
-	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:68)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:63)
-	at io.undertow.server.handlers.BlockingHandler.handleRequest(BlockingHandler.java:56)
-	at org.jboss.as.domain.http.server.DomainApiCheckHandler.handleRequest(DomainApiCheckHandler.java:83)
-	at io.undertow.security.handlers.AuthenticationCallHandler.handleRequest(AuthenticationCallHandler.java:52)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: javax.resource.ResourceException: Wrong driver class [class com.mysql.jdbc.Driver] for this connection URL [http://127.0.0.1:3306/test]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:324) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	... 30 more
-
-2015-10-26 13:55:38,419 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-3) JBAS014613: Operation ("test-connection-in-pool") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010440: failed to invoke operation: JBAS010447: Connection is not valid"
-2015-10-26 13:55:38,459 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 13:55:48,515 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 13:55:48,726 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (XNIO-1 task-3) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:347) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:354) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:288) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:1166) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:446) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.internalTestConnection(AbstractPool.java:764) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.strategy.OnePool.testConnection(OnePool.java:91) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$TestConnectionInPool.invokeCommandOn(PoolOperations.java:206) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$1.execute(PoolOperations.java:87) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.DomainApiHandler.handleRequest(DomainApiHandler.java:170)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:72)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:68)
-	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_60]
-	at javax.security.auth.Subject.doAs(Unknown Source) [rt.jar:1.8.0_60]
-	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:68)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:63)
-	at io.undertow.server.handlers.BlockingHandler.handleRequest(BlockingHandler.java:56)
-	at org.jboss.as.domain.http.server.DomainApiCheckHandler.handleRequest(DomainApiCheckHandler.java:83)
-	at io.undertow.security.handlers.AuthenticationCallHandler.handleRequest(AuthenticationCallHandler.java:52)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: javax.resource.ResourceException: Wrong driver class [class com.mysql.jdbc.Driver] for this connection URL [http://127.0.0.1:3306/]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:324) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	... 30 more
-
-2015-10-26 13:55:48,732 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-3) JBAS014613: Operation ("test-connection-in-pool") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010440: failed to invoke operation: JBAS010447: Connection is not valid"
-2015-10-26 13:55:48,835 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 13:56:10,715 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 13:56:10,915 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (XNIO-1 task-3) IJ000604: Throwable while attempting to get a new connection: null: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(Unknown Source) [rt.jar:1.8.0_60]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getDriver(LocalManagedConnectionFactory.java:605) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:301) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:354) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:288) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:1166) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:446) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.internalTestConnection(AbstractPool.java:764) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.strategy.OnePool.testConnection(OnePool.java:91) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$TestConnectionInPool.invokeCommandOn(PoolOperations.java:206) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$1.execute(PoolOperations.java:87) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.DomainApiHandler.handleRequest(DomainApiHandler.java:170)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:72)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:68)
-	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_60]
-	at javax.security.auth.Subject.doAs(Unknown Source) [rt.jar:1.8.0_60]
-	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:68)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:63)
-	at io.undertow.server.handlers.BlockingHandler.handleRequest(BlockingHandler.java:56)
-	at org.jboss.as.domain.http.server.DomainApiCheckHandler.handleRequest(DomainApiCheckHandler.java:83)
-	at io.undertow.security.handlers.AuthenticationCallHandler.handleRequest(AuthenticationCallHandler.java:52)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-
-2015-10-26 13:56:10,920 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-3) JBAS014613: Operation ("test-connection-in-pool") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010440: failed to invoke operation: JBAS010447: Connection is not valid"
-2015-10-26 13:56:11,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 13:57:30,546 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 13:57:30,746 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (XNIO-1 task-3) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:347) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:354) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:288) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:1166) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:446) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.internalTestConnection(AbstractPool.java:764) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.strategy.OnePool.testConnection(OnePool.java:91) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$TestConnectionInPool.invokeCommandOn(PoolOperations.java:206) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$1.execute(PoolOperations.java:87) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.DomainApiHandler.handleRequest(DomainApiHandler.java:170)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:72)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:68)
-	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_60]
-	at javax.security.auth.Subject.doAs(Unknown Source) [rt.jar:1.8.0_60]
-	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:68)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:63)
-	at io.undertow.server.handlers.BlockingHandler.handleRequest(BlockingHandler.java:56)
-	at org.jboss.as.domain.http.server.DomainApiCheckHandler.handleRequest(DomainApiCheckHandler.java:83)
-	at io.undertow.security.handlers.AuthenticationCallHandler.handleRequest(AuthenticationCallHandler.java:52)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: javax.resource.ResourceException: Wrong driver class [class com.mysql.jdbc.Driver] for this connection URL [http://127.0.0.1:3306/]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:324) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	... 30 more
-
-2015-10-26 13:57:30,755 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-3) JBAS014613: Operation ("test-connection-in-pool") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010440: failed to invoke operation: JBAS010447: Connection is not valid"
-2015-10-26 13:57:30,856 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 13:58:26,918 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 13:58:27,120 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (XNIO-1 task-3) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:347) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:354) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:288) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:1166) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:446) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.internalTestConnection(AbstractPool.java:764) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.strategy.OnePool.testConnection(OnePool.java:91) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$TestConnectionInPool.invokeCommandOn(PoolOperations.java:206) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$1.execute(PoolOperations.java:87) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.DomainApiHandler.handleRequest(DomainApiHandler.java:170)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:72)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:68)
-	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_60]
-	at javax.security.auth.Subject.doAs(Unknown Source) [rt.jar:1.8.0_60]
-	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:68)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:63)
-	at io.undertow.server.handlers.BlockingHandler.handleRequest(BlockingHandler.java:56)
-	at org.jboss.as.domain.http.server.DomainApiCheckHandler.handleRequest(DomainApiCheckHandler.java:83)
-	at io.undertow.security.handlers.AuthenticationCallHandler.handleRequest(AuthenticationCallHandler.java:52)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: javax.resource.ResourceException: Wrong driver class [class com.mysql.fabric.jdbc.FabricMySQLDriver] for this connection URL [jdbc:mysql://localhost:3306/AppDS]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:324) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	... 30 more
-
-2015-10-26 13:58:27,124 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-3) JBAS014613: Operation ("test-connection-in-pool") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010440: failed to invoke operation: JBAS010447: Connection is not valid"
-2015-10-26 13:58:27,226 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 13:58:47,760 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-5) JBAS014613: Operation ("enable") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010436: Failed to create DataSource instance for [{
-    \"name\" => \"AppDS\",
-    \"user-name\" => \"root\",
-    \"security-domain\" => \"/\",
-    \"enabled\" => false,
-    \"jndi-name\" => \"java:/jdbc/AppDS\",
-    \"pool-name\" => \"AppDS_Pool\",
-    \"connection-url\" => \"jdbc:mysql://localhost:3306/AppDS\",
-    \"driver-class\" => \"com.mysql.fabric.jdbc.FabricMySQLDriver\",
-    \"use-ccm\" => false,
-    \"driver-name\" => \"mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1\",
-    \"background-validation\" => false,
-    \"validate-on-match\" => false,
-    \"jta\" => false,
-    \"share-prepared-statements\" => false,
-    \"use-try-lock\" => 0L,
-    \"blocking-timeout-wait-millis\" => 0L,
-    \"idle-timeout-minutes\" => 0L,
-    \"set-tx-query-timeout\" => false,
-    \"query-timeout\" => 0L,
-    \"allocation-retry\" => 0,
-    \"allocation-retry-wait-millis\" => 0L,
-    \"statistics-enabled\" => false,
-    \"operation\" => \"enable\",
-    \"address\" => [
-        (\"subsystem\" => \"datasources\"),
-        (\"data-source\" => \"AppDS\")
-    ],
-    \"operation-headers\" => {\"access-mechanism\" => \"HTTP\"}
-}]
- reason: IJ010073: Invalid <security> configuration"
-2015-10-26 14:08:31,655 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-10) JBAS014613: Operation ("enable") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010436: Failed to create DataSource instance for [{
-    \"name\" => \"AppDS\",
-    \"user-name\" => \"root\",
-    \"password\" => \"\",
-    \"security-domain\" => \"/\",
-    \"enabled\" => false,
-    \"jndi-name\" => \"java:/jdbc/AppDS\",
-    \"pool-name\" => \"\",
-    \"transaction-isolation\" => \"\",
-    \"new-connection-sql\" => \"\",
-    \"connection-url\" => \"jdbc:mysql://localhost:3306/AppDS\",
-    \"driver-class\" => \"com.mysql.fabric.jdbc.FabricMySQLDriver\",
-    \"datasource-class\" => \"\",
-    \"use-ccm\" => false,
-    \"driver-name\" => \"mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1\",
-    \"valid-connection-checker-class-name\" => \"\",
-    \"check-valid-connection-sql\" => \"\",
-    \"background-validation\" => false,
-    \"background-validation-millis\" => -1L,
-    \"validate-on-match\" => false,
-    \"stale-connection-checker-class-name\" => \"\",
-    \"jta\" => false,
-    \"exception-sorter-class-name\" => \"\",
-    \"prepared-statements-cache-size\" => -1L,
-    \"share-prepared-statements\" => false,
-    \"use-try-lock\" => 0L,
-    \"blocking-timeout-wait-millis\" => 0L,
-    \"idle-timeout-minutes\" => 0L,
-    \"set-tx-query-timeout\" => false,
-    \"query-timeout\" => 0L,
-    \"allocation-retry\" => 0,
-    \"allocation-retry-wait-millis\" => 0L,
-    \"statistics-enabled\" => false,
-    \"operation\" => \"enable\",
-    \"address\" => [
-        (\"subsystem\" => \"datasources\"),
-        (\"data-source\" => \"AppDS\")
-    ],
-    \"operation-headers\" => {\"access-mechanism\" => \"HTTP\"}
-}]
- reason: IJ010073: Invalid <security> configuration"
-2015-10-26 14:09:21,139 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 14:09:21,333 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (XNIO-1 task-2) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:347) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:354) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:288) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:1166) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:446) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.internalTestConnection(AbstractPool.java:764) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.strategy.OnePool.testConnection(OnePool.java:91) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$TestConnectionInPool.invokeCommandOn(PoolOperations.java:206) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$1.execute(PoolOperations.java:87) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.DomainApiHandler.handleRequest(DomainApiHandler.java:170)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:72)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:68)
-	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_60]
-	at javax.security.auth.Subject.doAs(Unknown Source) [rt.jar:1.8.0_60]
-	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:68)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:63)
-	at io.undertow.server.handlers.BlockingHandler.handleRequest(BlockingHandler.java:56)
-	at org.jboss.as.domain.http.server.DomainApiCheckHandler.handleRequest(DomainApiCheckHandler.java:83)
-	at io.undertow.security.handlers.AuthenticationCallHandler.handleRequest(AuthenticationCallHandler.java:52)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: javax.resource.ResourceException: Wrong driver class [class com.mysql.fabric.jdbc.FabricMySQLDriver] for this connection URL [jdbc:mysql://localhost:3306/AppDS]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:324) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	... 30 more
-
-2015-10-26 14:09:21,337 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-2) JBAS014613: Operation ("test-connection-in-pool") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010440: failed to invoke operation: JBAS010447: Connection is not valid"
-2015-10-26 14:09:21,447 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 14:09:41,920 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 14:09:42,118 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (XNIO-1 task-2) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:347) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:354) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:288) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:1166) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:446) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.internalTestConnection(AbstractPool.java:764) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.strategy.OnePool.testConnection(OnePool.java:91) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$TestConnectionInPool.invokeCommandOn(PoolOperations.java:206) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$1.execute(PoolOperations.java:87) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.DomainApiHandler.handleRequest(DomainApiHandler.java:170)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:72)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:68)
-	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_60]
-	at javax.security.auth.Subject.doAs(Unknown Source) [rt.jar:1.8.0_60]
-	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:68)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:63)
-	at io.undertow.server.handlers.BlockingHandler.handleRequest(BlockingHandler.java:56)
-	at org.jboss.as.domain.http.server.DomainApiCheckHandler.handleRequest(DomainApiCheckHandler.java:83)
-	at io.undertow.security.handlers.AuthenticationCallHandler.handleRequest(AuthenticationCallHandler.java:52)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: javax.resource.ResourceException: Wrong driver class [class com.mysql.fabric.jdbc.FabricMySQLDriver] for this connection URL [jdbc:mysql://localhost:3306/AppDS]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:324) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	... 30 more
-
-2015-10-26 14:09:42,123 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-2) JBAS014613: Operation ("test-connection-in-pool") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010440: failed to invoke operation: JBAS010447: Connection is not valid"
-2015-10-26 14:09:42,228 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 14:13:02,284 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 14:13:02,482 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (XNIO-1 task-2) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:347) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:354) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:288) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:1166) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:446) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.internalTestConnection(AbstractPool.java:764) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.strategy.OnePool.testConnection(OnePool.java:91) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$TestConnectionInPool.invokeCommandOn(PoolOperations.java:206) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$1.execute(PoolOperations.java:87) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.DomainApiHandler.handleRequest(DomainApiHandler.java:170)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:72)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:68)
-	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_60]
-	at javax.security.auth.Subject.doAs(Unknown Source) [rt.jar:1.8.0_60]
-	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:68)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:63)
-	at io.undertow.server.handlers.BlockingHandler.handleRequest(BlockingHandler.java:56)
-	at org.jboss.as.domain.http.server.DomainApiCheckHandler.handleRequest(DomainApiCheckHandler.java:83)
-	at io.undertow.security.handlers.AuthenticationCallHandler.handleRequest(AuthenticationCallHandler.java:52)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: javax.resource.ResourceException: Wrong driver class [class com.mysql.fabric.jdbc.FabricMySQLDriver] for this connection URL [jdbc:mysql://localhost:3306/AppDS]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:324) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	... 30 more
-
-2015-10-26 14:13:02,486 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-2) JBAS014613: Operation ("test-connection-in-pool") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010440: failed to invoke operation: JBAS010447: Connection is not valid"
-2015-10-26 14:13:02,588 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 14:29:32,040 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
-2015-10-26 14:29:32,533 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
-2015-10-26 14:29:32,715 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
-2015-10-26 14:29:32,760 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+2015-11-03 13:44:38,942 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-11-03 13:44:40,613 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-11-03 13:44:40,630 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-11-03 13:44:40,662 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.3.0.Final
+2015-11-03 13:44:40,662 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.3.0.Final
+2015-11-03 13:44:40,755 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-11-03 13:44:40,787 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-11-03 13:44:40,802 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-11-03 13:44:40,833 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-11-03 13:44:40,849 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-11-03 13:44:40,865 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-11-03 13:44:40,865 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-11-03 13:44:40,880 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-11-03 13:44:40,896 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017502: Undertow 1.1.0.Final starting
+2015-11-03 13:44:40,896 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-11-03 13:44:40,912 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-11-03 13:44:40,927 INFO  [org.jboss.as.security] (MSC service thread 1-5) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-11-03 13:44:41,037 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-11-03 13:44:41,037 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-11-03 13:44:41,130 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010417: Started Driver service with driver-name = h2
+2015-11-03 13:44:41,162 INFO  [org.jboss.as.naming] (MSC service thread 1-5) JBAS011802: Starting Naming Service
+2015-11-03 13:44:41,318 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
+2015-11-03 13:44:41,396 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 4.0.6.Final
+2015-11-03 13:44:41,427 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017525: Started server default-server.
+2015-11-03 13:44:41,443 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017531: Host default-host starting
+2015-11-03 13:44:41,646 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
+2015-11-03 13:44:41,677 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-11-03 13:44:41,693 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-11-03 13:44:41,927 WARN  [org.jboss.as.messaging] (MSC service thread 1-8) JBAS011600: AIO wasn't located on this platform, it will fall back to using pure Java NIO. If your platform is Linux, install LibAIO to enable the AIO journal
+2015-11-03 13:44:42,021 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-11-03 13:44:42,255 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-11-03 13:44:42,287 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221000: live server is starting with configuration HornetQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingjournal,bindingsDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingbindings,largeMessagesDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messaginglargemessages,pagingDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingpaging)
+2015-11-03 13:44:42,318 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221006: Waiting to obtain live lock
+2015-11-03 13:44:42,318 WARN  [jacorb.codeset] (MSC service thread 1-2) Warning - unknown codeset (Cp1252) - defaulting to ISO-8859-1
+2015-11-03 13:44:42,458 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221013: Using NIO Journal
+2015-11-03 13:44:42,568 INFO  [org.jboss.as.jacorb] (MSC service thread 1-2) JBAS016330: CORBA ORB Service started
+2015-11-03 13:44:42,568 INFO  [io.netty.util.internal.PlatformDependent] (ServerService Thread Pool -- 56) Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+2015-11-03 13:44:42,615 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support CORE
+2015-11-03 13:44:42,708 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support AMQP
+2015-11-03 13:44:42,722 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support STOMP
+2015-11-03 13:44:42,806 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221034: Waiting to obtain live lock
+2015-11-03 13:44:42,806 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221035: Live Server Obtained live lock
+2015-11-03 13:44:42,900 INFO  [org.jboss.as.jacorb] (MSC service thread 1-4) JBAS016328: CORBA Naming Service started
+2015-11-03 13:44:43,525 INFO  [org.jboss.messaging] (MSC service thread 1-6) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor acceptor
+2015-11-03 13:44:43,541 INFO  [org.jboss.messaging] (MSC service thread 1-5) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor-throughput acceptor
+2015-11-03 13:44:44,135 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221007: Server is now live
+2015-11-03 13:44:44,135 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221001: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [a75387c8-8228-11e5-88e0-35e23455c819] 
+2015-11-03 13:44:44,147 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2015-11-03 13:44:44,506 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 56) JBAS011601: Bound messaging object to jndi name java:/jms/queue/ExpiryQueue
+2015-11-03 13:44:44,522 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-8) JBAS010406: Registered connection factory java:/JmsXA
+2015-11-03 13:44:44,522 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 57) JBAS011601: Bound messaging object to jndi name java:/ConnectionFactory
+2015-11-03 13:44:44,522 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 59) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-11-03 13:44:44,522 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 58) HQ221003: trying to deploy queue jms.queue.DLQ
+2015-11-03 13:44:44,631 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 58) JBAS011601: Bound messaging object to jndi name java:/jms/queue/DLQ
+2015-11-03 13:44:44,663 INFO  [org.hornetq.ra] (MSC service thread 1-8) HornetQ resource adaptor started
+2015-11-03 13:44:44,663 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-8) IJ020002: Deployed: file://RaActivatorhornetq-ra
+2015-11-03 13:44:44,663 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-8) JBAS010401: Bound JCA ConnectionFactory [java:/JmsXA]
+2015-11-03 13:44:44,663 INFO  [org.jboss.as.messaging] (MSC service thread 1-1) JBAS011601: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-11-03 13:44:45,100 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-11-03 13:44:45,163 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-11-03 13:44:45,334 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-11-03 13:44:45,334 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-11-03 13:44:45,334 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 6924ms - Started 290 of 344 services (103 services are lazy, passive or on-demand)
+2015-11-03 14:35:00,464 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 61) JBAS011605: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-11-03 14:35:00,469 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017535: Unregistered web context: /FrontAuthWatcherWebService
+2015-11-03 14:35:00,484 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017532: Host default-host stopping
+2015-11-03 14:35:00,486 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-11-03 14:35:00,486 INFO  [org.jboss.as.messaging] (MSC service thread 1-3) JBAS011605: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-11-03 14:35:00,487 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-7) JBAS010410: Unbound JCA ConnectionFactory [java:/JmsXA]
+2015-11-03 14:35:00,492 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010418: Stopped Driver service with driver-name = h2
+2015-11-03 14:35:00,533 INFO  [org.hornetq.ra] (ServerService Thread Pool -- 65) HQ151003: HornetQ resource adaptor stopped
+2015-11-03 14:35:00,613 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 5.1.3.Final
+2015-11-03 14:35:00,707 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 65) HQ221002: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [a75387c8-8228-11e5-88e0-35e23455c819] stopped
+2015-11-03 14:35:00,716 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017521: Undertow HTTP listener default suspending
+2015-11-03 14:35:00,718 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
+2015-11-03 14:35:00,719 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017506: Undertow 1.1.0.Final stopping
+2015-11-03 14:35:00,812 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment FrontAuthWatcherWebService.war (runtime-name: FrontAuthWatcherWebService.war) in 370ms
+2015-11-03 14:35:00,815 INFO  [org.jboss.as] (MSC service thread 1-4) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 358ms
+2015-11-03 14:35:02,714 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-11-03 14:35:02,921 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-11-03 14:35:02,981 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-11-03 14:35:02,989 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
 	awt.toolkit = sun.awt.windows.WToolkit
 	file.encoding = Cp1252
 	file.encoding.pkg = sun.io
@@ -727,7 +326,7 @@ Caused by: javax.resource.ResourceException: Wrong driver class [class com.mysql
 	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
 	java.home = C:\Program Files\Java\jre1.8.0_60
 	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
-	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
 	java.net.preferIPv4Stack = true
 	java.runtime.name = Java(TM) SE Runtime Environment
 	java.runtime.version = 1.8.0_60-b27
@@ -791,7 +390,7 @@ Caused by: javax.resource.ResourceException: Wrong driver class [class com.mysql
 	sun.cpu.isalist = amd64
 	sun.desktop = windows
 	sun.io.unicode.encoding = UnicodeLittle
-	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone-full.xml
 	sun.java.launcher = SUN_STANDARD
 	sun.jnu.encoding = Cp1252
 	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
@@ -806,637 +405,70 @@ Caused by: javax.resource.ResourceException: Wrong driver class [class com.mysql
 	user.script = 
 	user.timezone = Europe/Berlin
 	user.variant = 
-2015-10-26 14:29:32,782 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
-2015-10-26 14:29:35,028 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
-2015-10-26 14:29:35,055 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
-2015-10-26 14:29:35,081 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.3.0.Final
-2015-10-26 14:29:35,097 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.3.0.Final
-2015-10-26 14:29:35,196 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
-2015-10-26 14:29:35,242 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
-2015-10-26 14:29:35,250 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
-2015-10-26 14:29:35,264 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
-2015-10-26 14:29:35,278 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
-2015-10-26 14:29:35,307 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-2) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
-2015-10-26 14:29:35,313 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010417: Started Driver service with driver-name = h2
-2015-10-26 14:29:35,346 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
-2015-10-26 14:29:35,349 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013170: Current PicketBox version=4.0.21.Final
-2015-10-26 14:29:35,353 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
-2015-10-26 14:29:35,377 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
-2015-10-26 14:29:35,463 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 14:29:35,480 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 14:29:35,747 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
-2015-10-26 14:29:36,184 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
-2015-10-26 14:29:36,185 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) JBAS015400: Bound mail session [java:jboss/mail/Default]
-2015-10-26 14:29:36,271 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017525: Started server default-server.
-2015-10-26 14:29:36,277 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017531: Host default-host starting
-2015-10-26 14:29:36,310 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 4.0.6.Final
-2015-10-26 14:29:36,402 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
-2015-10-26 14:29:36,402 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
-2015-10-26 14:29:36,412 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
-2015-10-26 14:29:36,721 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
-2015-10-26 14:29:36,725 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
-	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
-	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
-	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
-	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
-	... 5 more
-Caused by: java.net.BindException: Address already in use: bind
-	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_60]
-	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
-	at sun.nio.ch.Net.bind(Unknown Source) [rt.jar:1.8.0_60]
-	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) [rt.jar:1.8.0_60]
-	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
-	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) [rt.jar:1.8.0_60]
-	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
-	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
-	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
-	... 6 more
-
-2015-10-26 14:29:37,057 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 14:29:37,437 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
-2015-10-26 14:29:37,477 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
-2015-10-26 14:29:37,479 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
-2015-10-26 14:29:37,500 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1
-2015-10-26 14:29:37,502 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
-2015-10-26 14:29:38,088 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017534: Registered web context: /FrontAuthWatcherWebService
-2015-10-26 14:29:38,095 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
-    ("core-service" => "management"),
-    ("management-interface" => "http-interface")
-]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
-    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
-    Caused by: java.net.BindException: Address already in use: bind"}}
-2015-10-26 14:29:38,169 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS018559: Deployed "mysql-connector-java-5.1.33.jar" (runtime-name : "mysql-connector-java-5.1.33.jar")
-2015-10-26 14:29:38,170 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
-2015-10-26 14:29:38,171 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
-JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
-
-2015-10-26 14:29:38,413 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
-2015-10-26 14:29:38,413 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
-2015-10-26 14:29:38,414 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 6859ms - Started 282 of 346 services (1 services failed or missing dependencies, 100 services are lazy, passive or on-demand)
-2015-10-26 14:32:55,032 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
-2015-10-26 14:32:55,328 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
-2015-10-26 14:32:55,409 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
-2015-10-26 14:32:55,418 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
-	awt.toolkit = sun.awt.windows.WToolkit
-	file.encoding = Cp1252
-	file.encoding.pkg = sun.io
-	file.separator = \
-	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
-	java.awt.headless = true
-	java.awt.printerjob = sun.awt.windows.WPrinterJob
-	java.class.path = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\jboss-modules.jar
-	java.class.version = 52.0
-	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
-	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
-	java.home = C:\Program Files\Java\jre1.8.0_60
-	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
-	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
-	java.net.preferIPv4Stack = true
-	java.runtime.name = Java(TM) SE Runtime Environment
-	java.runtime.version = 1.8.0_60-b27
-	java.specification.name = Java Platform API Specification
-	java.specification.vendor = Oracle Corporation
-	java.specification.version = 1.8
-	java.util.logging.manager = org.jboss.logmanager.LogManager
-	java.vendor = Oracle Corporation
-	java.vendor.url = http://java.oracle.com/
-	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
-	java.version = 1.8.0_60
-	java.vm.info = mixed mode
-	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
-	java.vm.specification.name = Java Virtual Machine Specification
-	java.vm.specification.vendor = Oracle Corporation
-	java.vm.specification.version = 1.8
-	java.vm.vendor = Oracle Corporation
-	java.vm.version = 25.60-b23
-	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
-	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
-	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
-	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
-	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
-	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
-	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
-	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
-	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
-	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
-	jboss.bind.address = localhost
-	jboss.home.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final
-	jboss.host.name = pc-câme
-	jboss.modules.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\modules
-	jboss.modules.system.pkgs = org.jboss.byteman
-	jboss.node.name = pc-câme
-	jboss.qualified.host.name = pc-câme
-	jboss.server.base.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone
-	jboss.server.config.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\configuration
-	jboss.server.data.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data
-	jboss.server.deploy.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content
-	jboss.server.log.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\log
-	jboss.server.name = pc-câme
-	jboss.server.persist.config = true
-	jboss.server.temp.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\tmp
-	line.separator = 
-
-	logging.configuration = file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties
-	module.path = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules
-	org.jboss.boot.log.file = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log
-	org.jboss.logmanager.nocolor = true
-	org.jboss.resolver.warning = true
-	org.xml.sax.driver = __redirected.__XMLReaderFactory
-	os.arch = amd64
-	os.name = Windows 10
-	os.version = 10.0
-	path.separator = ;
-	program.name = JBossTools: WildFly 8.0 Runtime Server
-	sun.arch.data.model = 64
-	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
-	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
-	sun.cpu.endian = little
-	sun.cpu.isalist = amd64
-	sun.desktop = windows
-	sun.io.unicode.encoding = UnicodeLittle
-	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
-	sun.java.launcher = SUN_STANDARD
-	sun.jnu.encoding = Cp1252
-	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
-	sun.os.patch.level = 
-	sun.rmi.dgc.client.gcInterval = 3600000
-	sun.rmi.dgc.server.gcInterval = 3600000
-	user.country = FR
-	user.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\bin
-	user.home = C:\Users\côme
-	user.language = fr
-	user.name = c“me
-	user.script = 
-	user.timezone = Europe/Berlin
-	user.variant = 
-2015-10-26 14:32:55,420 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
-2015-10-26 14:32:56,925 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
-2015-10-26 14:32:56,946 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
-2015-10-26 14:32:56,972 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.3.0.Final
-2015-10-26 14:32:56,984 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.3.0.Final
-2015-10-26 14:32:57,060 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
-2015-10-26 14:32:57,069 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
-2015-10-26 14:32:57,070 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
-2015-10-26 14:32:57,075 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
-2015-10-26 14:32:57,082 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
-2015-10-26 14:32:57,085 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
-2015-10-26 14:32:57,088 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 14:32:57,095 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
-2015-10-26 14:32:57,099 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 14:32:57,112 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013170: Current PicketBox version=4.0.21.Final
-2015-10-26 14:32:57,186 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
-2015-10-26 14:32:57,192 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
-2015-10-26 14:32:57,216 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010417: Started Driver service with driver-name = h2
-2015-10-26 14:32:57,251 INFO  [org.jboss.as.naming] (MSC service thread 1-5) JBAS011802: Starting Naming Service
-2015-10-26 14:32:57,271 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) JBAS015400: Bound mail session [java:jboss/mail/Default]
-2015-10-26 14:32:57,331 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
-2015-10-26 14:32:57,402 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.6.Final
-2015-10-26 14:32:57,431 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017525: Started server default-server.
-2015-10-26 14:32:57,505 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017531: Host default-host starting
-2015-10-26 14:32:58,028 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
-2015-10-26 14:32:58,031 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
-2015-10-26 14:32:58,031 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
-2015-10-26 14:32:58,303 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
-2015-10-26 14:32:58,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 14:32:58,831 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
-2015-10-26 14:32:58,865 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
-2015-10-26 14:32:58,877 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
-2015-10-26 14:32:58,892 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
-2015-10-26 14:32:58,893 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1
-2015-10-26 14:32:59,262 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017534: Registered web context: /FrontAuthWatcherWebService
-2015-10-26 14:32:59,332 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS018559: Deployed "mysql-connector-java-5.1.33.jar" (runtime-name : "mysql-connector-java-5.1.33.jar")
-2015-10-26 14:32:59,333 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
-2015-10-26 14:32:59,515 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
-2015-10-26 14:32:59,516 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
-2015-10-26 14:32:59,517 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 4788ms - Started 287 of 348 services (100 services are lazy, passive or on-demand)
-2015-10-26 14:35:09,282 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 14:35:10,894 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (XNIO-1 task-7) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:347) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:354) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:288) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:1166) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:446) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.internalTestConnection(AbstractPool.java:764) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.jca.core.connectionmanager.pool.strategy.OnePool.testConnection(OnePool.java:91) [ironjacamar-core-impl-1.1.9.Final.jar:1.1.9.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$TestConnectionInPool.invokeCommandOn(PoolOperations.java:206) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.connector.subsystems.common.pool.PoolOperations$1.execute(PoolOperations.java:87) [wildfly-connector-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.DomainApiHandler.handleRequest(DomainApiHandler.java:170)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:72)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler$1.run(SubjectDoAsHandler.java:68)
-	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_60]
-	at javax.security.auth.Subject.doAs(Unknown Source) [rt.jar:1.8.0_60]
-	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:68)
-	at org.jboss.as.domain.http.server.security.SubjectDoAsHandler.handleRequest(SubjectDoAsHandler.java:63)
-	at io.undertow.server.handlers.BlockingHandler.handleRequest(BlockingHandler.java:56)
-	at org.jboss.as.domain.http.server.DomainApiCheckHandler.handleRequest(DomainApiCheckHandler.java:83)
-	at io.undertow.security.handlers.AuthenticationCallHandler.handleRequest(AuthenticationCallHandler.java:52)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_60]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_60]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_60]
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
-	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
-	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
-	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
-	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
-	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
-	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
-	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_60]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_60]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_60]
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
-	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
-	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
-	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:322) [ironjacamar-jdbc-1.1.9.Final.jar:1.1.9.Final]
-	... 30 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method) [rt.jar:1.8.0_60]
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) [rt.jar:1.8.0_60]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) [rt.jar:1.8.0_60]
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) [rt.jar:1.8.0_60]
-	at java.net.PlainSocketImpl.connect(Unknown Source) [rt.jar:1.8.0_60]
-	at java.net.SocksSocketImpl.connect(Unknown Source) [rt.jar:1.8.0_60]
-	at java.net.Socket.connect(Unknown Source) [rt.jar:1.8.0_60]
-	at java.net.Socket.connect(Unknown Source) [rt.jar:1.8.0_60]
-	at java.net.Socket.<init>(Unknown Source) [rt.jar:1.8.0_60]
-	at java.net.Socket.<init>(Unknown Source) [rt.jar:1.8.0_60]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
-	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
-	... 43 more
-
-2015-10-26 14:35:10,912 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-7) JBAS014613: Operation ("test-connection-in-pool") failed - address: ([
-    ("subsystem" => "datasources"),
-    ("data-source" => "AppDS")
-]) - failure description: "JBAS010440: failed to invoke operation: JBAS010447: Connection is not valid"
-2015-10-26 14:35:10,954 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 14:35:54,315 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 14:35:54,822 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 14:36:09,423 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 14:36:14,259 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017535: Unregistered web context: /FrontAuthWatcherWebService
-2015-10-26 14:36:14,288 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 14:36:14,292 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 14:36:14,305 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.undertow.deployment.default-server.default-host./FrontAuthWatcherWebService: org.jboss.msc.service.StartException in service jboss.undertow.deployment.default-server.default-host./FrontAuthWatcherWebService: Failed to start service
-	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1904) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_60]
-	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_60]
-Caused by: org.jboss.msc.inject.InjectionException: Value already set for this injector
-	at org.jboss.msc.inject.RetainingInjector.inject(RetainingInjector.java:50) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
-	at org.wildfly.extension.undertow.deployment.UndertowJSRWebSocketDeploymentProcessor$1.ready(UndertowJSRWebSocketDeploymentProcessor.java:197)
-	at io.undertow.websockets.jsr.WebSocketDeploymentInfo.containerReady(WebSocketDeploymentInfo.java:83)
-	at io.undertow.websockets.jsr.Bootstrap.handleDeployment(Bootstrap.java:86)
-	at io.undertow.servlet.core.DeploymentManagerImpl.handleExtensions(DeploymentManagerImpl.java:243)
-	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:149)
-	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:87)
-	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.start(UndertowDeploymentService.java:72)
-	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
-	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
-	... 3 more
-
-2015-10-26 14:36:14,308 INFO  [org.jboss.as.controller] (XNIO-1 task-7) JBAS014774: Service status report
-JBAS014777:   Services which failed to start:      service jboss.undertow.deployment.default-server.default-host./FrontAuthWatcherWebService: org.jboss.msc.service.StartException in service jboss.undertow.deployment.default-server.default-host./FrontAuthWatcherWebService: Failed to start service
-
-2015-10-26 15:24:20,962 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) JBAS015400: Bound mail session [java:/jms/queue/watcherqueue]
-2015-10-26 15:24:21,029 INFO  [org.jboss.as.controller] (XNIO-1 task-4) JBAS014774: Service status report
-JBAS014777:   Services which failed to start:      service jboss.undertow.deployment.default-server.default-host./FrontAuthWatcherWebService: org.jboss.msc.service.StartException in service jboss.undertow.deployment.default-server.default-host./FrontAuthWatcherWebService: Failed to start service
-
-2015-10-26 16:10:08,725 INFO  [org.jboss.as.controller] (management-handler-thread - 1) JBAS014774: Service status report
-JBAS014777:   Services which failed to start:      service jboss.undertow.deployment.default-server.default-host./FrontAuthWatcherWebService: org.jboss.msc.service.StartException in service jboss.undertow.deployment.default-server.default-host./FrontAuthWatcherWebService: Failed to start service
-
-2015-10-26 16:10:08,748 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
-2015-10-26 16:10:08,763 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 16:10:08,771 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017532: Host default-host stopping
-2015-10-26 16:10:08,786 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1
-2015-10-26 16:10:08,791 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 16:10:08,798 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010418: Stopped Driver service with driver-name = h2
-2015-10-26 16:10:08,807 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017521: Undertow HTTP listener default suspending
-2015-10-26 16:10:08,811 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
-2015-10-26 16:10:08,812 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017506: Undertow 1.1.0.Final stopping
-2015-10-26 16:10:08,931 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 5.1.3.Final
-2015-10-26 16:10:09,338 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment FrontAuthWatcherWebService.war (runtime-name: FrontAuthWatcherWebService.war) in 604ms
-2015-10-26 16:10:09,369 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment mysql-connector-java-5.1.33.jar (runtime-name: mysql-connector-java-5.1.33.jar) in 620ms
-2015-10-26 16:10:09,391 INFO  [org.jboss.as] (MSC service thread 1-4) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 642ms
-2015-10-26 16:10:56,658 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
-2015-10-26 16:10:56,965 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
-2015-10-26 16:10:57,039 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
-2015-10-26 16:10:57,047 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
-	awt.toolkit = sun.awt.windows.WToolkit
-	file.encoding = Cp1252
-	file.encoding.pkg = sun.io
-	file.separator = \
-	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
-	java.awt.headless = true
-	java.awt.printerjob = sun.awt.windows.WPrinterJob
-	java.class.path = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\jboss-modules.jar
-	java.class.version = 52.0
-	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
-	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
-	java.home = C:\Program Files\Java\jre1.8.0_60
-	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
-	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
-	java.net.preferIPv4Stack = true
-	java.runtime.name = Java(TM) SE Runtime Environment
-	java.runtime.version = 1.8.0_60-b27
-	java.specification.name = Java Platform API Specification
-	java.specification.vendor = Oracle Corporation
-	java.specification.version = 1.8
-	java.util.logging.manager = org.jboss.logmanager.LogManager
-	java.vendor = Oracle Corporation
-	java.vendor.url = http://java.oracle.com/
-	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
-	java.version = 1.8.0_60
-	java.vm.info = mixed mode
-	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
-	java.vm.specification.name = Java Virtual Machine Specification
-	java.vm.specification.vendor = Oracle Corporation
-	java.vm.specification.version = 1.8
-	java.vm.vendor = Oracle Corporation
-	java.vm.version = 25.60-b23
-	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
-	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
-	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
-	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
-	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
-	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
-	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
-	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
-	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
-	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
-	jboss.bind.address = localhost
-	jboss.home.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final
-	jboss.host.name = pc-câme
-	jboss.modules.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\modules
-	jboss.modules.system.pkgs = org.jboss.byteman
-	jboss.node.name = pc-câme
-	jboss.qualified.host.name = pc-câme
-	jboss.server.base.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone
-	jboss.server.config.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\configuration
-	jboss.server.data.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data
-	jboss.server.deploy.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content
-	jboss.server.log.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\log
-	jboss.server.name = pc-câme
-	jboss.server.persist.config = true
-	jboss.server.temp.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\tmp
-	line.separator = 
-
-	logging.configuration = file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties
-	module.path = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules
-	org.jboss.boot.log.file = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log
-	org.jboss.logmanager.nocolor = true
-	org.jboss.resolver.warning = true
-	org.xml.sax.driver = __redirected.__XMLReaderFactory
-	os.arch = amd64
-	os.name = Windows 10
-	os.version = 10.0
-	path.separator = ;
-	program.name = JBossTools: WildFly 8.0 Runtime Server (1)
-	sun.arch.data.model = 64
-	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
-	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
-	sun.cpu.endian = little
-	sun.cpu.isalist = amd64
-	sun.desktop = windows
-	sun.io.unicode.encoding = UnicodeLittle
-	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
-	sun.java.launcher = SUN_STANDARD
-	sun.jnu.encoding = Cp1252
-	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
-	sun.os.patch.level = 
-	sun.rmi.dgc.client.gcInterval = 3600000
-	sun.rmi.dgc.server.gcInterval = 3600000
-	user.country = FR
-	user.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\bin
-	user.home = C:\Users\côme
-	user.language = fr
-	user.name = c“me
-	user.script = 
-	user.timezone = Europe/Berlin
-	user.variant = 
-2015-10-26 16:10:57,049 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server (1) -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
-2015-10-26 16:10:59,297 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
-2015-10-26 16:10:59,321 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
-2015-10-26 16:10:59,344 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.0.Final
-2015-10-26 16:10:59,354 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.0.Final
-2015-10-26 16:10:59,408 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
-2015-10-26 16:10:59,410 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
-2015-10-26 16:10:59,413 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
-2015-10-26 16:10:59,417 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
-2015-10-26 16:10:59,439 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
-2015-10-26 16:10:59,469 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 16:10:59,474 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 16:10:59,481 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
-2015-10-26 16:10:59,484 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013170: Current PicketBox version=4.0.21.Final
-2015-10-26 16:10:59,510 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
-2015-10-26 16:10:59,518 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-6) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
-2015-10-26 16:10:59,522 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
-2015-10-26 16:10:59,543 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
-2015-10-26 16:10:59,552 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) JBAS015400: Bound mail session [java:jboss/mail/Default]
-2015-10-26 16:10:59,563 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
-2015-10-26 16:10:59,711 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
-2015-10-26 16:11:00,052 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.6.Final
-2015-10-26 16:11:00,054 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017525: Started server default-server.
-2015-10-26 16:11:00,078 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017531: Host default-host starting
-2015-10-26 16:11:00,228 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
-2015-10-26 16:11:00,232 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
-2015-10-26 16:11:00,234 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
-2015-10-26 16:11:00,320 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
-2015-10-26 16:11:00,666 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 16:11:00,966 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
-2015-10-26 16:11:01,002 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
-2015-10-26 16:11:01,008 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
-2015-10-26 16:11:01,030 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1
-2015-10-26 16:11:01,031 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
-2015-10-26 16:11:01,036 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 16:11:01,400 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017534: Registered web context: /FrontAuthWatcherWebService
-2015-10-26 16:11:01,496 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS018559: Deployed "mysql-connector-java-5.1.33.jar" (runtime-name : "mysql-connector-java-5.1.33.jar")
-2015-10-26 16:11:01,498 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
-2015-10-26 16:11:01,634 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
-2015-10-26 16:11:01,636 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
-2015-10-26 16:11:01,636 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 5272ms - Started 292 of 353 services (100 services are lazy, passive or on-demand)
-2015-10-26 16:11:12,100 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
-2015-10-26 16:11:12,106 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 16:11:12,112 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017535: Unregistered web context: /FrontAuthWatcherWebService
-2015-10-26 16:11:12,116 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1
-2015-10-26 16:11:12,123 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017532: Host default-host stopping
-2015-10-26 16:11:12,126 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 16:11:12,129 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010418: Stopped Driver service with driver-name = h2
-2015-10-26 16:11:12,134 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017521: Undertow HTTP listener default suspending
-2015-10-26 16:11:12,141 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
-2015-10-26 16:11:12,142 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017506: Undertow 1.1.0.Final stopping
-2015-10-26 16:11:12,156 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 5.1.3.Final
-2015-10-26 16:11:12,272 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment FrontAuthWatcherWebService.war (runtime-name: FrontAuthWatcherWebService.war) in 185ms
-2015-10-26 16:11:12,274 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment mysql-connector-java-5.1.33.jar (runtime-name: mysql-connector-java-5.1.33.jar) in 180ms
-2015-10-26 16:11:12,282 INFO  [org.jboss.as] (MSC service thread 1-4) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 185ms
-2015-10-26 16:12:05,482 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
-2015-10-26 16:12:05,760 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
-2015-10-26 16:12:05,835 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
-2015-10-26 16:12:05,843 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
-	awt.toolkit = sun.awt.windows.WToolkit
-	file.encoding = Cp1252
-	file.encoding.pkg = sun.io
-	file.separator = \
-	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
-	java.awt.headless = true
-	java.awt.printerjob = sun.awt.windows.WPrinterJob
-	java.class.path = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\jboss-modules.jar
-	java.class.version = 52.0
-	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_60\lib\endorsed
-	java.ext.dirs = C:\Program Files\Java\jre1.8.0_60\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
-	java.home = C:\Program Files\Java\jre1.8.0_60
-	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
-	java.library.path = C:\Program Files\Java\jre1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_65/bin/server;C:/Program Files/Java/jre1.8.0_65/bin;C:/Program Files/Java/jre1.8.0_65/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
-	java.net.preferIPv4Stack = true
-	java.runtime.name = Java(TM) SE Runtime Environment
-	java.runtime.version = 1.8.0_60-b27
-	java.specification.name = Java Platform API Specification
-	java.specification.vendor = Oracle Corporation
-	java.specification.version = 1.8
-	java.util.logging.manager = org.jboss.logmanager.LogManager
-	java.vendor = Oracle Corporation
-	java.vendor.url = http://java.oracle.com/
-	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
-	java.version = 1.8.0_60
-	java.vm.info = mixed mode
-	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
-	java.vm.specification.name = Java Virtual Machine Specification
-	java.vm.specification.vendor = Oracle Corporation
-	java.vm.specification.version = 1.8
-	java.vm.vendor = Oracle Corporation
-	java.vm.version = 25.60-b23
-	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
-	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
-	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
-	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
-	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
-	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
-	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
-	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
-	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
-	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
-	jboss.bind.address = localhost
-	jboss.home.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final
-	jboss.host.name = pc-câme
-	jboss.modules.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\modules
-	jboss.modules.system.pkgs = org.jboss.byteman
-	jboss.node.name = pc-câme
-	jboss.qualified.host.name = pc-câme
-	jboss.server.base.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone
-	jboss.server.config.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\configuration
-	jboss.server.data.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data
-	jboss.server.deploy.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content
-	jboss.server.log.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\log
-	jboss.server.name = pc-câme
-	jboss.server.persist.config = true
-	jboss.server.temp.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\tmp
-	line.separator = 
-
-	logging.configuration = file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties
-	module.path = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules
-	org.jboss.boot.log.file = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log
-	org.jboss.logmanager.nocolor = true
-	org.jboss.resolver.warning = true
-	org.xml.sax.driver = __redirected.__XMLReaderFactory
-	os.arch = amd64
-	os.name = Windows 10
-	os.version = 10.0
-	path.separator = ;
-	program.name = JBossTools: WildFly 8.0 Runtime Server
-	sun.arch.data.model = 64
-	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes
-	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
-	sun.cpu.endian = little
-	sun.cpu.isalist = amd64
-	sun.desktop = windows
-	sun.io.unicode.encoding = UnicodeLittle
-	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
-	sun.java.launcher = SUN_STANDARD
-	sun.jnu.encoding = Cp1252
-	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
-	sun.os.patch.level = 
-	sun.rmi.dgc.client.gcInterval = 3600000
-	sun.rmi.dgc.server.gcInterval = 3600000
-	user.country = FR
-	user.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\bin
-	user.home = C:\Users\côme
-	user.language = fr
-	user.name = c“me
-	user.script = 
-	user.timezone = Europe/Berlin
-	user.variant = 
-2015-10-26 16:12:05,844 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
-2015-10-26 16:12:07,239 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
-2015-10-26 16:12:07,264 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
-2015-10-26 16:12:07,287 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.3.0.Final
-2015-10-26 16:12:07,298 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.3.0.Final
-2015-10-26 16:12:07,360 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
-2015-10-26 16:12:07,371 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
-2015-10-26 16:12:07,374 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
-2015-10-26 16:12:07,419 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013170: Current PicketBox version=4.0.21.Final
-2015-10-26 16:12:07,428 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
-2015-10-26 16:12:07,439 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
-2015-10-26 16:12:07,449 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 16:12:07,461 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017502: Undertow 1.1.0.Final starting
-2015-10-26 16:12:07,492 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
-2015-10-26 16:12:07,493 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
-2015-10-26 16:12:07,500 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
-2015-10-26 16:12:07,525 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
-2015-10-26 16:12:07,550 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010417: Started Driver service with driver-name = h2
-2015-10-26 16:12:07,589 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) JBAS015400: Bound mail session [java:jboss/mail/Default]
-2015-10-26 16:12:07,591 INFO  [org.jboss.as.naming] (MSC service thread 1-4) JBAS011802: Starting Naming Service
-2015-10-26 16:12:07,709 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
-2015-10-26 16:12:07,771 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017525: Started server default-server.
-2015-10-26 16:12:07,775 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017531: Host default-host starting
-2015-10-26 16:12:07,966 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 4.0.6.Final
-2015-10-26 16:12:08,253 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
-2015-10-26 16:12:08,255 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
-2015-10-26 16:12:08,270 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
-2015-10-26 16:12:08,671 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
-2015-10-26 16:12:09,219 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 16:12:09,514 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
-2015-10-26 16:12:09,544 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
-2015-10-26 16:12:09,569 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
-2015-10-26 16:12:09,583 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
-2015-10-26 16:12:09,585 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1
-2015-10-26 16:12:09,593 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:/jdbc/AppDS]
-2015-10-26 16:12:09,968 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017534: Registered web context: /FrontAuthWatcherWebService
-2015-10-26 16:12:10,037 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS018559: Deployed "mysql-connector-java-5.1.33.jar" (runtime-name : "mysql-connector-java-5.1.33.jar")
-2015-10-26 16:12:10,038 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
-2015-10-26 16:12:10,305 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
-2015-10-26 16:12:10,306 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
-2015-10-26 16:12:10,306 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 5065ms - Started 292 of 353 services (100 services are lazy, passive or on-demand)
-2015-10-26 16:12:49,237 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010418: Stopped Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
-2015-10-26 16:12:49,254 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:/jdbc/AppDS]
-2015-10-26 16:12:49,271 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017535: Unregistered web context: /FrontAuthWatcherWebService
-2015-10-26 16:12:49,278 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010418: Stopped Driver service with driver-name = mysql-connector-java-5.1.33.jar_com.mysql.jdbc.Driver_5_1
-2015-10-26 16:12:49,310 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017532: Host default-host stopping
-2015-10-26 16:12:49,311 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 5.1.3.Final
-2015-10-26 16:12:49,314 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
-2015-10-26 16:12:49,317 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010418: Stopped Driver service with driver-name = h2
-2015-10-26 16:12:49,338 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017521: Undertow HTTP listener default suspending
-2015-10-26 16:12:49,339 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
-2015-10-26 16:12:49,340 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017506: Undertow 1.1.0.Final stopping
-2015-10-26 16:12:49,466 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment FrontAuthWatcherWebService.war (runtime-name: FrontAuthWatcherWebService.war) in 252ms
-2015-10-26 16:12:49,469 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment mysql-connector-java-5.1.33.jar (runtime-name: mysql-connector-java-5.1.33.jar) in 249ms
-2015-10-26 16:12:49,581 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 312ms
+2015-11-03 14:35:02,990 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-11-03 14:35:04,464 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found FrontAuthWatcherWebService.war in deployment directory. To trigger deployment create a file called FrontAuthWatcherWebService.war.dodeploy
+2015-11-03 14:35:04,484 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-11-03 14:35:04,509 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.3.0.Final
+2015-11-03 14:35:04,520 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.3.0.Final
+2015-11-03 14:35:04,618 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-11-03 14:35:04,634 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-11-03 14:35:04,637 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-11-03 14:35:04,653 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-11-03 14:35:04,690 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-2) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-11-03 14:35:04,696 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
+2015-11-03 14:35:04,722 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-11-03 14:35:04,758 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-11-03 14:35:04,762 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-11-03 14:35:04,765 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-11-03 14:35:04,774 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-11-03 14:35:04,785 INFO  [org.jboss.as.security] (MSC service thread 1-8) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-11-03 14:35:04,865 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017502: Undertow 1.1.0.Final starting
+2015-11-03 14:35:04,919 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-11-03 14:35:05,224 INFO  [org.jboss.as.naming] (MSC service thread 1-7) JBAS011802: Starting Naming Service
+2015-11-03 14:35:05,226 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-11-03 14:35:05,244 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 4.0.6.Final
+2015-11-03 14:35:05,263 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
+2015-11-03 14:35:05,275 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017525: Started server default-server.
+2015-11-03 14:35:05,408 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017531: Host default-host starting
+2015-11-03 14:35:05,574 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
+2015-11-03 14:35:05,579 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "FrontAuthWatcherWebService.war" (runtime-name: "FrontAuthWatcherWebService.war")
+2015-11-03 14:35:05,751 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-11-03 14:35:05,964 WARN  [org.jboss.as.messaging] (MSC service thread 1-4) JBAS011600: AIO wasn't located on this platform, it will fall back to using pure Java NIO. If your platform is Linux, install LibAIO to enable the AIO journal
+2015-11-03 14:35:06,065 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-11-03 14:35:06,105 WARN  [jacorb.codeset] (MSC service thread 1-6) Warning - unknown codeset (Cp1252) - defaulting to ISO-8859-1
+2015-11-03 14:35:06,121 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221000: live server is starting with configuration HornetQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingjournal,bindingsDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingbindings,largeMessagesDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messaginglargemessages,pagingDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingpaging)
+2015-11-03 14:35:06,125 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221006: Waiting to obtain live lock
+2015-11-03 14:35:06,186 INFO  [org.jboss.as.jacorb] (MSC service thread 1-6) JBAS016330: CORBA ORB Service started
+2015-11-03 14:35:06,246 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221013: Using NIO Journal
+2015-11-03 14:35:06,310 INFO  [io.netty.util.internal.PlatformDependent] (ServerService Thread Pool -- 56) Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+2015-11-03 14:35:06,338 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support CORE
+2015-11-03 14:35:06,346 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support AMQP
+2015-11-03 14:35:06,350 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support STOMP
+2015-11-03 14:35:06,449 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016328: CORBA Naming Service started
+2015-11-03 14:35:06,476 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-11-03 14:35:06,531 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221034: Waiting to obtain live lock
+2015-11-03 14:35:06,532 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221035: Live Server Obtained live lock
+2015-11-03 14:35:06,877 INFO  [org.jboss.messaging] (MSC service thread 1-8) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor-throughput acceptor
+2015-11-03 14:35:06,877 INFO  [org.jboss.messaging] (MSC service thread 1-3) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor acceptor
+2015-11-03 14:35:06,921 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221007: Server is now live
+2015-11-03 14:35:06,921 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221001: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [a75387c8-8228-11e5-88e0-35e23455c819] 
+2015-11-03 14:35:06,924 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221003: trying to deploy queue jms.queue.DLQ
+2015-11-03 14:35:06,929 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 56) JBAS011601: Bound messaging object to jndi name java:/jms/queue/DLQ
+2015-11-03 14:35:06,995 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 61) HQ221003: trying to deploy queue jms.queue.MyQueue
+2015-11-03 14:35:07,021 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 61) JBAS011601: Bound messaging object to jndi name java:/jms/queue/watcherqueue
+2015-11-03 14:35:07,031 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) JBAS010406: Registered connection factory java:/JmsXA
+2015-11-03 14:35:07,039 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 60) JBAS011601: Bound messaging object to jndi name java:/ConnectionFactory
+2015-11-03 14:35:07,041 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 58) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-11-03 14:35:07,044 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 57) HQ221003: trying to deploy queue jms.topic.MyTopic
+2015-11-03 14:35:07,091 INFO  [org.hornetq.ra] (MSC service thread 1-2) HornetQ resource adaptor started
+2015-11-03 14:35:07,092 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-2) IJ020002: Deployed: file://RaActivatorhornetq-ra
+2015-11-03 14:35:07,094 INFO  [org.jboss.as.messaging] (MSC service thread 1-3) JBAS011601: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-11-03 14:35:07,094 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) JBAS010401: Bound JCA ConnectionFactory [java:/JmsXA]
+2015-11-03 14:35:07,101 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 57) JBAS011601: Bound messaging object to jndi name java:/jms/watcherAuthJMS
+2015-11-03 14:35:07,102 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 59) HQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2015-11-03 14:35:07,105 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 59) JBAS011601: Bound messaging object to jndi name java:/jms/queue/ExpiryQueue
+2015-11-03 14:35:07,669 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017534: Registered web context: /FrontAuthWatcherWebService
+2015-11-03 14:35:07,748 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "FrontAuthWatcherWebService.war" (runtime-name : "FrontAuthWatcherWebService.war")
+2015-11-03 14:35:07,821 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-11-03 14:35:07,822 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-11-03 14:35:07,822 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 5350ms - Started 292 of 346 services (105 services are lazy, passive or on-demand)

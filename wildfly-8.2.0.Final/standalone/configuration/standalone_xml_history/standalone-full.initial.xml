@@ -364,15 +364,9 @@
                     <jms-queue name="ExpiryQueue">
                         <entry name="java:/jms/queue/ExpiryQueue"/>
                     </jms-queue>
-                     <jms-queue name="MyQueue">
-                        <entry name="java:/jms/queue/watcherqueue"/>
-                    </jms-queue>
                     <jms-queue name="DLQ">
                         <entry name="java:/jms/queue/DLQ"/>
                     </jms-queue>
-                    <jms-topic name="MyTopic">
-                    	<entry name="java:/jms/watcherAuthJMS"/>
-                    </jms-topic>
                 </jms-destinations>
             </hornetq-server>
         </subsystem>
