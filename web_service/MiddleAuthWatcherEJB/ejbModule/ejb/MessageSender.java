@@ -8,6 +8,7 @@ import javax.jms.JMSContext;
 import javax.jms.JMSException;
 import javax.jms.ObjectMessage;
 import javax.jms.Topic;
+
 import common.UserModel;
 
 @Stateless
@@ -19,10 +20,16 @@ public class MessageSender implements MessageSenderLocal {
 	Topic topic;
 
 	public void sendMessage(String message) {
-		// TODO
+		context.createProducer().send(topic, message);
 	}
 
 	public void sendMessage(UserModel user) {
-		// TODO
+		try {
+			ObjectMessage message = context.createObjectMessage();
+			message.setObject(user);
+			context.createProducer().send(topic, user);
+		} catch (JMSException e) {
+			e.printStackTrace();
+		}
 	}
 }
