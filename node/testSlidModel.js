@@ -8,6 +8,8 @@ var SlidModel = require("./app/models/slid.model.js");
 
 var slid = new SlidModel();
 
+//console.dir(slid);
+
 slid.id = utils.generateUUID();
 slid.type = "myType";
 slid.title = "myTitle";
