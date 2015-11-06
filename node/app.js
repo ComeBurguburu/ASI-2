@@ -6,7 +6,6 @@ var CONFIG = require("./config.json");
 var path = require("path");
 var defaultRoute = require("./app/routes/default.route.js");
 var fs = require("fs");
-var path = require("path");
 var _path = CONFIG.presentationDirectory;
 
 var app = express();
@@ -66,7 +65,7 @@ app.post("/savePress",function(request, response){
 	var json = JSON.parse(json_string);
 	for(id in json){
 		
-		fs.writeFileSync(CONFIG.contentDirectory+"/"+json[id].id+".pres.json.txt",json["id"]);
+		fs.writeFileSync(path.join(CONFIG.contentDirectory,json[id].id+".pres.json.txt"),json["id"]);
 	}
 	response.send(CONFIG.contentDirectory+"/test.txt");
 	
@@ -87,5 +86,4 @@ server.listen(CONFIG.port);
 
 app.use("/", express.static(path.join(__dirname, "public/")));
 app.use("/lib", express.static(path.join(__dirname, "lib/")));
-app.use("/app", express.static(path.join(__dirname, "app/")));
 //app.use("/watch", express.static(path.join(__dirname, "public/watch.html")));
