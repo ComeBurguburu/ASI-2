@@ -48,26 +48,22 @@ router.get("/slids", function (request, response) {
 });
 
 router.post("/slids", function (request, response) {
-			var content = "";
-	
-		request.on("data", function(data){
-			content+=data.toString();
-		});
-		request.on("end",function(){
-	
+	var content = "";
 
-		var json_string = content;// req.get();
-		
-		SlidModel.create(new SlidModel(json_string));
+	request.on("data", function (data) {
+		content += data.toString();
+	});
+	request.on("end", function () {
+
+
+		var json_string = content;
+	});
+	SlidModel.create(new SlidModel(json_string));
 });
 
 router.get("/slids/:slidId", function (request, response) {
-		var id = req.params.sildId;
-		SlidModel.read(id,function(erreur,data){
-			response.send(data.fileName);
-		});
-			
-	}
-
-
-
+	var id = req.params.sildId;
+	SlidModel.read(id, function (erreur, data) {
+		response.send(data.fileName);
+	});
+});
