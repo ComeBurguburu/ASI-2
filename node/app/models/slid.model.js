@@ -66,7 +66,7 @@ var SlidModel = function SlidModel(json) {
 
 }
 SlidModel.create = function (slid, callback) {
-	if(slid == undefined || slid.fileName == undefined || slid.id == undefined){
+	if(typeof slid.id !== "number" || typeof slid.fileName !== "string"){
 		callback("slide corrupted");
 	}else{
 		fs.writeFileSync(path.join(CONFIG.contentDirectory, slid.fileName), slid.getData());
@@ -95,8 +95,23 @@ SlidModel.update = function (slid, callback) {
 }
 
 SlidModel.delete = function (id, callback) {
-	fs.unlinkSync(path.join(CONFIG.contentDirectory, id.toString() + ".txt" ))
-	fs.unlinkSync(path.join(CONFIG.contentDirectory, id.toString() + ".meta.json"));
+	var path1 = path.join(CONFIG.contentDirectory, id.toString() + ".txt" );
+	
+	if(fs.stat(path1)){
+		fs.unlinkSync(path1);
+	}else{
+		callback(path1+" not found");
+		return;
+	}
+	
+	var path2 = path.join(CONFIG.contentDirectory, id.toString() + ".meta.json");
+	
+	if(fs.stat(path2)){
+		fs.unlinkSync(path2);
+	}else{
+		callback(path2+" not found");
+		return;
+	}
 	callback(null);
 }
 
