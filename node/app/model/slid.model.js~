@@ -1,4 +1,4 @@
-function SlidModel() {
+function SlideModel() {
 
 	this.id;
 	this.title;
