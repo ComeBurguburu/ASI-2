@@ -90,6 +90,16 @@ server.listen(CONFIG.port);
 
 
 app.use("/", express.static(path.join(__dirname, "public/")));
+<<<<<<< HEAD
 app.use("/lib", express.static(path.join(__dirname, "lib/")));
 //app.use("/watch", express.static(path.join(__dirname, "public/watch.html")));
 app.use(slidRoute);
+=======
+app.use("/lib/angular", express.static(path.join(__dirname, "lib/angular")));
+app.use("/lib/jquery", express.static(path.join(__dirname, "lib/jquery")));
+app.use("/lib/bootstrap/css", express.static(path.join(__dirname, "lib/bootstrap/css")));
+app.use("/lib/bootstrap/js", express.static(path.join(__dirname, "lib/bootstrap/js")));
+app.use("/js/application", express.static(path.join(__dirname, "public/js/application")));
+app.use("/js/controllers", express.static(path.join(__dirname, "public/js/controllers")));
+app.use("/watch", express.static(path.join(__dirname, "public/watch.html")));
+>>>>>>> 26739deb1673e17a3021f8ffd1e7e8f3ecb96442
