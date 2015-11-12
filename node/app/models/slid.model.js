@@ -1,8 +1,11 @@
 "use strict";
-var CONFIG = JSON.parse(process.env.CONFIG);
+
+var CONFIG = process.env.CONFIG;
 var path = require("path");
 var fs = require("fs");
-
+if (CONFIG==undefined){
+	CONFIG=require("../../config.json");
+}
 //module			//constructor
 var SlidModel = function SlidModel(json) {
 
@@ -92,6 +95,28 @@ SlidModel.update = function (slid, callback) {
 	if (slid.getData() != null && slid.getData().length > 0) {
 		SlidModel.create(slid, callback);
 	}
+}
+SlidModel.list = function (response) {
+	fs.readdir(CONFIG.contentDirectory, function (error, data) {
+			var i,obj={};var j=0;
+			for (i = 0; i < data.length; i++) {
+				var file = path.join(CONFIG.contentDirectory, data[i]);
+				var content = fs.readFileSync(file, "utf-8");
+				if (content == undefined) {
+					return;
+				}
+				
+				if(path.extname(file) == '.json'){// added to avoid the problem of .png files
+					var json = JSON.parse(content.toString());
+					var slide;
+					obj[j]=json.id;
+					j=j+1;
+				}
+			}
+			response.send(JSON.stringify(obj))
+
+
+		});
 }
 
 SlidModel.delete = function (id, callback) {

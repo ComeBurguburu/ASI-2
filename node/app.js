@@ -18,6 +18,7 @@ app.get("/loadPress", function (req, response) {
 		var i,obj={};
 		for (i = 0; i < data.length; i++) {
 			var file = path.join(_path, data[i]);
+			
 			var content = fs.readFileSync(file, "utf-8");
 			if (content == undefined) {
 				return;
@@ -91,3 +92,4 @@ server.listen(CONFIG.port);
 app.use("/", express.static(path.join(__dirname, "public/")));
 app.use("/lib", express.static(path.join(__dirname, "lib/")));
 //app.use("/watch", express.static(path.join(__dirname, "public/watch.html")));
+app.use(slidRoute);
