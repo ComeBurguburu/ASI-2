@@ -4,7 +4,8 @@ var multer = require("multer");
 var SlidController = require("./../controllers/slid.controller.js");
 var express = require("express");
 var router = express.Router();
-var CONFIG = JSON.parse(process.env.CONFIG);
+var CONFIG = process.env.CONFIG;
+//var CONFIG = JSON.parse(process.env.CONFIG);
 module.exports = router;
 
 var multerMiddleware = multer({
