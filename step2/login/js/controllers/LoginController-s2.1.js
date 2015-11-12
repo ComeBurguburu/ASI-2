@@ -1,14 +1,32 @@
-var app=angular.module('loginApp',[]);
-app.controller('loginCtrl',loginCrtFnt);
-loginCrtFnt.$inject=['$scope','$log','auth'];
-function loginCrtFnt($scope, $log,auth){
-	$scope.logAuth = function() { // Fonction sans paramètres qui s'appuie sur le scope
-		$log.info('user login:', $scope.user.login);
-		$log.info('user pwd:', $scope.user.pwd);
-	};
-	$scope.logAuthObject = function(user) { // Fonction avec paramètre qui affiche les propriétes de l'objet passé en paramètre
-		$log.info('user object login:', user.login);
-		$log.info('user object pwd:', user.pwd);
-	};
-	$log.info(auth.userList());
-}
+angular.module('loginApp').controller('loginCtrl', ['$scope','$log','$window', 'auth', function loginCrtFnt($scope, $log, $window, auth){
+var login='index';
+ $scope.logAuth = function() {
+	 $log.info('user login', $scope.user.login);
+	 $log.info('user pwd', $scope.user.pwd);
+ };
+
+ $scope.logAuthObject = function(user) {
+
+	$log.info('user login',user.login);
+ 	$log.info('user pwd', user.pwd);
+ 	// document.write(document.getElementById('form-password').pwd);
+
+ };
+ $scope.listUser = function() {
+  	auth.userList();	
+ 	// document.write(document.getElementById('form-password').pwd);
+ };
+ $scope.checkUser= function(user) {
+ 	login=auth.checkUser(user.login, user.pwd);
+ 	if(login=="success") {
+ 		$window.location.href= "loginSuccess.html";
+ 	}
+ 	else {
+ 		$window.location.href= "index.html";
+ 	}
+
+ 	
+ }
+
+}]);
+

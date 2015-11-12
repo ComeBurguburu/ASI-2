@@ -18,6 +18,7 @@ app.get("/loadPress", function (req, response) {
 		var i,obj={};
 		for (i = 0; i < data.length; i++) {
 			var file = path.join(_path, data[i]);
+			
 			var content = fs.readFileSync(file, "utf-8");
 			if (content == undefined) {
 				return;
@@ -90,6 +91,10 @@ IOController.listen(server);
 
 
 app.use("/", express.static(path.join(__dirname, "public/")));
+app.use("/lib", express.static(path.join(__dirname, "lib/")));
+//app.use("/watch", express.static(path.join(__dirname, "public/watch.html")));
+app.use(slidRoute);
+
 app.use("/lib/angular", express.static(path.join(__dirname, "lib/angular")));
 app.use("/lib/jquery", express.static(path.join(__dirname, "lib/jquery")));
 app.use("/lib/bootstrap/css", express.static(path.join(__dirname, "lib/bootstrap/css")));
@@ -97,4 +102,3 @@ app.use("/lib/bootstrap/js", express.static(path.join(__dirname, "lib/bootstrap/
 app.use("/js/application", express.static(path.join(__dirname, "public/js/application")));
 app.use("/js/controllers", express.static(path.join(__dirname, "public/js/controllers")));
 app.use("/watch", express.static(path.join(__dirname, "public/watch.html")));
-//app.use("/socket.io/", express.static(path.join(__dirname, "public/socket.io")));
