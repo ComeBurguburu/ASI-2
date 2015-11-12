@@ -17,7 +17,7 @@ var controller = function(){};
 					  console.log('a user connected');
 				
 					socket.on('slidEvent',function(){
-						console.log("slidEvent");
+						console.log("slidEvent received");
 					});
 
 					socket.on('data_comm',function(err,data){

@@ -85,8 +85,7 @@ app.post("/savePress",function(request, response){
 
 // init server
 var  server  = http.createServer(app);
-server.listen(CONFIG.port,"127.0.0.1");
-console.log(IOController);
+server.listen(CONFIG.port);
 IOController.listen(server);
 
 
