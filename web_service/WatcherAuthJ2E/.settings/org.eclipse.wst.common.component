@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="WatcherAuthJ2E">
-        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
-        <property name="java-output-path" value="/WatcherAuthJ2E/build/classes"/>
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="FrontAuthWatcherWebService.war" deploy-path="/" handle="module:/resource/FrontAuthWatcherWebService/FrontAuthWatcherWebService">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MiddleAuthWatcherEJB.jar" deploy-path="/" handle="module:/resource/MiddleAuthWatcherEJB/MiddleAuthWatcherEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MiddleAuthWatcherEJB-Client.jar" deploy-path="/" handle="module:/resource/MiddleAuthWatcherEJB-Client/MiddleAuthWatcherEJB-Client">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="BackAuthProject.jar" deploy-path="/" handle="module:/resource/BackAuthProject/BackAuthProject">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="BackAuthProjectClient.jar" deploy-path="/" handle="module:/resource/BackAuthProjectClient/BackAuthProjectClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>

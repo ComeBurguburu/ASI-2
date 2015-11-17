@@ -2,6 +2,7 @@ package servlet;
 
 import java.io.IOException;
 
+import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +14,9 @@ import model.UserModel;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 
+import ejb.MessageReceiverSyncLocal;
+import ejb.MessageSenderLocal;
+
 /**
  * Servlet implementation class WatcherAuthServlet
  */
@@ -23,6 +27,12 @@ public class WatcherAuthServlet extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
+	@EJB
+	MessageSenderLocal sender;
+	@EJB 
+	MessageReceiverSyncLocal receiver;
+
+
     public WatcherAuthServlet() {
         super();
         // TODO Auto-generated constructor stub
