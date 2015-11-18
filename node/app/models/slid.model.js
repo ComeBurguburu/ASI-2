@@ -144,18 +144,17 @@ SlidModel.delete = function (id, callback) {
 			if (err) {
 				return;
 			} else {
-				fs.unlink(data, function (error, function (err, data) {});
-					var path2 = path.join(CONFIG.contentDirectory, id.toString() + ".meta.json");
+				fs.unlink(data, function (err, data) {});
+				var path2 = path.join(CONFIG.contentDirectory, id.toString() + ".meta.json");
 
-					utils.readFileIfExists(path2, function (err, data) {
-						if (err) {
-							return;
-						} else {
-							fs.unlink(data, function (error, function (err, data) {}));
-						}
-					});
+				utils.readFileIfExists(path2, function (err, data) {
+					if (err) {
+						return;
+					} else {
+						fs.unlink(data,function (err, data) {});
+					}
+				});
 
-				)
 			}
 		})
 	})
