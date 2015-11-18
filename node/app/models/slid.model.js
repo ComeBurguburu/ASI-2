@@ -3,7 +3,7 @@
 var CONFIG = JSON.parse(process.env.CONFIG);
 var path = require("path");
 var fs = require("fs");
-var utils = require("./app/utils/utils.js");
+var utils = require("../utils/utils.js");
 
 //module			//constructor
 var SlidModel = function SlidModel(json) {
@@ -133,15 +133,16 @@ SlidModel.list = function (response, callback) {
 SlidModel.delete = function (id, callback) {
 
 	SlidModel.read(id, function (err, slid) {
-
+		if(err){callback(err);return;}
 		if (slid.fileName == null) {
-			callback("no filename");
+			callback("no filename");return;
 		}
 		var path_img = path.join(CONFIG.contentDirectory, slid.fileName);
 
 
 		utils.readFileIfExists(path_img, function (err, data) {
 			if (err) {
+				callback(err);
 				return;
 			} else {
 				fs.unlink(data, function (err, data) {});
@@ -149,9 +150,11 @@ SlidModel.delete = function (id, callback) {
 
 				utils.readFileIfExists(path2, function (err, data) {
 					if (err) {
+						callback(null);
 						return;
 					} else {
 						fs.unlink(data,function (err, data) {});
+						callback(null);
 					}
 				});
 
