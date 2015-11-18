@@ -7,6 +7,7 @@ var controller = function(){};
 	controller.listen = function(server){
 	
 					var ioServer = io.listen(server);
+
 	
 					ioServer.on('connection', function (socket) {
 					  /**
