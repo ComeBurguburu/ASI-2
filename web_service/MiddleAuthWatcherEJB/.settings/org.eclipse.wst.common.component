@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="MiddleAuthWatcherEJB">
-        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
-        <property name="java-output-path" value="/MiddleAuthWatcherEJB/build/classes"/>
-        <property name="ClientProject" value="MiddleAuthWatcherEJB2Client"/>
-        <property name="ClientJARURI" value="MiddleAuthWatcherEJB2Client.jar"/>
-    </wb-module>
-</project-modules>
