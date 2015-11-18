@@ -3,8 +3,8 @@
 <head>     
  <title>Bootstrap 101 Template</title>  
   <!-- Bootstrap -->     
- <link href="lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">     
- <link href="css/js.css" rel="stylesheet">  
+ <link href="css/bootstrap.min.css" rel="stylesheet">  
+ <!-- <link href="css/js.css" rel="stylesheet">  -->
 </head>   
 <body>       
   <div class="container-fluid fullScreenHeight zeroRef" >     
@@ -29,12 +29,22 @@
       </div>         
       <div class="form-group">             
         <label for="currentPresTitle">Title</label>             
-          <input type="text" ng-model="currentPresenation.title" class="form-control" id="currentPresTitle">
-        </div>
-      </div>          
-    </div>          
-    <script src="lib/js/jquery-1.11.3.min.js"></script>        
-    <script src="lib/js/angular.min.js"></script>   
+          <input type="text" ng-model="currentPresentation.title" class="form-control" id="currentPresTitle">
+       <!--  <label for="currentPresTitle">list of slid</label>     
+         <input type="text" ng-model="currentPresentation.slidArray['firstSlid']" class="form-control" id="currentPresTitle"> -->
+      </div> 
+          <div ng-repeat="slid in currentPresentation.slidArray">
+              {{slid.title}}
+              <div ng-repeat="content in slid.contentMap">
+                  <img ng-src="{{content.src}}" style="width:200%"/>
+              <div>
+          </div>         
+    </div>
+     </div>   
+      </div> 
+       </div>               
+    <script src="lib/jquery-1.11.1.min.js"></script>        
+    <script src="lib/angular.min.js"></script>   
     <script src="js/services/FactoryService-s3.1.js"></script>      
     <script src="js/application/AdminApp-s3.1.js"></script>   
     <script src="js/controllers/EventController-s3.1.js"></script>          

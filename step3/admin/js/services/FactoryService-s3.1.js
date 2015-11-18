@@ -17,7 +17,9 @@ function factoryFnc(){
         mapToArray
     };
     // http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
-
+    var contentId=0;
+    var slidId=0;
+    var presentationId=0;
     function generateUUID(){
         var d = new Date().getTime();
         var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c){
@@ -29,15 +31,37 @@ function factoryFnc(){
     };
 
     function contentCreation(title,type,src){
-    // TODO
+        var content={};
+        content['id']=contentId;
+        content['title']=title;
+        content['type']=type;
+        content['src']=src;
+        contentId++;
+        return content;
+
     };
 
     function slidCreation(title,txt){
-    // TODO
+
+        var slid={};
+        slid['id']=slidId;
+        slid['title']=title;
+        slid['txt']=txt;
+        slid.contentMap={};
+        slidId++;
+        return slid;
     };
 
     function presentationCreation(title,description){
-    // TODO
+    
+        var presentation={};
+        presentation['id']=presentationId;
+        presentation['title']=title;
+        presentation['description']=description;
+        presentation.slidArray={};
+        presentationId++;
+        return presentation;
+
     };
     function mapToArray(map){
         contentArray=[];
