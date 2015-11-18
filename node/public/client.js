@@ -6,3 +6,4 @@ var socket = io.connect();
  */
 socket.emit('slidEvent','salut');
 socket.on('open',function(){alert("ready");});
+socket.on('connection',function(msg){alert("msg");});
