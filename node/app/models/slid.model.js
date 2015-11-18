@@ -122,8 +122,8 @@ SlidModel.list = function (response, callback) {
 				j = j + 1;
 			}
 		}
-		if (JSON.stringify(obj) != null) {
-			callback(null, JSON.stringify(obj));
+		if (obj != null) {
+			callback(null,JSON.stringify(obj));
 		} else {
 			callback(error);
 		}

@@ -5,8 +5,7 @@ var multer = require("multer");
 var SlidController = require("./../controllers/slid.controller.js");
 var express = require("express");
 var router = express.Router();
-var slidController = new SlidController();
-var utils = require("./app/utils/utils.js");
+var utils = require("./../models/slid.model.js");
 
 if (CONFIG==undefined){
 	CONFIG=require("../../config.json");
@@ -31,13 +30,14 @@ router.post("/slids", multerMiddleware.single("file"), function (request, respon
 	slidController.create(request.body);
 });
 
-router.get("/slids", slidController.list);
+console.dir(SlidController);
+router.get("/slids", SlidController.list);
 
 
 router.get("/slids/:slidId", function (request, response) {
 	var id = request.params.slidId;
 	console.log(id);
-	slidController.read(id, function (erreur, data) {
+	SlidController.read(id, function (erreur, data) {
 		response.send(data);
 		console.log(data);
 		console.log(erreur);

@@ -7,8 +7,11 @@ var SlidModel = require("./../models/slid.model.js");
 
 var SlidController = function () {}
 
-SlidController.list = function (response) {
-	SlidModel.list(response);
+SlidController.list = function (request,response,callback) {
+	//console.dir(callback);
+	SlidModel.list(response,function(err,data){
+			response.send(data);
+		});
 }
 
 SlidController.create = function (request, response) {
