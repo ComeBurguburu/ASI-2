@@ -97,7 +97,7 @@ server.listen(CONFIG.port);
 IOController.listen(server);
 
 
-app.use("/", express.static(path.join(__dirname, "public/")));
+app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/lib", express.static(path.join(__dirname, "lib/")));
 //app.use("/watch", express.static(path.join(__dirname, "public/watch.html")));
 app.use(slidRoute);

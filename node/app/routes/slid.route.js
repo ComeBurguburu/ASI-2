@@ -1,11 +1,12 @@
 "use strict";
 
+var CONFIG = JSON.parse(process.env.CONFIG);
 var multer = require("multer");
 var SlidController = require("./../controllers/slid.controller.js");
 var express = require("express");
 var router = express.Router();
-var CONFIG = process.env.CONFIG;
 var slidController = new SlidController();
+var utils = require("./app/utils/utils.js");
 
 if (CONFIG==undefined){
 	CONFIG=require("../../config.json");
@@ -17,19 +18,21 @@ var multerMiddleware = multer({
 });
 
 router.post("/slids", multerMiddleware.single("file"), function (request, response) {
-	console.log(request.file.path); // The full path to the uploaded  file
-	console.log(request.file.originalname); // Name of the file on the user's computer
-	console.log(request.file.mimetype); // Mime type of the file
-});
-
-router.get("/slids", function (request, response) {
-//console.log(slid);
-	slidController.list(response);
-});
-
-router.post("/slids", function (request, response) {
+	var _path = request.file.path
+	console.log(path); // The full path to the uploaded  file
+	var originalName = request.file.originalname
+	console.log(originalName); // Name of the file on the user's computer
+	var mime_type = request.file.mimetype;
+	console.log(mime_type); // Mime type of the file
+	
+	var uuid = utils.generateUUID();
+	var mySlide = {type: mime_type,  id: uuid,   title: originalName,fileName: uuid+".png"};
+	
 	slidController.create(request.body);
 });
+
+router.get("/slids", slidController.list);
+
 
 router.get("/slids/:slidId", function (request, response) {
 	var id = request.params.slidId;
@@ -37,6 +40,6 @@ router.get("/slids/:slidId", function (request, response) {
 	slidController.read(id, function (erreur, data) {
 		response.send(data);
 		console.log(data);
-console.log(erreur);
+		console.log(erreur);
 	});
 });

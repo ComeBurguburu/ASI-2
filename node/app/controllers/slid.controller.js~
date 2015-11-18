@@ -5,8 +5,9 @@ var path = require("path");
 var fs = require("fs");
 var SlidModel = require("./../models/slid.model.js");
 
-var SlidController = function () {}
 
+
+var SlidController = function () {}
 SlidController.list = function (response) {
 	SlidModel.list(response);
 }
@@ -20,8 +21,8 @@ SlidController.create = function (request, response) {
 	request.on("end", function () {
 
 		var json_string = content;
-		SlidModel.create(new SlidModel(json_string));
 	});
+	SlidModel.create(new SlidModel(json_string));
 }
 
 SlidController.read = function (id, callback) {

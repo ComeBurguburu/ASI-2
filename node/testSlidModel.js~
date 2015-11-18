@@ -53,7 +53,7 @@ function test3(slid) {
 			console.error(err);
 		} else {
 			console.dir(slid);
-			test4(slid);
+			testErr(slid);
 		}
 	});
 }
