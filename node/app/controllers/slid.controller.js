@@ -13,6 +13,7 @@ SlidController.list = function (request,response,callback) {
 			response.send(data);
 		});
 }
+//SlidController.getData = function(){return SlidModel.getData();};
 
 SlidController.create = function (request, response) {
 	var content = "";

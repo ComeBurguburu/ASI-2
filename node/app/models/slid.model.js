@@ -51,7 +51,7 @@ var SlidModel = function SlidModel(json) {
 		console.error("no title");
 	}
 	if (json.fileName) {
-		this.fileName = json.filename;
+		this.fileName = json.fileName;
 	} else {
 		console.error("no filename");
 	}
@@ -68,13 +68,13 @@ var SlidModel = function SlidModel(json) {
 
 }
 SlidModel.create = function (slid, callback) {
-	if (typeof slid.id !== "string" || typeof slid.fileName !== "string") {
-		callback("slide corrupted");
+	if (typeof slid.id !== "string") {
+		callback("slide corrupted no id:"+JSON.stringify(slid));
+	}else if(typeof slid.fileName !== "string"){
+		callback("slide corrupted no fileName:" + JSON.stringify(slid));
 	} else {
-		console.dir(CONFIG);
-		console.log(CONFIG.contentDirectory);
-		console.log(slid.fileName);
-		fs.writeFileSync(path.join(CONFIG.contentDirectory, slid.fileName), slid.getData());
+		
+		//fs.writeFileSync(path.join(CONFIG.contentDirectory, slid.fileName), slid.getData());
 		fs.writeFileSync(path.join(CONFIG.contentDirectory, slid.id + ".meta.json"), JSON.stringify(slid));
 		callback(null);
 	}

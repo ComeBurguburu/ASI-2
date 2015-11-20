@@ -1,0 +1,25 @@
+"{
+    \"JBAS014671: Failed services\" => {\"jboss.deployment.subunit.\\\"WatcherAuthJ2E.ear\\\".\\\"BackAuthProject.jar\\\".INSTALL\" => \"org.jboss.msc.service.StartException in service jboss.deployment.subunit.\\\"WatcherAuthJ2E.ear\\\".\\\"BackAuthProject.jar\\\".INSTALL: JBAS018733: Failed to process phase INSTALL of subdeployment \\\"BackAuthProject.jar\\\" of deployment \\\"WatcherAuthJ2E.ear\\\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS011058: Failed to install component AuthWatcherMsgDrivenEJB
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS014544: No EJB found with interface of type 'ejb.MessageSenderQueueLocal' for binding ejb.AuthWatcherMsgDrivenEJB/sender\"},
+    \"JBAS014771: Services with missing/unavailable dependencies\" => [
+        \"jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB.HandleDelegate is missing [jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB]\",
+        \"jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB.ORB is missing [jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB]\",
+        \"jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB.Validator is missing [jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB]\",
+        \"jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB.ValidatorFactory is missing [jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB]\",
+        \"jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB.InstanceName is missing [jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB]\",
+        \"jboss.deployment.unit.\\\"WatcherAuthJ2E.ear\\\".deploymentCompleteService is missing [jboss.deployment.subunit.\\\"WatcherAuthJ2E.ear\\\".\\\"BackAuthProject.jar\\\".deploymentCompleteService]\",
+        \"jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB.InAppClientContainer is missing [jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB]\"
+    ],
+    \"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available.\" => {
+        \"Services that were unable to start:\" => [
+            \"jboss.deployment.subunit.\\\"WatcherAuthJ2E.ear\\\".\\\"MiddleAuthWatcherEJB-Client.jar\\\".CLEANUP\",
+            \"jboss.deployment.unit.\\\"WatcherAuthJ2E.ear\\\".CLEANUP\"
+        ],
+        \"Services that may be the cause:\" => [
+            \"jboss.deployment.subunit.\\\"WatcherAuthJ2E.ear\\\".\\\"BackAuthProject.jar\\\".deploymentCompleteService\",
+            \"jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1\",
+            \"jboss.naming.context.java.comp.WatcherAuthJ2E.BackAuthProject.AuthWatcherMsgDrivenEJB\"
+        ]
+    }
+}"

@@ -79,7 +79,7 @@ if (json != null){
 		fs.writeFileSync(path.join(CONFIG.presentationDirectory, json.id + ".pres.json"),json_string);
 	
 }
-	response.send(CONFIG.contentDirectory+"/test.txt");
+	response.send(CONFIG.presentationDirectory+"/"+ json.id + ".pres.json");
 	
 
 	

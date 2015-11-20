@@ -27,10 +27,10 @@ public class WatcherAuthServlet extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-	@EJB
+	/*@EJB
 	MessageSenderLocal sender;
 	@EJB 
-	MessageReceiverSyncLocal receiver;
+	MessageReceiverSyncLocal receiver;*/
 
 
     public WatcherAuthServlet() {
