@@ -40,9 +40,9 @@ SlidController.read = function (id, callback, json) {
 				callback(err);
 			} else {
 				if (json == true) {
-					callback(null, JSON.parse(content.toString()));
+					callback(null, JSON.parse(data.toString()));
 				} else {
-					callback(null, new SlidModel(JSON.parse(content.toString())));
+					callback(null, new SlidModel(JSON.parse(data.toString())));
 				}
 			}
 		});

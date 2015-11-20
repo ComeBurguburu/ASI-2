@@ -93,7 +93,11 @@ SlidModel.read = function (id, callback) {
 			callback(err);
 		}
 		fs.readFile(myPath, "utf-8", function (err, data) {
-			callback(null, new SlidModel(JSON.parse(data)));
+			if(err){
+				callback(err);
+			}else{
+				callback(null, new SlidModel(JSON.parse(data)));
+			}
 		});
 	});
 
@@ -119,23 +123,36 @@ SlidModel.list = function (response, callback) {
 			fs.readFile(file, "utf-8", function (err, data) {
 				if (err) {
 					callback(err);
+					return;
 				}
 
 
 				if (path.extname(file) == '.json') { // added to avoid the problem of .png files
-					var json = JSON.parse(content.toString());
+					//console.log(data);
+					var json ="";
+				try{
+					json = JSON.parse(data.toString());
+				}catch(e){
+					return;
+				}
 					var slide;
 					obj[j] = json.id;
 					j = j + 1;
 				}
 
-				if (obj != null) {
+				
+			});
+		};//loop end
+		
+		if (obj != null) {
 					callback(null, JSON.stringify(obj));
+					return;
 				} else {
 					callback(error);
+					return;
 				}
-			});
-		};
+		
+		
 	});
 }
 
