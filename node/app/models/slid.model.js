@@ -69,27 +69,33 @@ var SlidModel = function SlidModel(json) {
 }
 SlidModel.create = function (slid, callback) {
 	if (typeof slid.id !== "string") {
-		callback("slide corrupted no id:"+JSON.stringify(slid));
-	}else if(typeof slid.fileName !== "string"){
+		callback("slide corrupted no id:" + JSON.stringify(slid));
+	} else if (typeof slid.fileName !== "string") {
 		callback("slide corrupted no fileName:" + JSON.stringify(slid));
 	} else {
-		
-		//fs.writeFileSync(path.join(CONFIG.contentDirectory, slid.fileName), slid.getData());
-		fs.writeFileSync(path.join(CONFIG.contentDirectory, slid.id + ".meta.json"), JSON.stringify(slid));
-		callback(null);
+
+		fs.writeFile(path.join(CONFIG.contentDirectory, slid.id + ".meta.json"), JSON.stringify(slid), function (err, data) {
+			if (err) {
+				callback(err);
+			} else {
+				callback(null);
+			}
+		});
 	}
 
 }
 
 SlidModel.read = function (id, callback) {
 	var myPath = path.join(CONFIG.contentDirectory, id + ".meta.json");
-	console.dir(fs.statSync(myPath));
-	if (fs.statSync(myPath)) {
-		var content = fs.readFileSync(myPath, "utf-8");
-		callback(null, new SlidModel(JSON.parse(content.toString())));
-	} else {
-		callback("no file");
-	}
+
+	fs.stat(myPath, function (err, data) {
+		if (err) {
+			callback(err);
+		}
+		fs.readFile(myPath, "utf-8", function (err, data) {
+			callback(null, new SlidModel(JSON.parse(data)));
+		});
+	});
 
 }
 
@@ -110,32 +116,39 @@ SlidModel.list = function (response, callback) {
 		var j = 0;
 		for (i = 0; i < data.length; i++) {
 			var file = path.join(CONFIG.contentDirectory, data[i]);
-			var content = fs.readFileSync(file, "utf-8");
-			if (content == undefined) {
-				return;
-			}
+			fs.readFile(file, "utf-8", function (err, data) {
+				if (err) {
+					callback(err);
+				}
 
-			if (path.extname(file) == '.json') { // added to avoid the problem of .png files
-				var json = JSON.parse(content.toString());
-				var slide;
-				obj[j] = json.id;
-				j = j + 1;
-			}
-		}
-		if (obj != null) {
-			callback(null,JSON.stringify(obj));
-		} else {
-			callback(error);
-		}
+
+				if (path.extname(file) == '.json') { // added to avoid the problem of .png files
+					var json = JSON.parse(content.toString());
+					var slide;
+					obj[j] = json.id;
+					j = j + 1;
+				}
+
+				if (obj != null) {
+					callback(null, JSON.stringify(obj));
+				} else {
+					callback(error);
+				}
+			});
+		};
 	});
 }
 
 SlidModel.delete = function (id, callback) {
 
 	SlidModel.read(id, function (err, slid) {
-		if(err){callback(err);return;}
+		if (err) {
+			callback(err);
+			return;
+		}
 		if (slid.fileName == null) {
-			callback("no filename");return;
+			callback("no filename");
+			return;
 		}
 		var path_img = path.join(CONFIG.contentDirectory, slid.fileName);
 
@@ -153,7 +166,7 @@ SlidModel.delete = function (id, callback) {
 						callback(null);
 						return;
 					} else {
-						fs.unlink(data,function (err, data) {});
+						fs.unlink(data, function (err, data) {});
 						callback(null);
 					}
 				});

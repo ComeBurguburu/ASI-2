@@ -7,13 +7,13 @@ var SlidModel = require("./../models/slid.model.js");
 
 var SlidController = function () {}
 
-SlidController.list = function (request,response,callback) {
-	//console.dir(callback);
-	SlidModel.list(response,function(err,data){
+SlidController.list = function (request, response, callback) {
+		//console.dir(callback);
+		SlidModel.list(response, function (err, data) {
 			response.send(data);
 		});
-}
-//SlidController.getData = function(){return SlidModel.getData();};
+	}
+	//SlidController.getData = function(){return SlidModel.getData();};
 
 SlidController.create = function (request, response) {
 	var content = "";
@@ -28,13 +28,24 @@ SlidController.create = function (request, response) {
 	});
 }
 
-SlidController.read = function (id, callback) {
+SlidController.read = function (id, callback, json) {
 	var myPath = path.join(CONFIG.contentDirectory, id + ".meta.json");
-	if(fs.statSync(myPath)){
-		var content = fs.readFileSync(myPath, "utf-8");
-		callback(null,new SlidModel(JSON.parse(content.toString())));
-	}else{
-		callback("no file in "+myPath);
-	}
+	fs.stat(myPath, function (err, data) {
+		if (err) {
+			callback("no file in " + myPath);
+			return;
+		}
+		fs.readFile(myPath, "utf-8", function (err, data) {
+			if (err) {
+				callback(err);
+			} else {
+				if (json == true) {
+					callback(null, JSON.parse(content.toString()));
+				} else {
+					callback(null, new SlidModel(JSON.parse(content.toString())));
+				}
+			}
+		});
+	});
 }
 module.exports = SlidController;
