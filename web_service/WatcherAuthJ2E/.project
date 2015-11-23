@@ -5,8 +5,6 @@
 	<projects>
 		<project>FrontAuthWatcherWebService</project>
 		<project>MiddleAuthWatcherEJB</project>
-		<project>MiddleAuthWatcherEJB-Client</project>
-		<project>BackAuthProject</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

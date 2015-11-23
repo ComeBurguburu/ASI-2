@@ -17,6 +17,7 @@ import org.json.simple.JSONValue;
 import ejb.MessageReceiverSyncLocal;
 import ejb.MessageSenderLocal;
 
+
 /**
  * Servlet implementation class WatcherAuthServlet
  */
@@ -27,10 +28,10 @@ public class WatcherAuthServlet extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-	/*@EJB
+	@EJB
 	MessageSenderLocal sender;
 	@EJB 
-	MessageReceiverSyncLocal receiver;*/
+	MessageReceiverSyncLocal receiver;
 
 
     public WatcherAuthServlet() {

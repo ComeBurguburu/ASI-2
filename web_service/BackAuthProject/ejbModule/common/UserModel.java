@@ -10,7 +10,7 @@ public class UserModel {
 	}
 
 	public String getPwd() {
-		return password;
+		return getPassword();
 	}
 
 	public void setRole(Role currentTestRole) {
@@ -20,6 +20,14 @@ public class UserModel {
 
 	public Role getRole() {
 		return role;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }
