@@ -10,6 +10,10 @@ var SlidController = function () {}
 SlidController.list = function (request, response, callback) {
 		//console.dir(callback);
 		SlidModel.list(response, function (err, data) {
+			if(err){
+				response.send(err);
+				return;
+			}
 			response.send(data);
 		});
 	}

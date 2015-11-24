@@ -93,9 +93,9 @@ SlidModel.read = function (id, callback) {
 			callback(err);
 		}
 		fs.readFile(myPath, "utf-8", function (err, data) {
-			if(err){
+			if (err) {
 				callback(err);
-			}else{
+			} else {
 				callback(null, new SlidModel(JSON.parse(data)));
 			}
 		});
@@ -115,9 +115,12 @@ SlidModel.update = function (slid, callback) {
 	}
 }
 SlidModel.list = function (response, callback) {
+	var i, obj = {},
+		cpt = 0;
 	fs.readdir(CONFIG.contentDirectory, function (error, data) {
-		var i, obj = {};
+
 		var j = 0;
+
 		for (i = 0; i < data.length; i++) {
 			var file = path.join(CONFIG.contentDirectory, data[i]);
 			fs.readFile(file, "utf-8", function (err, data) {
@@ -126,33 +129,31 @@ SlidModel.list = function (response, callback) {
 					return;
 				}
 
-
 				if (path.extname(file) == '.json') { // added to avoid the problem of .png files
-					//console.log(data);
-					var json ="";
-				try{
-					json = JSON.parse(data.toString());
-				}catch(e){
-					return;
-				}
-					var slide;
-					obj[j] = json.id;
-					j = j + 1;
-				}
 
-				
-			});
-		};//loop end
-		
-		if (obj != null) {
-					callback(null, JSON.stringify(obj));
-					return;
-				} else {
-					callback(error);
+					var json = "";
+					try {
+						json = JSON.parse(data.toString());
+						obj[j] = json.id;
+						j = j + 1;
+					} catch (e) {
+
+					}
+
+
+				}
+				cpt++;
+				if (cpt == 6) {
+					if (obj != {}) {
+						callback(null, JSON.stringify(obj));
+					} else {
+						callback(error);
+					}
 					return;
 				}
-		
-		
+			});
+		}; //loop end	
+
 	});
 }
 

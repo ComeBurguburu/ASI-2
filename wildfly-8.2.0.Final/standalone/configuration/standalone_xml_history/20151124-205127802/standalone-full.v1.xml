@@ -512,9 +512,4 @@
         </outbound-socket-binding>
     </socket-binding-group>
 
-    <deployments>
-        <deployment name="WatcherAuthJ2E.ear.deployed" runtime-name="WatcherAuthJ2E.ear.deployed" enabled="false">
-            <content sha1="8c665fed02f9fe18d591bf6721068701e58b20cb"/>
-        </deployment>
-    </deployments>
 </server>

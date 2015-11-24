@@ -7,4 +7,7 @@
       <context-root>FrontAuthWatcherWebService</context-root>
     </web>
   </module>
+  <module>
+    <ejb>BackAuthProject.jar</ejb>
+  </module>
 </application>
