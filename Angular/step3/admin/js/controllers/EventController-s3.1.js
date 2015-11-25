@@ -3,13 +3,28 @@ angular.module('adminApp').controller('eventCtrl', ['$scope','$log','$window', '
 
 
 	$scope.currentPresentation=factory.presentationCreation("Star wars","presentation episode 7");
+	var increment = 0;
 	
 	//console.log($scope.currentSlid);
 	$scope.newSlide=function(titleSlid,txtSlid,contentTitle,contentType,contentSrc){ 
+
 		currentSlid = factory.slidCreation(titleSlid,txtSlid);
 		currentSlid.contentMap[titleSlid] = factory.contentCreation(contentTitle,contentType,contentSrc);
 		$scope.currentPresentation.slidArray[titleSlid] = currentSlid;
 	 };
+
+	 $scope.nullSlide=function(){ 
+		var titleSlid ="Undefined"+increment;
+		var txtSlid ="Undefined"+increment;
+		var contentTitle ="Undefined"+increment;
+		var contentType ="Undefined"+increment;
+		var contentSrc ="../admin/img/noImage.png";
+		currentSlid = factory.slidCreation(titleSlid,txtSlid);
+		currentSlid.contentMap[titleSlid] = factory.contentCreation(contentTitle,contentType,contentSrc);
+		$scope.currentPresentation.slidArray[titleSlid] = currentSlid;
+		increment++;
+	 };
+
 	 $scope.newSlide("Dark Vador", "Bonjour je m'appelle Dark Vador","description dark vador","Dark Vador est une machine-humaine","../admin/img/Dark-Vador.jpg");
 	 $scope.newSlide("Luke", "Bonjour je m'appelle Luke","description Luke","Luke est un jedi","../admin/img/Luke.jpg");
 	 $scope.newSlide("Clone", "Bonjour je suis un clone","description Clone","Clone est un soldat","../admin/img/Clone.jpg");
