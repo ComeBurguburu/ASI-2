@@ -15,9 +15,10 @@ var IOController = require("./app/controllers/io.controller.js");
 var app = express();
 
 
-app.get("/loadPress", function (req, response) {
+app.get("/loadPres", function (req, response) {
 	fs.readdir(_path, function (error, data) {
 		var i,obj={};
+		
 		for (i = 0; i < data.length; i++) {
 			var file = path.join(_path, data[i]);
 			
@@ -26,16 +27,16 @@ app.get("/loadPress", function (req, response) {
 				return;
 			}
 			/*str = "<!DOCTYPE html>\n<html>\n<body>\n";*/
-			var json = JSON.parse(content.toString());/*
+			/*var json = JSON.parse(content.toString());/*
 
 			/*str += "<div>id: " + json.id + "</div>";
 			str += "<div>title: " + json.title + "</div>";
 			str += "<div>description: " + json.description + "</div>";
 			*/
-			var slide;
+			/*var slide;
 			for (slide in json.slidArray) {
 				obj[json.slidArray[slide].id] =  json.slidArray[slide];
-			}
+			}*/
 /*
 
 
@@ -48,7 +49,8 @@ app.get("/loadPress", function (req, response) {
 			response.send(str);*/
 			
 		}
-		response.send(JSON.stringify(obj))
+		//response.send(JSON.stringify(obj))
+		response.send(content);
 
 
 	});
@@ -97,8 +99,9 @@ server.listen(CONFIG.port);
 IOController.listen(server);
 
 
-app.use("/", express.static(path.join(__dirname, "public")));
-app.use("/lib/jquery/", express.static(path.join(__dirname, "public/lib/jquery")));
+app.use("/admin/", express.static(path.join(__dirname, "public/admin")));
+app.use("/uploads/",express.static(path.join(__dirname,"uploads")));
+//app.use("/lib/jquery/", express.static(path.join(__dirname, "public/lib/jquery")));
 //app.use("/watch", express.static(path.join(__dirname, "public/watch.html")));
 app.use(slidRoute);
 

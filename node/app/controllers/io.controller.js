@@ -1,6 +1,8 @@
 "use strict";
 var io = require('socket.io');
-var SlidModel = require("../models/slid.model.js")
+var SlidModel = require("../models/slid.model.js");
+
+var mapSocket = {};
 
 var controller = function () {};
 
@@ -34,7 +36,22 @@ controller.listen = function (server) {
 			});
 		});
 
-		socket.on('data_comm', function (err, data) {
+		socket.on('data_comm', function (err, data,arg0,arg1,arg2) {
+			var json = "";
+			console.log(arg0);
+			console.log(arg1);
+			console.log(arg2);
+			
+			try{
+				json = JSON.parse(data);
+			}catch(e){
+				
+			}
+			if(json == ""){
+				return;
+			}
+			
+			mapSocket[data.id] = "";
 
 		});
 	})

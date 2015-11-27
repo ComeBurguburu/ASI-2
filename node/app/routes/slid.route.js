@@ -59,8 +59,8 @@ router.post("/slids", multerMiddleware.single("file"), function (request, respon
 	});
 });
 
-console.dir(SlidController);
 router.get("/slids", SlidController.list);
+router.get("/resources_list", SlidController.pict);
 
 
 router.get("/slids/:slidId", function (request, response) {

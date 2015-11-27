@@ -17,6 +17,16 @@ SlidController.list = function (request, response, callback) {
 			response.send(data);
 		});
 	}
+SlidController.pict = function (request, response, callback) {
+		//console.dir(callback);
+		SlidModel.pict(response, function (err, data) {
+			if(err){
+				response.send(err);
+				return;
+			}
+			response.send(data);
+		});
+	}
 	//SlidController.getData = function(){return SlidModel.getData();};
 
 SlidController.create = function (request, response) {
