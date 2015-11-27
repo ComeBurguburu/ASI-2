@@ -1,3 +1,4 @@
+"use strict";
 var io = require('socket.io');
 var SlidModel = require("../models/slid.model.js")
 
@@ -8,6 +9,8 @@ var controller = function () {};
 controller.listen = function (server) {
 
 	var ioServer = io.listen(server);
+	ioServer.set('log level', 1);
+
 
 
 	ioServer.on('connection', function (socket) {
