@@ -65,6 +65,9 @@ var SlidModel = function SlidModel(json) {
 	} else {
 		this.setData(null);
 	}
+	if (json.src) {
+		this.src = json.src;
+	}
 
 }
 SlidModel.create = function (slid, callback) {

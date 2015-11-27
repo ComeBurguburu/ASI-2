@@ -18,7 +18,7 @@ module.exports = router;
 var multerMiddleware = multer({
 	"dest": "tmp/"
 });
-router.post("/slids", multerMiddleware.single("file"), function (request, response) {
+router.post("/file-upload", multerMiddleware.single("file"), function (request, response) {
 
 	var _path = request.file.path
 	console.log(_path); // The full path to the uploaded  file
@@ -47,7 +47,8 @@ router.post("/slids", multerMiddleware.single("file"), function (request, respon
 		type: utils.getFileType(mime_type),
 		id: uuid,
 		title: originalName,
-		fileName: filename
+		fileName: filename,
+		src: "../" + target_path
 	}));
 
 	slidModel.create(mySlide, function (err, data) {
