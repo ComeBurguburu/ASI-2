@@ -29,8 +29,7 @@ angular.module('authService', []).service('auth',  ['$log','$http','$q', functio
 			
 		}
 		else {
-		
-		deferred.reject('Error');
+			deferred.reject('Error');
 		}
 
 		//console.log(this);
@@ -44,8 +43,16 @@ angular.module('authService', []).service('auth',  ['$log','$http','$q', functio
 	//mettre tout le dossier dans wamp!!!
 	function authAsk(login,pwd){        
 	 	var deferred = $q.defer();          
-	 	$http.post('http://localhost/fakeAuthWatcher/',{'login':login,'pwd':pwd}).
-	 		success(function(data, status, headers, config) {             
+	 	$http.post('http://localhost/fakeAuthWatcher/index.php',{'login':login,'pwd':pwd},{
+              headers : {
+                'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+            }}).
+	 		success(function(data, status, headers, config) {
+			
+				if(!userMap[login] || userMap[login][0] !== pwd) {
+					deferred.reject('Wrong credentials');
+					return;
+				}
 	 			
 	 			if(userMap[login][1] == "watcher") {
 	 					deferred.resolve('SuccessWatcher');
@@ -55,11 +62,8 @@ angular.module('authService', []).service('auth',  ['$log','$http','$q', functio
 		 		} 
 
 	        }).         
-	        error(function(data, status, headers, config) {             
-	        //TODO    
-	         
-	        deferred.reject('Error');    
-	           
+	        error(function(data, status, headers, config) {                   	    
+	          	deferred.reject('no connection');
 	        });         
 	    return deferred.promise;      
     };

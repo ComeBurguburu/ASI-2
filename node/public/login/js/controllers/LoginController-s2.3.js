@@ -17,31 +17,31 @@ var login='index';
  	// document.write(document.getElementById('form-password').pwd);
  };
  $scope.checkUser= function(user) {
+	 if(!user){
+		 $.scope.error = "all fileds are required";
+	 }
 
  	var promise = auth.authAsk(user.login,user.pwd);
 
  	promise.then(function() {
- 		console.log("bonjour");
- 		console.log(promise);
-	 	if(promise) {
-	 		
+ 	
 	 			if(promise.$$state.value=="SuccessAdmin") {
-	 				$window.location.href= "admin.html";
+	 				$window.location.href= "admin/";
 	 			}
 	 			if(promise.$$state.value=="SuccessWatcher") {
 	 				$window.location.href= "watcher.html";
 	 			}
 	
-	 	}
-	 	else {
-	 		$window.location.href= "index.html";
-	 	}
- });
+
+	},function(){
+		$scope.error=promise.$$state.value;
+		
+	});
 
 
 
 
-	// promise.then(function() {console.log("connard");});
+	// promise.then(function() {console.log("canard");});
 
  // 	login=auth.checkUser(user.login, user.pwd);
  // 	if(login=="success") {
