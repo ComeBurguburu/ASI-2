@@ -118,38 +118,94 @@ SlidModel.update = function (slid, callback) {
 	}
 }
 SlidModel.list = function (response, callback) {
-	var i, slidArray= [],
+	var i, slidArray = [],
 		cpt = 0;
-	fs.readdir(CONFIG.contentDirectory, function (error, data) {
+	fs.readdir(CONFIG.contentDirectory, function (error, data_dir) {
 
 		var j = 0;
 
-		for (i = 0; i < data.length; i++) {
-			var file = path.join(CONFIG.contentDirectory, data[i]);
+		for (i = 0; i < data_dir.length; i++) {
+			var file = path.join(CONFIG.contentDirectory, data_dir[i]);
 			fs.readFile(file, "utf-8", function (err, data) {
 				if (err) {
+					console.error(err);
 					callback(err);
 					return;
 				}
 
-				if (path.extname(file) == '.json') { // added to avoid the problem of .png files
-					
-					var json = "";
-					try {
-						json = JSON.parse(data.toString());
-						slidArray[j] = json.id;
-						j = j + 1;
-					} catch (e) {
+				//	if (path.extname(file) == '.json') { // added to avoid the problem of .png files
 
-					}
-
+				var json = "";
+				try {
+					json = JSON.parse(data.toString());
+					slidArray[j] = json.id;
+					j = j + 1;
+				} catch (e) {
 
 				}
+
+
+				//	}
 				cpt++;
-				if (cpt == 6) {
+				if (cpt == data_dir.length - 1) {
+
 					if (slidArray != []) {
-						var obj={"id":"00001","title":"nototo","description":"Welcome to this first présentation do you need some help?","slidArray":slidArray};
-						callback(null, JSON.stringify(obj));
+						callback(null, JSON.stringify(slidArray));
+					} else {
+						console.error(error);
+						callback(error);
+					}
+					return;
+				}
+			});
+		}; //loop end	
+
+	});
+}
+SlidModel.loadPres = function (response, callback) {
+	var i, slidArray = [],
+		cpt = 0;
+	fs.readdir(CONFIG.presentationDirectory, function (error, data_dir) {
+
+		var j = 0;
+		console.log(data_dir.length - 1);
+
+		for (i = 0; i < data_dir.length; i++) {
+			var file = path.join(CONFIG.presentationDirectory, data_dir[i]);
+			console.log(file);
+			fs.readFile(file, "utf-8", function (err, data) {
+				if (err) {
+					console.error(err)
+					callback(err);
+					return;
+				}
+
+				//	if (path.extname(file) == '.json') { // added to avoid the problem of .png files
+
+				var json = "";
+				try {
+					json = JSON.parse(data.toString());
+					slidArray[j] = json;
+					j = j + 1;
+				} catch (e) {
+
+				}
+
+
+				//	}
+				cpt++;
+				console.log(cpt);
+				if (cpt == data_dir.length - 1 || data_dir.length == 1) {
+
+					if (slidArray != []) {
+						var obj = {
+							"id": "00002",
+							"title": "nototo",
+							"description": "Welcome to this first présentation do you need some help?",
+							"slidArray": slidArray
+						};
+						//callback(null, JSON.stringify([obj]));
+						callback(null, JSON.stringify(slidArray));
 					} else {
 						callback(error);
 					}
@@ -163,39 +219,41 @@ SlidModel.list = function (response, callback) {
 SlidModel.pict = function (response, callback) {
 	var i, obj = {},
 		cpt = 0;
-	fs.readdir(CONFIG.contentDirectory, function (error, data) {
+	fs.readdir(CONFIG.contentDirectory, function (error, data_dir) {
 
 		var j = 0;
+		if (error) {
+			return console.error(error);
+		}
 
-		for (i = 0; i < data.length; i++) {
-			var file = path.join(CONFIG.contentDirectory, data[i]);
+		for (i = 0; i < data_dir.length; i++) {
+			var file = path.join(CONFIG.contentDirectory, data_dir[i]);
 			fs.readFile(file, "utf-8", function (err, data) {
 
 				if (err) {
+					console.error(error);
 					callback(err);
 					return;
 				}
 
-				if (data.toString().indexOf("fileName") !== -1) { // added to avoid the problem of .png files
+				//if (path.extname(file) == ".json") { // added to avoid the problem of .png files
 
-					var json = "";
-					try {
-						json = JSON.parse(data.toString());
-						obj[j] = json;
-						j = j + 1;
-					} catch (e) {
 
-					}
-					
+				var json = "";
+				try {
+					json = JSON.parse(data.toString());
+					json.id = j;
+					obj[j] = json;
+					j = j + 1;
+				} catch (e) {
+
 				}
-				//console.log(cpt);
+
+				//}
 				cpt++;
-				if (cpt == 4) {
-					if (obj != {}) {
-						callback(null, JSON.stringify(obj));
-					} else {
-						callback(error);
-					}
+
+				if (cpt == data_dir.length - 1) {
+					callback(null, JSON.stringify(obj));
 					return;
 				}
 			});

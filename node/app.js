@@ -10,27 +10,9 @@ var defaultRoute = require("./app/routes/default.route.js");
 var slidRoute = require("./app/routes/slid.route.js");
 var utils = require("./app/utils/utils.js");
 var fs = require("fs");
-var _path = CONFIG.presentationDirectory;
+var _path = path.join(__dirname, CONFIG.presentationDirectory);
 var IOController = require("./app/controllers/io.controller.js");
 var app = express();
-
-app.get("/loadPres", function (req, response) {
-	fs.readdir(_path, function (error, data) {
-		var i, obj = {};
-
-		for (i = 0; i < data.length; i++) {
-			var file = path.join(_path, data[i]);
-
-			fs.readFile(file, "utf-8", function (err, data) {
-				if (err) {
-					response.send(err);
-				} else {
-					response.send(data)
-				}
-			});
-		}
-	});
-});
 
 app.post("/savePress", function (request, response) {
 	var json_string = "";

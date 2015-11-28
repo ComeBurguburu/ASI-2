@@ -8,19 +8,29 @@ var SlidModel = require("./../models/slid.model.js");
 var SlidController = function () {}
 
 SlidController.list = function (request, response, callback) {
-		//console.dir(callback);
-		SlidModel.list(response, function (err, data) {
-			if(err){
-				response.send(err);
-				return;
-			}
-			response.send(data);
-		});
-	}
+
+	SlidModel.list(response, function (err, data) {
+		if (err) {
+			response.send(err);
+			return;
+		}
+		response.send(data);
+	});
+}
+SlidController.loadPres = function (request, response, callback) {
+
+	SlidModel.loadPres(response, function (err, data) {
+		if (err) {
+			response.send(err);
+			return;
+		}
+		response.send(data);
+	});
+}
 SlidController.pict = function (request, response, callback) {
 		//console.dir(callback);
 		SlidModel.pict(response, function (err, data) {
-			if(err){
+			if (err) {
 				response.send(err);
 				return;
 			}

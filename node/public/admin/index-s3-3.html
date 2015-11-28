@@ -41,7 +41,7 @@
                         Slid Zone
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 slidZone"  ng-class="{'slidZoneSelected': slid.id == currentSlide.id, 'hide':slid.contentMap[1]==undefined}"> 
-                        <img src="{{contentMap.payload[slid.contentMap[1]].src}}" alt="{{contentMap.payload[slid.contentMap[1]].title}}" class="img-responsive">   
+                        <img ng-src="{{contentMap.payload[slid.contentMap[1]].src}}" alt="{{contentMap.payload[slid.contentMap[1]].title}}" class="img-responsive">   
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                         <textarea rows="5" type="text" ng-model="currentSlide.txt"  class="form-control" id="currentSlideText"></textarea>
                     </div>  
                     <div ng-drop="true" ng-drop-success="onDropComplete($data,$event)"  style="min-height: 100px;min-width: 100px;background-color:#cccccc;border: 5px solid #262626;">
-                        <img src="{{contentMap.payload[currentSlide.contentMap[1]].src}}" alt="{{contentMap.payload[currentSlide.contentMap[1]].title}}" class="img-responsive">    
+                        <img ng-src="{{contentMap.payload[currentSlide.contentMap[1]].src}}" alt="{{contentMap.payload[currentSlide.contentMap[1]].title}}" class="img-responsive">    
                     </div>
                 </div>
                 

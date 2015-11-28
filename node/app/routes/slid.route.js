@@ -62,6 +62,7 @@ router.post("/file-upload", multerMiddleware.single("file"), function (request, 
 
 router.get("/slids", SlidController.list);
 router.get("/resources_list", SlidController.pict);
+router.get("/loadPres", SlidController.loadPres);
 
 
 router.get("/slids/:slidId", function (request, response) {
