@@ -14,7 +14,7 @@ var _path = path.join(__dirname, CONFIG.presentationDirectory);
 var IOController = require("./app/controllers/io.controller.js");
 var app = express();
 
-app.post("/savePress", function (request, response) {
+app.post("/savePres", function (request, response) {
 	var json_string = "";
 
 	request.on("data", function (data) {

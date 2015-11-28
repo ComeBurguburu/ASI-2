@@ -28,10 +28,11 @@ SlidController.loadPres = function (request, response, callback) {
 	});
 }
 SlidController.pict = function (request, response, callback) {
-		//console.dir(callback);
+
 		SlidModel.pict(response, function (err, data) {
 			if (err) {
-				response.send(err);
+				console.error(err)
+				callback(err);
 				return;
 			}
 			response.send(data);

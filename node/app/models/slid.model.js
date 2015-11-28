@@ -168,7 +168,6 @@ SlidModel.loadPres = function (response, callback) {
 	fs.readdir(CONFIG.presentationDirectory, function (error, data_dir) {
 
 		var j = 0;
-		console.log(data_dir.length - 1);
 
 		for (i = 0; i < data_dir.length; i++) {
 			var file = path.join(CONFIG.presentationDirectory, data_dir[i]);
@@ -194,8 +193,7 @@ SlidModel.loadPres = function (response, callback) {
 
 				//	}
 				cpt++;
-				console.log(cpt);
-				if (cpt == data_dir.length - 1 || data_dir.length == 1) {
+				if (cpt == data_dir.length) {
 
 					if (slidArray != []) {
 						var obj = {
@@ -252,7 +250,7 @@ SlidModel.pict = function (response, callback) {
 				//}
 				cpt++;
 
-				if (cpt == data_dir.length - 1) {
+				if (cpt == data_dir.length) {
 					callback(null, JSON.stringify(obj));
 					return;
 				}

@@ -8,7 +8,7 @@ function commFnc($http, $q, factory) {
 		savePres: savePres
 
 	};
-	
+
 	function loadImages(presName, presID) {
 		var deferred = $q.defer();
 		$http.get('/resources_list').
@@ -26,11 +26,10 @@ function commFnc($http, $q, factory) {
 		var deferred = $q.defer();
 		$http.get('/loadPres').
 		success(function (data, status, headers, config) {
-			console.info(JSON.stringify(data));
 			deferred.resolve(data);
 		}).
 		error(function (data, status, headers, config) {
-			console.info(JSON.stringify(data));
+			console.error(JSON.stringify(data));
 			deferred.reject(status);
 			// or server returns response with an error status.
 		});
@@ -89,8 +88,20 @@ function commFnc($http, $q, factory) {
 		// deferred.reject("NULL");
 		return deferred.promise;
 	};*/
-	function savePres(presName, presID) {
+	function savePres(currentPresentation) {
 		// TODO
+		var deferred = $q.defer();
+
+		$http.post('/savePres', JSON.stringify(currentPresentation)).
+		success(function (data, status, headers, config) {
+			deferred.resolve(data);
+		}).
+		error(function (data, status, headers, config) {
+			console.error(JSON.stringify(data));
+			deferred.reject(status);
+			// or server returns response with an error status.
+		});
+		return deferred.promise;
 	};
 	return comm;
 
