@@ -14,37 +14,6 @@ var _path = path.join(__dirname, CONFIG.presentationDirectory);
 var IOController = require("./app/controllers/io.controller.js");
 var app = express();
 
-app.post("/savePres", function (request, response) {
-	var json_string = "";
-
-	request.on("data", function (data) {
-		json_string += data.toString();
-	});
-	request.on("end", function () {
-
-		var json = null;
-		try {
-			json = JSON.parse(json_string);
-			console.log("============================");
-			console.dir(json);
-			console.log("============================");
-		} catch (e) {
-
-			response.send("json corrupted");
-		}
-		if (json != null) {
-			fs.writeFile(path.join(CONFIG.presentationDirectory, json.id + ".pres.json"), json_string, function (err) {
-				if (err) {
-					response.send(err)
-				}
-				console.log(path.join(CONFIG.presentationDirectory, json.id + ".pres.json"));
-				response.send("");
-			});
-		}
-
-	});
-});
-
 // init server
 var  server  = http.createServer(app);
 server.listen(CONFIG.port);

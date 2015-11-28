@@ -17,6 +17,18 @@ SlidController.list = function (request, response, callback) {
 		response.send(data);
 	});
 }
+SlidController.savePres = function (request, response, callback) {
+	SlidModel.savePres(request, response, function (err, data) {
+		if (err) {
+			console.error(err);
+			response.send(err);
+			return;
+		}
+		response.send(data);
+	})
+}
+
+
 SlidController.loadPres = function (request, response, callback) {
 
 	SlidModel.loadPres(response, function (err, data) {
