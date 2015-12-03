@@ -29,7 +29,6 @@ function commFnc($http, $q, factory) {
 			deferred.resolve(data);
 		}).
 		error(function (data, status, headers, config) {
-			console.error(JSON.stringify(data));
 			deferred.reject(status);
 			// or server returns response with an error status.
 		});
@@ -88,20 +87,8 @@ function commFnc($http, $q, factory) {
 		// deferred.reject("NULL");
 		return deferred.promise;
 	};*/
-	function savePres(currentPresentation) {
+	function savePres(presName, presID) {
 		// TODO
-		var deferred = $q.defer();
-
-		$http.post('/savePres', JSON.stringify(currentPresentation)).
-		success(function (data, status, headers, config) {
-			deferred.resolve(data);
-		}).
-		error(function (data, status, headers, config) {
-			console.error(JSON.stringify(data));
-			deferred.reject(status);
-			// or server returns response with an error status.
-		});
-		return deferred.promise;
 	};
 	return comm;
 

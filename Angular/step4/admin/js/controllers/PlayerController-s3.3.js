@@ -1,17 +1,12 @@
-
 angular.module('adminApp').controller('playerCtrl',playerCtrlFnt);
 
 playerCtrlFnt.$inject=['$scope','$log','$window','comm','$timeout'];
 
 function playerCtrlFnt($scope, $log, $window, comm, $timeout){
 
-
 	var stopPlaying = false;
-
 	var promise;
-
 	var currentSlideId;
-
 
 	$scope.pause=function(){
 		console.log("Pause function called");
