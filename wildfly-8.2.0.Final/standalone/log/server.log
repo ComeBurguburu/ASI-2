@@ -2391,10 +2391,17 @@ JBAS014775:    New missing/unsatisfied dependencies:
 JBAS014777:   Services which failed to start:      service jboss.deployment.subunit."WatcherAuthJ2E.ear"."BackAuthProject.jar".POST_MODULE
 
 2015-11-24 20:57:38,042 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
+<<<<<<< Updated upstream
 2015-12-01 12:25:48,859 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
 2015-12-01 12:25:49,098 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
 2015-12-01 12:25:49,167 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
 2015-12-01 12:25:49,167 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+=======
+2015-12-01 12:11:45,200 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-12-01 12:11:45,443 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-12-01 12:11:45,516 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-12-01 12:11:45,532 DEBUG [org.jboss.as.config] (MSC service thread 1-5) Configured system properties:
+>>>>>>> Stashed changes
 	awt.toolkit = sun.awt.windows.WToolkit
 	file.encoding = Cp1252
 	file.encoding.pkg = sun.io
@@ -2464,9 +2471,15 @@ JBAS014777:   Services which failed to start:      service jboss.deployment.subu
 	os.name = Windows 10
 	os.version = 10.0
 	path.separator = ;
+<<<<<<< Updated upstream
 	program.name = JBossTools: WildFly 8.2 Runtime Server
 	sun.arch.data.model = 32
 	sun.boot.class.path = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\classes
+=======
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 32
+	sun.boot.class.path = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\classes;C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jfr.jar
+>>>>>>> Stashed changes
 	sun.boot.library.path = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\bin
 	sun.cpu.endian = little
 	sun.cpu.isalist = pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86
@@ -2487,6 +2500,7 @@ JBAS014777:   Services which failed to start:      service jboss.deployment.subu
 	user.script = 
 	user.timezone = Europe/Paris
 	user.variant = 
+<<<<<<< Updated upstream
 2015-12-01 12:25:49,167 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.2 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
 2015-12-01 12:25:50,618 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
 2015-12-01 12:25:50,643 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
@@ -2613,3 +2627,1798 @@ JBAS014775:    New missing/unsatisfied dependencies:
 JBAS014777:   Services which failed to start:      service jboss.deployment.subunit."WatcherAuthJ2E.ear"."BackAuthProject.jar".POST_MODULE
 
 2015-12-01 12:25:58,866 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
+=======
+2015-12-01 12:11:45,532 DEBUG [org.jboss.as.config] (MSC service thread 1-5) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 -Xbootclasspath/a:C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jfr.jar 
+2015-12-01 12:11:46,981 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment module.xml
+2015-12-01 12:11:46,991 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment mysql-connector-java-5.1.33.jar
+2015-12-01 12:11:46,998 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
+2015-12-01 12:11:47,003 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 23) JBAS014613: Operation ("add") failed - address: ([("deployment" => "module.xml")]) - failure description: "JBAS014803: Duplicate resource [(\"deployment\" => \"module.xml\")]"
+2015-12-01 12:11:47,003 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) "JBAS014784: Failed executing subsystem deployment-scanner boot operations"
+2015-12-01 12:11:47,003 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("parallel-subsystem-boot") failed - address: ([]) - failure description: "\"JBAS014784: Failed executing subsystem deployment-scanner boot operations\""
+2015-12-01 12:11:47,003 FATAL [org.jboss.as.server] (Controller Boot Thread) JBAS015957: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2015-12-01 12:11:47,019 INFO  [org.jboss.as] (MSC service thread 1-1) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 8ms
+2015-12-01 12:13:18,831 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-12-01 12:13:19,081 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-12-01 12:13:19,132 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-12-01 12:13:19,148 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files (x86)\Java\jdk1.8.0_65\jre
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files (x86)\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_66/bin/server;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Apache\apache-maven-3.3.3\bin;C:\Program Files\MongoDB\Server\3.0\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_65-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_65
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.65-b01
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 32
+	sun.boot.class.path = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\classes;C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jfr.jar
+	sun.boot.library.path = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone-full.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-12-01 12:13:19,148 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 -Xbootclasspath/a:C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jfr.jar 
+2015-12-01 12:13:20,644 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment module.xml
+2015-12-01 12:13:20,648 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment mysql-connector-java-5.1.33.jar
+2015-12-01 12:13:20,648 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
+2015-12-01 12:13:20,664 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-12-01 12:13:20,679 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.3.0.Final
+2015-12-01 12:13:20,695 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.3.0.Final
+2015-12-01 12:13:20,749 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-12-01 12:13:20,764 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-12-01 12:13:20,780 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-12-01 12:13:20,780 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-12-01 12:13:20,795 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-3) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-12-01 12:13:20,795 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010417: Started Driver service with driver-name = h2
+2015-12-01 12:13:20,811 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-12-01 12:13:20,827 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-12-01 12:13:20,843 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+2015-12-01 12:13:20,848 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-12-01 12:13:20,852 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-12-01 12:13:20,859 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-12-01 12:13:20,869 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-12-01 12:13:20,916 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-12-01 12:13:20,947 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-12-01 12:13:20,950 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017502: Undertow 1.1.0.Final starting
+2015-12-01 12:13:21,070 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
+2015-12-01 12:13:21,341 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017525: Started server default-server.
+2015-12-01 12:13:21,364 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017531: Host default-host starting
+2015-12-01 12:13:21,373 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.6.Final
+2015-12-01 12:13:21,504 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
+2015-12-01 12:13:21,508 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "module.xml" (runtime-name: "module.xml")
+2015-12-01 12:13:21,508 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
+2015-12-01 12:13:21,776 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-12-01 12:13:22,157 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-12-01 12:13:22,171 WARN  [org.jboss.as.messaging] (MSC service thread 1-5) JBAS011600: AIO wasn't located on this platform, it will fall back to using pure Java NIO. If your platform is Linux, install LibAIO to enable the AIO journal
+2015-12-01 12:13:22,200 WARN  [jacorb.codeset] (MSC service thread 1-8) Warning - unknown codeset (Cp1252) - defaulting to ISO-8859-1
+2015-12-01 12:13:22,208 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.ws.config: org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1904) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_65]
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.getProvider(ProviderList.java:233) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.getIndex(ProviderList.java:263) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.getProviderConfig(ProviderList.java:247) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.getProvider(ProviderList.java:253) [rt.jar:1.8.0_65]
+	at java.security.Security.getProvider(Security.java:468) [rt.jar:1.8.0_65]
+	at org.apache.ws.security.WSSConfig.addJceProvider(WSSConfig.java:865)
+	at org.apache.ws.security.WSSConfig$5.run(WSSConfig.java:446)
+	at org.apache.ws.security.WSSConfig$5.run(WSSConfig.java:444)
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at org.apache.ws.security.WSSConfig.init(WSSConfig.java:443)
+	at org.jboss.wsf.stack.cxf.config.CXFStackConfig.<init>(CXFStackConfigFactory.java:61)
+	at org.jboss.wsf.stack.cxf.config.CXFStackConfigFactory.getStackConfig(CXFStackConfigFactory.java:45)
+	at org.jboss.ws.common.management.AbstractServerConfig.create(AbstractServerConfig.java:272)
+	at org.jboss.as.webservices.config.ServerConfigImpl.create(ServerConfigImpl.java:62)
+	at org.jboss.as.webservices.service.ServerConfigService.start(ServerConfigService.java:74)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	... 3 more
+
+2015-12-01 12:13:22,243 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221000: live server is starting with configuration HornetQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingjournal,bindingsDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingbindings,largeMessagesDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messaginglargemessages,pagingDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingpaging)
+2015-12-01 12:13:22,245 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221006: Waiting to obtain live lock
+2015-12-01 12:13:22,260 INFO  [org.jboss.as.jacorb] (MSC service thread 1-8) JBAS016330: CORBA ORB Service started
+2015-12-01 12:13:22,283 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221013: Using NIO Journal
+2015-12-01 12:13:22,325 INFO  [io.netty.util.internal.PlatformDependent] (ServerService Thread Pool -- 56) Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+2015-12-01 12:13:22,360 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support CORE
+2015-12-01 12:13:22,368 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support AMQP
+2015-12-01 12:13:22,372 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support STOMP
+2015-12-01 12:13:22,396 INFO  [org.jboss.as.jacorb] (MSC service thread 1-8) JBAS016328: CORBA Naming Service started
+2015-12-01 12:13:22,451 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221034: Waiting to obtain live lock
+2015-12-01 12:13:22,451 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221035: Live Server Obtained live lock
+2015-12-01 12:13:22,666 INFO  [org.jboss.messaging] (MSC service thread 1-5) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor-throughput acceptor
+2015-12-01 12:13:22,666 INFO  [org.jboss.messaging] (MSC service thread 1-4) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor acceptor
+2015-12-01 12:13:22,929 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221007: Server is now live
+2015-12-01 12:13:22,929 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221001: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [a75387c8-8228-11e5-88e0-35e23455c819] 
+2015-12-01 12:13:22,952 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 56) JBAS011601: Bound messaging object to jndi name java:/ConnectionFactory
+2015-12-01 12:13:22,983 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 60) HQ221003: trying to deploy queue jms.queue.MyQueue
+2015-12-01 12:13:22,998 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 60) JBAS011601: Bound messaging object to jndi name java:/jms/queue/watcherqueue
+2015-12-01 12:13:22,998 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 61) HQ221003: trying to deploy queue jms.topic.MyTopic
+2015-12-01 12:13:23,014 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 61) JBAS011601: Bound messaging object to jndi name java:/jms/watcherAuthJMS
+2015-12-01 12:13:23,014 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 59) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-12-01 12:13:23,014 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 58) HQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2015-12-01 12:13:23,014 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 58) JBAS011601: Bound messaging object to jndi name java:/jms/queue/ExpiryQueue
+2015-12-01 12:13:23,014 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 57) HQ221003: trying to deploy queue jms.queue.DLQ
+2015-12-01 12:13:23,014 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 57) JBAS011601: Bound messaging object to jndi name java:/jms/queue/DLQ
+2015-12-01 12:13:23,014 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) JBAS010406: Registered connection factory java:/JmsXA
+2015-12-01 12:13:23,052 INFO  [org.hornetq.ra] (MSC service thread 1-1) HornetQ resource adaptor started
+2015-12-01 12:13:23,052 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-1) IJ020002: Deployed: file://RaActivatorhornetq-ra
+2015-12-01 12:13:23,052 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-8) JBAS010401: Bound JCA ConnectionFactory [java:/JmsXA]
+2015-12-01 12:13:23,052 INFO  [org.jboss.as.messaging] (MSC service thread 1-8) JBAS011601: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-12-01 12:13:23,052 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "module.xml")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"module.xml\".INSTALL"],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+}}
+2015-12-01 12:13:23,067 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "mysql-connector-java-5.1.33.jar")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"mysql-connector-java-5.1.33.jar\".INSTALL"],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+}}
+2015-12-01 12:13:23,067 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "AppDS")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => [
+    "jboss.data-source.java:/jdbc/AppDS is missing [jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1]",
+    "jboss.driver-demander.java:/jdbc/AppDS is missing [jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1]"
+]}
+2015-12-01 12:13:23,067 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "webservices")]) - failure description: {"JBAS014671: Failed services" => {"jboss.ws.config" => "org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+    Caused by: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB"}}
+2015-12-01 12:13:23,067 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "AppDS")
+]) - failure description: {
+    "JBAS014771: Services with missing/unavailable dependencies" => [
+        "jboss.data-source.java:/jdbc/AppDS is missing [jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1]",
+        "jboss.driver-demander.java:/jdbc/AppDS is missing [jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1]"
+    ],
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.data-source.reference-factory.AppDS",
+            "jboss.naming.context.java.jdbc.AppDS"
+        ],
+        "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+    }
+}
+2015-12-01 12:13:23,157 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "mysql-connector-java-5.1.33.jar" (runtime-name : "mysql-connector-java-5.1.33.jar")
+2015-12-01 12:13:23,157 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "module.xml" (runtime-name : "module.xml")
+2015-12-01 12:13:23,159 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1 (missing) dependents: [service jboss.driver-demander.java:/jdbc/AppDS, service jboss.data-source.java:/jdbc/AppDS] 
+JBAS014777:   Services which failed to start:      service jboss.ws.config: org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+
+2015-12-01 12:13:23,235 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-12-01 12:13:23,235 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-12-01 12:13:23,235 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4634ms - Started 262 of 318 services (7 services failed or missing dependencies, 99 services are lazy, passive or on-demand)
+2015-12-01 12:13:23,411 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 5.1.3.Final
+2015-12-01 12:13:23,469 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment module.xml (runtime-name: module.xml) in 85ms
+2015-12-01 12:13:23,472 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment mysql-connector-java-5.1.33.jar (runtime-name: mysql-connector-java-5.1.33.jar) in 87ms
+2015-12-01 12:13:23,600 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
+2015-12-01 12:13:23,600 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "module.xml" (runtime-name: "module.xml")
+2015-12-01 12:13:23,600 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.naming.context.java.app."module.xml" (missing) dependents: [service jboss.deployment.unit."module.xml".INSTALL] 
+      service jboss.naming.context.java.app."mysql-connector-java-5.1.33" (missing) dependents: [service jboss.deployment.unit."mysql-connector-java-5.1.33.jar".INSTALL] 
+      service jboss.naming.context.java.module."module.xml"."module.xml" (missing) dependents: [service jboss.deployment.unit."module.xml".INSTALL] 
+      service jboss.naming.context.java.module."mysql-connector-java-5.1.33"."mysql-connector-java-5.1.33" (missing) dependents: [service jboss.deployment.unit."mysql-connector-java-5.1.33.jar".INSTALL] 
+JBAS014777:   Services which failed to start:      service jboss.ws.config: org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+
+2015-12-01 12:13:23,986 ERROR [org.xnio.listener] (XNIO-1 I/O-2) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:13:28,178 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
+2015-12-01 12:13:29,348 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:13:34,757 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:13:40,122 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:13:45,464 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:13:50,848 ERROR [org.xnio.listener] (XNIO-1 I/O-2) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:13:56,183 ERROR [org.xnio.listener] (XNIO-1 I/O-2) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:14:01,555 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:14:06,891 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:14:54,210 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-12-01 12:14:54,446 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-12-01 12:14:54,515 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-12-01 12:14:54,515 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files (x86)\Java\jdk1.8.0_65\jre
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files (x86)\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_66/bin/server;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Apache\apache-maven-3.3.3\bin;C:\Program Files\MongoDB\Server\3.0\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_65-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_65
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.65-b01
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 32
+	sun.boot.class.path = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\classes;C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jfr.jar
+	sun.boot.library.path = C:\Program Files (x86)\Java\jdk1.8.0_65\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone-full.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-12-01 12:14:54,531 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 -Xbootclasspath/a:C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_65\jre\lib\jfr.jar 
+2015-12-01 12:14:56,051 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment module.xml
+2015-12-01 12:14:56,054 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment mysql-connector-java-5.1.33.jar
+2015-12-01 12:14:56,056 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
+2015-12-01 12:14:56,084 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-12-01 12:14:56,109 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.3.0.Final
+2015-12-01 12:14:56,119 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.3.0.Final
+2015-12-01 12:14:56,166 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-12-01 12:14:56,166 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-12-01 12:14:56,179 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-12-01 12:14:56,189 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-12-01 12:14:56,196 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-12-01 12:14:56,198 INFO  [org.jboss.as.security] (MSC service thread 1-8) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-12-01 12:14:56,212 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-12-01 12:14:56,212 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-12-01 12:14:56,296 INFO  [org.jboss.as.naming] (MSC service thread 1-7) JBAS011802: Starting Naming Service
+2015-12-01 12:14:56,297 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-12-01 12:14:56,310 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-12-01 12:14:56,325 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017502: Undertow 1.1.0.Final starting
+2015-12-01 12:14:56,335 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-12-01 12:14:56,342 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-12-01 12:14:56,444 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-12-01 12:14:56,455 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) JBAS010417: Started Driver service with driver-name = h2
+2015-12-01 12:14:56,616 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final/welcome-content
+2015-12-01 12:14:56,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017525: Started server default-server.
+2015-12-01 12:14:56,676 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017531: Host default-host starting
+2015-12-01 12:14:56,686 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 4.0.6.Final
+2015-12-01 12:14:57,127 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\deployments
+2015-12-01 12:14:57,132 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "module.xml" (runtime-name: "module.xml")
+2015-12-01 12:14:57,132 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
+2015-12-01 12:14:57,700 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-12-01 12:14:57,893 WARN  [jacorb.codeset] (MSC service thread 1-7) Warning - unknown codeset (Cp1252) - defaulting to ISO-8859-1
+2015-12-01 12:14:57,915 WARN  [org.jboss.as.messaging] (MSC service thread 1-2) JBAS011600: AIO wasn't located on this platform, it will fall back to using pure Java NIO. If your platform is Linux, install LibAIO to enable the AIO journal
+2015-12-01 12:14:57,953 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-12-01 12:14:57,977 INFO  [org.jboss.as.jacorb] (MSC service thread 1-7) JBAS016330: CORBA ORB Service started
+2015-12-01 12:14:58,005 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.ws.config: org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1904) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_65]
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.getProvider(ProviderList.java:233) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.getIndex(ProviderList.java:263) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.getProviderConfig(ProviderList.java:247) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.getProvider(ProviderList.java:253) [rt.jar:1.8.0_65]
+	at java.security.Security.getProvider(Security.java:468) [rt.jar:1.8.0_65]
+	at org.apache.ws.security.WSSConfig.addJceProvider(WSSConfig.java:865)
+	at org.apache.ws.security.WSSConfig$5.run(WSSConfig.java:446)
+	at org.apache.ws.security.WSSConfig$5.run(WSSConfig.java:444)
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at org.apache.ws.security.WSSConfig.init(WSSConfig.java:443)
+	at org.jboss.wsf.stack.cxf.config.CXFStackConfig.<init>(CXFStackConfigFactory.java:61)
+	at org.jboss.wsf.stack.cxf.config.CXFStackConfigFactory.getStackConfig(CXFStackConfigFactory.java:45)
+	at org.jboss.ws.common.management.AbstractServerConfig.create(AbstractServerConfig.java:272)
+	at org.jboss.as.webservices.config.ServerConfigImpl.create(ServerConfigImpl.java:62)
+	at org.jboss.as.webservices.service.ServerConfigService.start(ServerConfigService.java:74)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	... 3 more
+
+2015-12-01 12:14:58,015 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221000: live server is starting with configuration HornetQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingjournal,bindingsDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingbindings,largeMessagesDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messaginglargemessages,pagingDirectory=C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\messagingpaging)
+2015-12-01 12:14:58,017 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221006: Waiting to obtain live lock
+2015-12-01 12:14:58,072 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221013: Using NIO Journal
+2015-12-01 12:14:58,151 INFO  [io.netty.util.internal.PlatformDependent] (ServerService Thread Pool -- 56) Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+2015-12-01 12:14:58,179 INFO  [org.jboss.as.jacorb] (MSC service thread 1-6) JBAS016328: CORBA Naming Service started
+2015-12-01 12:14:58,185 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support CORE
+2015-12-01 12:14:58,192 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support AMQP
+2015-12-01 12:14:58,195 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support STOMP
+2015-12-01 12:14:58,263 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221034: Waiting to obtain live lock
+2015-12-01 12:14:58,263 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221035: Live Server Obtained live lock
+2015-12-01 12:14:58,570 INFO  [org.jboss.messaging] (MSC service thread 1-7) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor-throughput acceptor
+2015-12-01 12:14:58,570 INFO  [org.jboss.messaging] (MSC service thread 1-6) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor acceptor
+2015-12-01 12:14:58,758 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221007: Server is now live
+2015-12-01 12:14:58,762 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221001: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [a75387c8-8228-11e5-88e0-35e23455c819] 
+2015-12-01 12:14:58,762 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221003: trying to deploy queue jms.topic.MyTopic
+2015-12-01 12:14:58,770 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 56) JBAS011601: Bound messaging object to jndi name java:/jms/watcherAuthJMS
+2015-12-01 12:14:58,811 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 58) HQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2015-12-01 12:14:58,827 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 58) JBAS011601: Bound messaging object to jndi name java:/jms/queue/ExpiryQueue
+2015-12-01 12:14:58,827 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 59) HQ221003: trying to deploy queue jms.queue.MyQueue
+2015-12-01 12:14:58,831 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 59) JBAS011601: Bound messaging object to jndi name java:/jms/queue/watcherqueue
+2015-12-01 12:14:58,851 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 61) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-12-01 12:14:58,851 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 60) HQ221003: trying to deploy queue jms.queue.DLQ
+2015-12-01 12:14:58,855 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 60) JBAS011601: Bound messaging object to jndi name java:/jms/queue/DLQ
+2015-12-01 12:14:58,855 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 57) JBAS011601: Bound messaging object to jndi name java:/ConnectionFactory
+2015-12-01 12:14:58,871 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) JBAS010406: Registered connection factory java:/JmsXA
+2015-12-01 12:14:58,911 INFO  [org.hornetq.ra] (MSC service thread 1-1) HornetQ resource adaptor started
+2015-12-01 12:14:58,911 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-1) IJ020002: Deployed: file://RaActivatorhornetq-ra
+2015-12-01 12:14:58,915 INFO  [org.jboss.as.messaging] (MSC service thread 1-4) JBAS011601: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-12-01 12:14:58,915 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) JBAS010401: Bound JCA ConnectionFactory [java:/JmsXA]
+2015-12-01 12:14:58,919 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "module.xml")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"module.xml\".INSTALL"],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+}}
+2015-12-01 12:14:58,919 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "mysql-connector-java-5.1.33.jar")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"mysql-connector-java-5.1.33.jar\".INSTALL"],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+}}
+2015-12-01 12:14:58,919 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "webservices")]) - failure description: {"JBAS014671: Failed services" => {"jboss.ws.config" => "org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+    Caused by: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB"}}
+2015-12-01 12:14:58,923 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "AppDS")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => [
+    "jboss.data-source.java:/jdbc/AppDS is missing [jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1]",
+    "jboss.driver-demander.java:/jdbc/AppDS is missing [jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1]"
+]}
+2015-12-01 12:14:58,923 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "AppDS")
+]) - failure description: {
+    "JBAS014771: Services with missing/unavailable dependencies" => [
+        "jboss.data-source.java:/jdbc/AppDS is missing [jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1]",
+        "jboss.driver-demander.java:/jdbc/AppDS is missing [jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1]"
+    ],
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.data-source.reference-factory.AppDS",
+            "jboss.naming.context.java.jdbc.AppDS"
+        ],
+        "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+    }
+}
+2015-12-01 12:14:58,983 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "mysql-connector-java-5.1.33.jar" (runtime-name : "mysql-connector-java-5.1.33.jar")
+2015-12-01 12:14:58,987 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "module.xml" (runtime-name : "module.xml")
+2015-12-01 12:14:58,987 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1 (missing) dependents: [service jboss.driver-demander.java:/jdbc/AppDS, service jboss.data-source.java:/jdbc/AppDS] 
+JBAS014777:   Services which failed to start:      service jboss.ws.config: org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+
+2015-12-01 12:14:59,071 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-12-01 12:14:59,075 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-12-01 12:14:59,075 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 5125ms - Started 262 of 318 services (7 services failed or missing dependencies, 99 services are lazy, passive or on-demand)
+2015-12-01 12:14:59,247 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 5.1.3.Final
+2015-12-01 12:14:59,315 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment module.xml (runtime-name: module.xml) in 96ms
+2015-12-01 12:14:59,323 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment mysql-connector-java-5.1.33.jar (runtime-name: mysql-connector-java-5.1.33.jar) in 104ms
+2015-12-01 12:14:59,379 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:14:59,443 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
+2015-12-01 12:14:59,447 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "module.xml" (runtime-name: "module.xml")
+2015-12-01 12:14:59,447 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.naming.context.java.app."module.xml" (missing) dependents: [service jboss.deployment.unit."module.xml".INSTALL] 
+      service jboss.naming.context.java.app."mysql-connector-java-5.1.33" (missing) dependents: [service jboss.deployment.unit."mysql-connector-java-5.1.33.jar".INSTALL] 
+      service jboss.naming.context.java.module."module.xml"."module.xml" (missing) dependents: [service jboss.deployment.unit."module.xml".INSTALL] 
+      service jboss.naming.context.java.module."mysql-connector-java-5.1.33"."mysql-connector-java-5.1.33" (missing) dependents: [service jboss.deployment.unit."mysql-connector-java-5.1.33.jar".INSTALL] 
+JBAS014777:   Services which failed to start:      service jboss.ws.config: org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+
+2015-12-01 12:15:04,017 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
+2015-12-01 12:15:04,717 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:15:10,085 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:15:15,501 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:15:20,899 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:15:26,379 ERROR [org.xnio.listener] (XNIO-1 I/O-2) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:15:31,733 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:15:37,103 ERROR [org.xnio.listener] (XNIO-1 I/O-2) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:15:42,492 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:15:42,636 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
+2015-12-01 12:15:42,724 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-1) JBAS014613: Operation ("add") failed - address: ([{"deployment" => "mysql-connector-java-5.1.33.jar"}]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"mysql-connector-java-5.1.33.jar\".INSTALL"],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+}}
+2015-12-01 12:15:42,724 ERROR [org.jboss.as.server] (XNIO-1 task-1) JBAS015870: Deploy of deployment "mysql-connector-java-5.1.33.jar" was rolled back with the following failure message: 
+{"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"mysql-connector-java-5.1.33.jar\".INSTALL"],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+}}
+2015-12-01 12:15:42,736 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment mysql-connector-java-5.1.33.jar (runtime-name: mysql-connector-java-5.1.33.jar) in 11ms
+2015-12-01 12:15:42,736 INFO  [org.jboss.as.controller] (XNIO-1 task-1) JBAS014774: Service status report
+JBAS014776:    Newly corrected services:
+      service jboss.naming.context.java.app."module.xml" (no longer required)
+      service jboss.naming.context.java.module."module.xml"."module.xml" (no longer required)
+JBAS014777:   Services which failed to start:      service jboss.ws.config: org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+
+2015-12-01 12:15:46,121 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
+2015-12-01 12:15:46,190 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-4) JBAS014613: Operation ("add") failed - address: ([{"deployment" => "mysql-connector-java-5.1.33.jar"}]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"mysql-connector-java-5.1.33.jar\".INSTALL"],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+}}
+2015-12-01 12:15:46,190 ERROR [org.jboss.as.server] (XNIO-1 task-4) JBAS015870: Deploy of deployment "mysql-connector-java-5.1.33.jar" was rolled back with the following failure message: 
+{"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"mysql-connector-java-5.1.33.jar\".INSTALL"],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+}}
+2015-12-01 12:15:46,202 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment mysql-connector-java-5.1.33.jar (runtime-name: mysql-connector-java-5.1.33.jar) in 8ms
+2015-12-01 12:15:46,202 INFO  [org.jboss.as.controller] (XNIO-1 task-4) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.ws.config: org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+
+2015-12-01 12:15:46,206 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "mysql-connector-java-5.1.33.jar" (runtime-name: "mysql-connector-java-5.1.33.jar")
+2015-12-01 12:15:46,286 ERROR [org.jboss.as.controller.management-operation] (XNIO-1 task-2) JBAS014613: Operation ("add") failed - address: ([{"deployment" => "mysql-connector-java-5.1.33.jar"}]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"mysql-connector-java-5.1.33.jar\".INSTALL"],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+}}
+2015-12-01 12:15:46,286 ERROR [org.jboss.as.server] (XNIO-1 task-2) JBAS015870: Deploy of deployment "mysql-connector-java-5.1.33.jar" was rolled back with the following failure message: 
+{"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"mysql-connector-java-5.1.33.jar\".INSTALL"],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.mysql-connector-java-5_1_33_jar_com_mysql_jdbc_Driver_5_1"]
+}}
+2015-12-01 12:15:46,298 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment mysql-connector-java-5.1.33.jar (runtime-name: mysql-connector-java-5.1.33.jar) in 13ms
+2015-12-01 12:15:46,302 INFO  [org.jboss.as.controller] (XNIO-1 task-2) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.ws.config: org.jboss.msc.service.StartException in service jboss.ws.config: Failed to start service
+
+2015-12-01 12:15:47,934 ERROR [org.xnio.listener] (XNIO-1 I/O-2) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:15:53,357 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:15:58,757 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:16:04,154 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:16:09,493 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:16:14,862 ERROR [org.xnio.listener] (XNIO-1 I/O-1) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source) [:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:16:20,202 ERROR [org.xnio.listener] (XNIO-1 I/O-2) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: Could not initialize class sun.security.ec.CurveDB
+	at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+	at sun.security.ec.SunEC.<init>(SunEC.java:76)
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source) [:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) [rt.jar:1.8.0_65]
+	at java.lang.Class.newInstance(Class.java:442) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.loadAll(ProviderList.java:282) [rt.jar:1.8.0_65]
+	at sun.security.jca.ProviderList.removeInvalid(ProviderList.java:299) [rt.jar:1.8.0_65]
+	at sun.security.jca.Providers.getFullProviderList(Providers.java:173) [rt.jar:1.8.0_65]
+	at java.security.Security.getProviders(Security.java:452) [rt.jar:1.8.0_65]
+	at org.xnio.sasl.SaslUtils.getFactories(SaslUtils.java:121) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.sasl.SaslUtils.getSaslServerFactories(SaslUtils.java:75) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.initialiseCapabilities(ServerConnectionOpenListener.java:165) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.sendCapabilities(ServerConnectionOpenListener.java:423) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:263) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.jboss.remoting3.remote.ServerConnectionOpenListener$Initial.handleEvent(ServerConnectionOpenListener.java:139) [jboss-remoting-4.0.6.Final.jar:4.0.6.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel.handleReadable(TranslatingSuspendableChannel.java:199) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.channels.TranslatingSuspendableChannel$1.handleEvent(TranslatingSuspendableChannel.java:113) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539)
+
+2015-12-01 12:17:27,092 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-12-01 12:17:27,392 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-12-01 12:17:27,461 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-12-01 12:17:27,461 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 51.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.7.0_80\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.7.0_80\jre
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_66/bin/server;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Apache\apache-maven-3.3.3\bin;C:\Program Files\MongoDB\Server\3.0\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.7.0_80-b15
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.7
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.7.0_80
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.7
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 24.80-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 8.1
+	os.version = 6.3
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_80\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.7.0_80\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-12-01 12:17:27,461 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-12-01 12:17:28,841 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment module.xml
+2015-12-01 12:17:28,846 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment mysql-connector-java-5.1.33.jar
+2015-12-01 12:17:28,846 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
+2015-12-01 12:17:28,878 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("deployment" => "mysql-connector-java-5.1.33.jar")]) - failure description: "JBAS014803: Duplicate resource [(\"deployment\" => \"mysql-connector-java-5.1.33.jar\")]"
+2015-12-01 12:17:28,878 FATAL [org.jboss.as.server] (Controller Boot Thread) JBAS015957: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2015-12-01 12:17:28,894 INFO  [org.jboss.as] (MSC service thread 1-2) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 6ms
+2015-12-01 12:18:27,151 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-12-01 12:18:27,520 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-12-01 12:18:27,587 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-12-01 12:18:27,593 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 51.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.7.0_80\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.7.0_80\jre
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_66/bin/server;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Apache\apache-maven-3.3.3\bin;C:\Program Files\MongoDB\Server\3.0\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.7.0_80-b15
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.7
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.7.0_80
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.7
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 24.80-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 8.1
+	os.version = 6.3
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_80\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.7.0_80\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-12-01 12:18:27,595 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-12-01 12:18:28,984 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
+2015-12-01 12:18:29,014 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("deployment" => "mysql-connector-java-5.1.33.jar")]) - failure description: "JBAS014803: Duplicate resource [(\"deployment\" => \"mysql-connector-java-5.1.33.jar\")]"
+2015-12-01 12:18:29,017 FATAL [org.jboss.as.server] (Controller Boot Thread) JBAS015957: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2015-12-01 12:18:29,021 INFO  [org.jboss.as] (MSC service thread 1-4) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 1ms
+2015-12-01 12:19:18,322 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-12-01 12:19:18,614 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-12-01 12:19:18,683 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-12-01 12:19:18,698 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 51.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.7.0_80\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.7.0_80\jre
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_66/bin/server;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Apache\apache-maven-3.3.3\bin;C:\Program Files\MongoDB\Server\3.0\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.7.0_80-b15
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.7
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.7.0_80
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.7
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 24.80-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 8.1
+	os.version = 6.3
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_80\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.7.0_80\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-12-01 12:19:18,698 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-12-01 12:19:20,296 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found WatcherAuthJ2E.ear in deployment directory. To trigger deployment create a file called WatcherAuthJ2E.ear.dodeploy
+2015-12-01 12:19:20,314 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("deployment" => "mysql-connector-java-5.1.33.jar")]) - failure description: "JBAS014803: Duplicate resource [(\"deployment\" => \"mysql-connector-java-5.1.33.jar\")]"
+2015-12-01 12:19:20,314 FATAL [org.jboss.as.server] (Controller Boot Thread) JBAS015957: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2015-12-01 12:19:20,330 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 4ms
+2015-12-01 12:20:14,903 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-12-01 12:20:15,367 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-12-01 12:20:15,463 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-12-01 12:20:15,472 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 51.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.7.0_80\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.7.0_80\jre
+	java.io.tmpdir = C:\Users\CME~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_66/bin/server;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Apache\apache-maven-3.3.3\bin;C:\Program Files\MongoDB\Server\3.0\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Users\c“me\AppData\Roaming\npm;C:\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.7.0_80-b15
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.7
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.7.0_80
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.7
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 24.80-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final
+	jboss.host.name = pc-câme
+	jboss.modules.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = pc-câme
+	jboss.qualified.host.name = pc-câme
+	jboss.server.base.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = pc-câme
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 8.1
+	os.version = 6.3
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.0 Runtime Server
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_80\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.7.0_80\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\côme\Documents\GitHub\ASI-2\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\côme
+	user.language = fr
+	user.name = c“me
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2015-12-01 12:20:15,476 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.0 Runtime Server -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/côme/Documents/GitHub/ASI-2/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=Cp1252 
+2015-12-01 12:20:16,795 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment module.xml
+2015-12-01 12:20:16,812 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment mysql-connector-java-5.1.33.jar
+2015-12-01 12:20:16,812 WARN  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015002: Deployment of 'WatcherAuthJ2E.ear' requested, but the deployment is not present
+2015-12-01 12:20:16,828 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("deployment" => "mysql-connector-java-5.1.33.jar")]) - failure description: "JBAS014803: Duplicate resource [(\"deployment\" => \"mysql-connector-java-5.1.33.jar\")]"
+2015-12-01 12:20:16,828 FATAL [org.jboss.as.server] (Controller Boot Thread) JBAS015957: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2015-12-01 12:20:16,843 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 1ms
+>>>>>>> Stashed changes

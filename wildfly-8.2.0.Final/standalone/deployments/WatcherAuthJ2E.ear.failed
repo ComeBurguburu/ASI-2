@@ -1,4 +1,0 @@
-"{\"JBAS014671: Failed services\" => {\"jboss.deployment.subunit.\\\"WatcherAuthJ2E.ear\\\".\\\"BackAuthProject.jar\\\".POST_MODULE\" => \"org.jboss.msc.service.StartException in service jboss.deployment.subunit.\\\"WatcherAuthJ2E.ear\\\".\\\"BackAuthProject.jar\\\".POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of subdeployment \\\"BackAuthProject.jar\\\" of deployment \\\"WatcherAuthJ2E.ear\\\"
-    Caused by: java.lang.RuntimeException: JBAS018757: Error getting reflective information for class ejb.AuthWatcherMsgDrivenEJB with ClassLoader ModuleClassLoader for Module \\\"deployment.WatcherAuthJ2E.ear.BackAuthProject.jar:main\\\" from Service Module Loader
-    Caused by: java.lang.NoClassDefFoundError: Lejb/MessageSenderQueueLocal;
-    Caused by: java.lang.ClassNotFoundException: ejb.MessageSenderQueueLocal from [Module \\\"deployment.WatcherAuthJ2E.ear.BackAuthProject.jar:main\\\" from Service Module Loader]\"}}"
