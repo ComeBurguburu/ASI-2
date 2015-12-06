@@ -87,8 +87,8 @@ function commFnc($http, $q, factory) {
 		// deferred.reject("NULL");
 		return deferred.promise;
 	};*/
-	function savePres(presName, presID) {
- 		// TODO
+	function savePres(currentPresentation) {
+ 		
 		var deferred = $q.defer();
 
 		$http.post('/savePres', JSON.stringify(currentPresentation)).

@@ -226,8 +226,8 @@ SlidModel.savePres = function (request, response) {
 		try {
 			json = JSON.parse(json_string);
 		} catch (e) {
-
-			response.send("json corrupted");
+			console.log(":"+json_string);
+			response.send("json corrupted: "+json_string);
 		}
 		if (json != null) {
 			fs.writeFile(path.join(CONFIG.presentationDirectory, json.id + ".pres.json"), json_string, function (err) {

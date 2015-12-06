@@ -107,7 +107,7 @@ function playerCtrlFnt($scope, $log, $window, comm, $timeout){
 
 	$scope.savePres=function(){
 		console.log("SavePres function called");
-		comm.savePres();
+		comm.savePres($scope.currentPresenation);
 	}
 
 	$scope.remove=function(){
