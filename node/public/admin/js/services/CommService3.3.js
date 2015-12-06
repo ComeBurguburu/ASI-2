@@ -88,21 +88,20 @@ function commFnc($http, $q, factory) {
 		return deferred.promise;
 	};*/
 	function savePres(presName, presID) {
-		function savePres(presName, presID) {
  		// TODO
--		var deferred = $q.defer();
--
--		$http.post('/savePres', JSON.stringify(currentPresentation)).
--		success(function (data, status, headers, config) {
--			deferred.resolve(data);
--		}).
--		error(function (data, status, headers, config) {
--			console.error(JSON.stringify(data));
--			deferred.reject(status);
--			// or server returns response with an error status.
--		});
--		return deferred.promise;
- 	};
- 	return comm;
+		var deferred = $q.defer();
+
+		$http.post('/savePres', JSON.stringify(currentPresentation)).
+		success(function (data, status, headers, config) {
+			deferred.resolve(data);
+		}).
+		error(function (data, status, headers, config) {
+			console.error(JSON.stringify(data));
+			deferred.reject(status);
+			// or server returns response with an error status.
+		});
+		return deferred.promise;
+};
+return comm;
 
 };
