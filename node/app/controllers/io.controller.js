@@ -31,27 +31,31 @@ controller.listen = function (server) {
 				if (err) {
 					socket.emit('connection', JSON.stringify(err));
 				} else {
+					data.src = "/slid/" + id;
 					socket.emit('connection', JSON.stringify(data));
 				}
 			});
 		});
 
-		socket.on('data_comm', function (err, data,arg0,arg1,arg2) {
+		socket.on('data_comm', function (data) {
 			var json = "";
-			console.log(arg0);
-			console.log(arg1);
-			console.log(arg2);
+			console.log("DEBUG DATA_COM");
+			console.log(data);
+			
+			if (data instanceof Object) {
+				json = data;
+			}
 			
 			try{
 				json = JSON.parse(data);
 			}catch(e){
-				
 			}
 			if(json == ""){
 				return;
 			}
 			
-			mapSocket[data.id] = "";
+			mapSocket[data.id] = this;
+			console.log(mapSocket);
 
 		});
 	})
