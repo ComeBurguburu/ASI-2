@@ -15,9 +15,6 @@ function eventCrtFnt($scope, $log, $window, factory, comm){
     $scope.presentationMap.payload="";
     
     var available_content=comm.loadImages('test','test');
-	
-	//console.info(available_content);
-	
        available_content.then(
           function(payload) { 
               $scope.contentMap.payload = payload;
@@ -33,7 +30,7 @@ function eventCrtFnt($scope, $log, $window, factory, comm){
               $scope.presentationMap.payload= payload;
                             
               for(key in $scope.presentationMap.payload){
-              //  console.log( $scope.currentPresenation);
+                console.log( $scope.currentPresenation);
                   $scope.currentPresenation =$scope.presentationMap.payload[key];
               }
              
@@ -45,7 +42,6 @@ function eventCrtFnt($scope, $log, $window, factory, comm){
     
     $scope.newSlide=function(){
         var slid=factory.slidCreation("slide-Title","slide-text");
-		console.info($scope.currentPresenation);
         $scope.currentPresenation.slidArray.push(slid);
         
     }
