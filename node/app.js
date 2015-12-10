@@ -22,6 +22,6 @@ IOController.listen(server);
 app.use("/", express.static(path.join(__dirname, "public/login")));
 app.use("/admin/", express.static(path.join(__dirname, "public/admin")));
 app.use("/uploads/", express.static(path.join(__dirname, "uploads")));
-app.use("/watch", express.static(path.join(__dirname, "public/watch.html")));
+app.use("/watch", express.static(path.join(__dirname, "public/watch")));
 app.use("/socket", express.static(path.join(__dirname, "public/socket")));
 app.use(slidRoute);

@@ -46,7 +46,7 @@
             available_content.then(
                 function(payload) { 
                    $scope.$parent.contentMap.payload = payload;
-                    $scope.$parent.contentMap.array=factory.mapToArray(payload);
+				   $scope.$parent.contentMap.array=factory.mapToArray(payload);
                 },
                 function(errorPayload) {
                     $log.error('failure loading movie', errorPayload);
