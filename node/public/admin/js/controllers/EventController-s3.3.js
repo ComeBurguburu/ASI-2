@@ -19,9 +19,6 @@ function eventCrtFnt($scope, $log, $window, factory, comm, socket) {
 		function (payload) {
 			$scope.contentMap.payload = payload;
 			$scope.contentMap.array = factory.mapToArray(payload);
-			console.log($scope.contentMap.array.map(function (a) {
-				return a.fileName.substr(0, 5);
-			}).join(","));
 		},
 		function (errorPayload) {
 			$log.error('failure loading movie', errorPayload);
