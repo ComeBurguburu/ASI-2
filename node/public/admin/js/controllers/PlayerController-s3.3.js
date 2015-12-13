@@ -29,11 +29,9 @@ function playerCtrlFnt($scope, $log, $window, comm, $timeout, socket) {
 			break;
 		case UP:
 			$scope.begin();
-			event.preventDefault();
 			break;
 		case DOWN:
 			$scope.end();
-			event.preventDefault();
 			break;
 		case SPACE:
 			if (isPlay) {

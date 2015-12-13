@@ -42,7 +42,7 @@ function eventCrtFnt($scope, $log, $window, factory, comm, socket) {
 
 
 	$scope.newSlide = function () {
-		var slid = factory.slidCreation("slide-Title", "slide-text");
+		var slid = factory.slidCreation("", "");
 		$scope.currentPresenation.slidArray.push(slid);
 
 	}
