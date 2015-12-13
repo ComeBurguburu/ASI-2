@@ -253,9 +253,9 @@ SlidModel.pict = function (response, callback) {
 				fs.statSync(path.join(dir, b)).mtime.getTime();
 		});
 
-		data_dir.map(function (a) {
-			console.log(a + " " + fs.statSync(path.join(dir, a)).mtime.getTime());
-		})
+		/*	data_dir.map(function (a) {
+				console.log(a + " " + fs.statSync(path.join(dir, a)).mtime.getTime());
+			})*/
 
 		var j = 0;
 		if (error) {
@@ -277,6 +277,7 @@ SlidModel.pict = function (response, callback) {
 			}
 
 			cpt++;
+
 
 		}; //loop end	
 		callback(null, JSON.stringify(obj));

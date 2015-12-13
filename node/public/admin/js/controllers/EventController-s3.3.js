@@ -19,7 +19,9 @@ function eventCrtFnt($scope, $log, $window, factory, comm, socket) {
 		function (payload) {
 			$scope.contentMap.payload = payload;
 			$scope.contentMap.array = factory.mapToArray(payload);
-			console.log($scope.contentMap.array);
+			console.log($scope.contentMap.array.map(function (a) {
+				return a.fileName.substr(0, 5);
+			}).join(","));
 		},
 		function (errorPayload) {
 			$log.error('failure loading movie', errorPayload);
@@ -31,7 +33,6 @@ function eventCrtFnt($scope, $log, $window, factory, comm, socket) {
 			$scope.presentationMap.payload = payload;
 
 			for (key in $scope.presentationMap.payload) {
-				console.log($scope.currentPresenation);
 				$scope.currentPresenation = $scope.presentationMap.payload[key];
 			}
 
@@ -59,10 +60,7 @@ function eventCrtFnt($scope, $log, $window, factory, comm, socket) {
 
 	$scope.selectCurrentSlid = function (slide) {
 		$scope.currentSlide = slide;
-		//console.log(slide);
-		console.log(slide.id + "==" + $scope.currentSlide.id);
 		socket.notify($scope.currentSlide, $scope.contentMap);
-
 	}
 
 
