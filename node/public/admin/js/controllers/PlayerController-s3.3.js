@@ -14,6 +14,14 @@ function playerCtrlFnt($scope, $log, $window, comm, $timeout, socket) {
 	$scope.pause = function () {
 		console.log("Pause function called");
 		$timeout.cancel(promise);
+/*
+        $scope.$on(
+            "$destroy",
+            function( event ) {
+                $timeout.cancel( promise );
+            }
+        );
+*/
 	}
 
 	$scope.end = function () {
@@ -99,13 +107,14 @@ function playerCtrlFnt($scope, $log, $window, comm, $timeout, socket) {
 		// for (var slid in $scope.currentPresenation.slidArray){
 		// 	comm.loadPres(slid.title,slid.id);
 		// }
-		promise = $timeout((function () {
-			for (var slid in $scope.currentPresenation.slidArray) {
+		for (var slid in $scope.currentPresenation.slidArray) {
+			promise = $timeout((function () {
+
 				//for (var slid in $scope.currentPresenation.slidArray){
 				$scope.forward();
-			}
-		}), 5000, true);
+			}), 2000, true);
 
+		}
 	}
 
 	$scope.savePres = function () {
@@ -121,16 +130,8 @@ function playerCtrlFnt($scope, $log, $window, comm, $timeout, socket) {
 					console.log("No slide slected");
 					break;
 				}
-				$scope.$on('$destroy', function () {
-					$scope.cancel($scope.currentPresenation.slidArray[slid].id);
-				});
-				/*
-				$scope.$on(
-					"$destroy",
-					function handleDestroyEvent(){
-						scope.currentPresenation.slidArray[slid].id;
-					});
-				*/
+				$scope.currentPresenation.slidArray.splice(slid,1);
+				
 				break;
 			}
 		}

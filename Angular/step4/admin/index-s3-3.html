@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="adminApp" ng-controller="eventCtrl">
+<html lang="en" ng-app="adminApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <link href="css/js.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body ng-controller="playerCtrl">
       
       <div class="container-fluid fullScreenHeight zeroRef" >
         <div class="row container-fluid fullScreenHeight ">
@@ -46,7 +46,7 @@
                 </div>
             </div>
 <!-- *************   CENTER PANEL  *************-->
-            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 zeroRef fullScreenHeight" > 
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 zeroRef fullScreenHeight" ng-controller="eventCtrl" > 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
                    <div class="btn-group" role="group" aria-label="..." >
                        <button type="button" class="btn btn-default" ><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></button>
