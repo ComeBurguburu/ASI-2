@@ -226,8 +226,8 @@ SlidModel.savePres = function (request, response) {
 		try {
 			json = JSON.parse(json_string);
 		} catch (e) {
-			console.log(":"+json_string);
-			response.send("json corrupted: "+json_string);
+			console.log(":" + json_string);
+			response.send("json corrupted: " + json_string);
 		}
 		if (json != null) {
 			fs.writeFile(path.join(CONFIG.presentationDirectory, json.id + ".pres.json"), json_string, function (err) {
@@ -236,7 +236,7 @@ SlidModel.savePres = function (request, response) {
 				}
 				var f = path.join(CONFIG.presentationDirectory, json.id + ".pres.json")
 				console.log(f);
-				response.send(f);
+				response.send("save success");
 			});
 		}
 
@@ -247,6 +247,16 @@ SlidModel.pict = function (response, callback) {
 		cpt = 0;
 	fs.readdir(CONFIG.contentDirectory, function (error, data_dir) {
 
+		var dir = CONFIG.contentDirectory; // your directory
+		data_dir = data_dir.sort(function (a, b) {
+			return fs.statSync(path.join(dir, a)).mtime.getTime() -
+				fs.statSync(path.join(dir, b)).mtime.getTime();
+		});
+
+		data_dir.map(function (a) {
+			console.log(a + " " + fs.statSync(path.join(dir, a)).mtime.getTime());
+		})
+
 		var j = 0;
 		if (error) {
 			return console.error(error);
@@ -254,36 +264,23 @@ SlidModel.pict = function (response, callback) {
 
 		for (i = 0; i < data_dir.length; i++) {
 			var file = path.join(CONFIG.contentDirectory, data_dir[i]);
-			fs.readFile(file, "utf-8", function (err, data) {
+			var data = fs.readFileSync(file, "utf-8");
 
-				if (err) {
-					console.error(error);
-					callback(err);
-					return;
-				}
+			var json = "";
+			try {
+				json = JSON.parse(data.toString());
+				json.id = j;
+				obj[j] = json;
+				j = j + 1;
+			} catch (e) {
 
-				//if (path.extname(file) == ".json") { // added to avoid the problem of .png files
+			}
 
+			cpt++;
 
-				var json = "";
-				try {
-					json = JSON.parse(data.toString());
-					json.id = j;
-					obj[j] = json;
-					j = j + 1;
-				} catch (e) {
-
-				}
-
-				//}
-				cpt++;
-
-				if (cpt == data_dir.length) {
-					callback(null, JSON.stringify(obj));
-					return;
-				}
-			});
 		}; //loop end	
+		callback(null, JSON.stringify(obj));
+		return;
 
 	});
 }

@@ -87,7 +87,7 @@
 				<div id="dropZone" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div ng-include="'pages/DropZoneArea.html'"> </div>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contentBlock" ng-repeat="content in contentMap.array | filter:searchContent | orderBy: 'title'">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contentBlock" ng-repeat="content in contentMap.array | filter:searchContent | orderBy: 'id'">
 					<input type="text" ng-model="content.title" class="form-control" id="currentContentTitle">
 					<div ng-drag="true" ng-drag-data="content" ng-drag-success="onDragComplete($data,$event)">
 						<img ng-src="{{content.src}}" alt="{{content.title}}" class="img-thumbnail">

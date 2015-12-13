@@ -48,7 +48,13 @@ function eventCrtFnt($scope, $log, $window, factory, comm, socket) {
 	}
 
 	$scope.savePres = function () {
-		comm.savePres($scope.currentPresenation);
+		promise = comm.savePres($scope.currentPresenation);
+		promise.then(function (data) {
+				alert("save successed");
+			},
+			function (data) {
+				alert("error connection failed");
+			});
 	}
 
 	$scope.selectCurrentSlid = function (slide) {

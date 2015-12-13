@@ -53,7 +53,7 @@ router.post("/file-upload", multerMiddleware.single("file"), function (request, 
 			console.error(err);
 			response.send(err);
 		} else {
-			response.send("it work");
+			response.send("picture uploaded");
 		}
 	});
 });
