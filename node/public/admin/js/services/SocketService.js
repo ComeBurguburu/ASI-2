@@ -9,7 +9,7 @@ function notifyFnc() {
 		var socket = io.connect();
 		var slid = angular.extend({}, currentSlide);
 
-		if (slid !== undefined && slid.contentMap[1] !== undefined) {
+		if (slid !== undefined && slid.contentMap !== undefined && slid.contentMap[1] !== undefined) {
 			slid.src = contentMap.payload[slid.contentMap[1]].src;
 		}
 		socket.emit('slidEvent', JSON.stringify(slid));

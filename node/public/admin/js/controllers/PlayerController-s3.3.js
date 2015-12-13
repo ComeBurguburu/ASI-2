@@ -1,3 +1,4 @@
+"use strict";
 angular.module('adminApp').controller('playerCtrl', playerCtrlFnt);
 
 playerCtrlFnt.$inject = ['$scope', '$log', '$window', 'comm', '$timeout', 'socket'];
@@ -10,9 +11,43 @@ function playerCtrlFnt($scope, $log, $window, comm, $timeout, socket) {
 	var stopPlaying = false;
 	var promise = [];
 	var currentSlideId = undefined;
+	var isPlay = false;
+
+	var UP = 38,
+		DOWN = 40,
+		LEFT = 37,
+		RIGHT = 39,
+		SPACE = 32;
+
+	$scope.shortcut = function (event) {
+		switch (event.which) {
+		case LEFT:
+			$scope.backward();
+			break;
+		case RIGHT:
+			$scope.forward();
+			break;
+		case UP:
+			$scope.begin();
+			break;
+		case DOWN:
+			$scope.end();
+			break;
+		case SPACE:
+			if (isPlay) {
+				$scope.pause();
+			} else {
+				$scope.play();
+			}
+			event.preventDefault();
+			break;
+		}
+
+	}
 
 	$scope.pause = function () {
 		console.log("Pause function called");
+		isPlay = false;
 
 		for (var i = 0; i < promise.length; i++) {
 			$timeout.cancel(promise.pop());
@@ -92,16 +127,14 @@ function playerCtrlFnt($scope, $log, $window, comm, $timeout, socket) {
 
 	$scope.play = function () {
 		console.log("Play function called");
+		isPlay = true;
 
-
-		var period = 2000;
+		var period = 1000;
 		for (var slid in $scope.currentPresenation.slidArray) {
 			promise.push($timeout((function () {
 				$scope.forward();
 			}), period += period));
 		}
-
-
 	}
 
 
