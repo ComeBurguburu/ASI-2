@@ -39,7 +39,6 @@ function playerCtrlFnt($scope, $log, $window, comm, $timeout, socket) {
 			} else {
 				$scope.play();
 			}
-			event.preventDefault();
 			break;
 		}
 
