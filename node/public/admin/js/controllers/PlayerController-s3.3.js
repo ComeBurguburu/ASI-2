@@ -91,7 +91,7 @@ function playerCtrlFnt($scope, $log, $window, comm, $timeout, socket) {
 				//console.log("previous slide : " + $scope.currentPresenation.slidArray[slid_tmp_backward].id);
 
 				slid--;
-				$scope.selectCurrentSlid($scope.currentSlide = $scope.currentPresenation.slidArray[slid]);
+				$scope.selectCurrentSlid($scope.currentPresenation.slidArray[slid]);
 				break;
 			}
 		}
@@ -117,7 +117,7 @@ function playerCtrlFnt($scope, $log, $window, comm, $timeout, socket) {
 				//	console.log("next slide : " + $scope.currentPresenation.slidArray[slid_tmp_forward].id);
 
 				slid++;
-				$scope.selectCurrentSlid($scope.currentSlide = $scope.currentPresenation.slidArray[slid]);
+				$scope.selectCurrentSlid($scope.currentPresenation.slidArray[slid]);
 				break;
 			}
 		}
